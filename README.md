@@ -50,7 +50,7 @@ scripts/models/       Elo、Poisson、去水、融合和评分函数
 scripts/providers/    免费数据源 Provider 骨架
 scripts/generate_data.py
 tests/                Python 模型测试
-.github/workflows/    Pages 部署与数据更新
+workflow-templates/   Pages 部署与数据更新模板
 ```
 
 ## 数据源策略
@@ -95,7 +95,7 @@ USE_MOCK_DATA=true
 
 ## 数据更新 Workflow
 
-`update-data.yml` 每小时第 17 分钟运行一次，也支持手动触发。它会：
+将 `workflow-templates/update-data.yml` 复制到 `.github/workflows/` 后，每小时第 17 分钟运行一次，也支持手动触发。它会：
 
 1. 生成或拉取数据。
 2. 执行模型测试。
