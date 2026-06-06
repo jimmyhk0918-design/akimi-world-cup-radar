@@ -1,0 +1,38 @@
+{
+  "name": "World Cup 2026",
+  "matches": [
+    {
+      "num": 1,
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "time": "13:00 UTC-6",
+      "team1": "Mexico",
+      "team2": "South Africa",
+      "group": "Group A",
+      "ground": "Mexico City"
+    },
+    {
+      "num": 2,
+      "round": "Matchday 1",
+      "date": "2026-06-11",
+      "time": "20:00 UTC-6",
+      "team1": "South Korea",
+      "team2": "Czech Republic",
+      "group": "Group A",
+      "ground": "Guadalajara (Zapopan)",
+      "score": {
+        "ft": [2, 1],
+        "ht": [1, 0]
+      }
+    },
+    {
+      "num": 73,
+      "round": "Round of 32",
+      "date": "2026-06-28",
+      "time": "15:00 UTC-4",
+      "team1": "2A",
+      "team2": "2B",
+      "ground": "Miami"
+    }
+  ]
+}

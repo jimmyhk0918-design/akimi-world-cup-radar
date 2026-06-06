@@ -1,48 +1,113 @@
+import hashlib
 import json
 import os
-import random
+import re
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
-from models.football import blend, elo_to_1x2, matrix_to_1x2, remove_vig, score_matrix, totals_from_matrix
+try:
+    from .models.football import (
+        blend,
+        brier_score,
+        elo_to_1x2,
+        log_loss,
+        matrix_to_1x2,
+        score_matrix,
+        totals_from_matrix,
+    )
+    from .providers.openfootball import OpenFootballProvider
+except ImportError:
+    from models.football import (
+        blend,
+        brier_score,
+        elo_to_1x2,
+        log_loss,
+        matrix_to_1x2,
+        score_matrix,
+        totals_from_matrix,
+    )
+    from providers.openfootball import OpenFootballProvider
 
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT = ROOT / "public" / "data"
-NOW = datetime(2026, 6, 6, 6, 0, tzinfo=timezone.utc)
-random.seed(2026)
+OUTPUT = Path(os.getenv("RADAR_OUTPUT_DIR", ROOT / "public" / "data"))
+SOURCE = os.getenv("RADAR_DATA_SOURCE", "openfootball").lower()
+MARKET_WEIGHT = 0.20
 
-TEAMS = {
-    "ARG": ("阿根廷", "Argentina", "🇦🇷", 2118),
-    "ESP": ("西班牙", "Spain", "🇪🇸", 2094),
-    "FRA": ("法国", "France", "🇫🇷", 2076),
-    "ENG": ("英格兰", "England", "🏴", 2047),
-    "BRA": ("巴西", "Brazil", "🇧🇷", 2028),
-    "POR": ("葡萄牙", "Portugal", "🇵🇹", 2012),
-    "GER": ("德国", "Germany", "🇩🇪", 1986),
-    "NED": ("荷兰", "Netherlands", "🇳🇱", 1981),
+TEAM_INFO = {
+    "Algeria": ("ALG", "阿尔及利亚", "🇩🇿", 1760),
+    "Argentina": ("ARG", "阿根廷", "🇦🇷", 2118),
+    "Australia": ("AUS", "澳大利亚", "🇦🇺", 1785),
+    "Austria": ("AUT", "奥地利", "🇦🇹", 1875),
+    "Belgium": ("BEL", "比利时", "🇧🇪", 1930),
+    "Bosnia & Herzegovina": ("BIH", "波黑", "🇧🇦", 1680),
+    "Brazil": ("BRA", "巴西", "🇧🇷", 2028),
+    "Canada": ("CAN", "加拿大", "🇨🇦", 1810),
+    "Cape Verde": ("CPV", "佛得角", "🇨🇻", 1640),
+    "Colombia": ("COL", "哥伦比亚", "🇨🇴", 1960),
+    "Croatia": ("CRO", "克罗地亚", "🇭🇷", 1905),
+    "Curaçao": ("CUW", "库拉索", "🇨🇼", 1575),
+    "Czech Republic": ("CZE", "捷克", "🇨🇿", 1825),
+    "DR Congo": ("COD", "刚果民主共和国", "🇨🇩", 1650),
+    "Ecuador": ("ECU", "厄瓜多尔", "🇪🇨", 1885),
+    "Egypt": ("EGY", "埃及", "🇪🇬", 1750),
+    "England": ("ENG", "英格兰", "🏴", 2047),
+    "France": ("FRA", "法国", "🇫🇷", 2076),
+    "Germany": ("GER", "德国", "🇩🇪", 1986),
+    "Ghana": ("GHA", "加纳", "🇬🇭", 1660),
+    "Haiti": ("HAI", "海地", "🇭🇹", 1520),
+    "Iran": ("IRN", "伊朗", "🇮🇷", 1815),
+    "Iraq": ("IRQ", "伊拉克", "🇮🇶", 1630),
+    "Ivory Coast": ("CIV", "科特迪瓦", "🇨🇮", 1790),
+    "Japan": ("JPN", "日本", "🇯🇵", 1900),
+    "Jordan": ("JOR", "约旦", "🇯🇴", 1580),
+    "Mexico": ("MEX", "墨西哥", "🇲🇽", 1840),
+    "Morocco": ("MAR", "摩洛哥", "🇲🇦", 1940),
+    "Netherlands": ("NED", "荷兰", "🇳🇱", 1981),
+    "New Zealand": ("NZL", "新西兰", "🇳🇿", 1550),
+    "Norway": ("NOR", "挪威", "🇳🇴", 1845),
+    "Panama": ("PAN", "巴拿马", "🇵🇦", 1690),
+    "Paraguay": ("PAR", "巴拉圭", "🇵🇾", 1770),
+    "Portugal": ("POR", "葡萄牙", "🇵🇹", 2012),
+    "Qatar": ("QAT", "卡塔尔", "🇶🇦", 1620),
+    "Saudi Arabia": ("KSA", "沙特阿拉伯", "🇸🇦", 1610),
+    "Scotland": ("SCO", "苏格兰", "🏴", 1780),
+    "Senegal": ("SEN", "塞内加尔", "🇸🇳", 1835),
+    "South Africa": ("RSA", "南非", "🇿🇦", 1635),
+    "South Korea": ("KOR", "韩国", "🇰🇷", 1765),
+    "Spain": ("ESP", "西班牙", "🇪🇸", 2094),
+    "Sweden": ("SWE", "瑞典", "🇸🇪", 1810),
+    "Switzerland": ("SUI", "瑞士", "🇨🇭", 1880),
+    "Tunisia": ("TUN", "突尼斯", "🇹🇳", 1685),
+    "Turkey": ("TUR", "土耳其", "🇹🇷", 1870),
+    "USA": ("USA", "美国", "🇺🇸", 1830),
+    "Uruguay": ("URU", "乌拉圭", "🇺🇾", 1950),
+    "Uzbekistan": ("UZB", "乌兹别克斯坦", "🇺🇿", 1675),
 }
 
-FIXTURES = [
-    ("m001", "ARG", "ESP", "A", 6, "纽约新泽西体育场", "纽约"),
-    ("m002", "FRA", "ENG", "A", 9, "洛杉矶体育场", "洛杉矶"),
-    ("m003", "BRA", "POR", "B", 13, "迈阿密体育场", "迈阿密"),
-    ("m004", "GER", "NED", "B", 16, "多伦多体育场", "多伦多"),
-    ("m005", "ARG", "FRA", "A", 20, "达拉斯体育场", "达拉斯"),
-    ("m006", "ESP", "ENG", "A", 23, "亚特兰大体育场", "亚特兰大"),
-    ("m007", "BRA", "GER", "B", 27, "休斯敦体育场", "休斯敦"),
-    ("m008", "POR", "NED", "B", 30, "波士顿体育场", "波士顿"),
-    ("m009", "ARG", "ENG", "A", 34, "费城体育场", "费城"),
-    ("m010", "ESP", "FRA", "A", 37, "西雅图体育场", "西雅图"),
-    ("m011", "BRA", "NED", "B", 41, "旧金山湾区体育场", "旧金山"),
-    ("m012", "POR", "GER", "B", 44, "温哥华体育场", "温哥华"),
-]
+CITY_NAMES = {
+    "Atlanta": "亚特兰大",
+    "Boston (Foxborough)": "波士顿",
+    "Dallas (Arlington)": "达拉斯",
+    "Guadalajara (Zapopan)": "瓜达拉哈拉",
+    "Houston": "休斯敦",
+    "Kansas City": "堪萨斯城",
+    "Los Angeles (Inglewood)": "洛杉矶",
+    "Mexico City": "墨西哥城",
+    "Miami": "迈阿密",
+    "Monterrey (Guadalupe)": "蒙特雷",
+    "New York/New Jersey (East Rutherford)": "纽约/新泽西",
+    "Philadelphia": "费城",
+    "San Francisco Bay Area (Santa Clara)": "旧金山湾区",
+    "Seattle": "西雅图",
+    "Toronto": "多伦多",
+    "Vancouver": "温哥华",
+}
 
 
-def team(code):
-    name, english, flag, elo = TEAMS[code]
-    forms = [["W", "W", "D", "W", "L"], ["W", "D", "W", "W", "W"], ["D", "W", "W", "L", "W"]]
-    return {"code": code, "name": name, "english_name": english, "flag": flag, "elo": elo, "form": forms[sum(map(ord, code)) % 3]}
+def now_utc():
+    override = os.getenv("RADAR_NOW")
+    return datetime.fromisoformat(override.replace("Z", "+00:00")) if override else datetime.now(timezone.utc)
 
 
 def round_probs(probs):
@@ -51,154 +116,327 @@ def round_probs(probs):
 
 def write(name, payload):
     OUTPUT.mkdir(parents=True, exist_ok=True)
-    with (OUTPUT / "{}.json".format(name)).open("w", encoding="utf-8") as handle:
+    target = OUTPUT / "{}.json".format(name)
+    temporary = target.with_suffix(".json.tmp")
+    with temporary.open("w", encoding="utf-8") as handle:
         json.dump(payload, handle, ensure_ascii=False, indent=2)
+        handle.write("\n")
+    temporary.replace(target)
 
 
-def main():
-    matches, predictions, score_rows, odds_rows, upsets, divergences = [], [], [], [], [], []
-    for index, (match_id, home_code, away_code, group, hour_offset, stadium, city) in enumerate(FIXTURES, 1):
-        home, away = team(home_code), team(away_code)
-        match_time = NOW + timedelta(days=5 + index // 4, hours=hour_offset)
-        status = "finished" if index <= 4 else ("live" if index == 5 else "scheduled")
+def parse_match_time(row):
+    clock = row.get("time", "12:00 UTC+0")
+    match = re.match(r"(\d{1,2}):(\d{2})(?:\s+UTC([+-]\d+))?", clock)
+    if not match:
+        hour, minute, offset = 12, 0, 0
+    else:
+        hour, minute = int(match.group(1)), int(match.group(2))
+        offset = int(match.group(3) or 0)
+    local = datetime.fromisoformat(row["date"]).replace(
+        hour=hour,
+        minute=minute,
+        tzinfo=timezone(timedelta(hours=offset)),
+    )
+    return local.astimezone(timezone.utc)
+
+
+def is_known_team(name):
+    return name in TEAM_INFO
+
+
+def team(name):
+    code, chinese, flag, elo = TEAM_INFO.get(name, (name[:3].upper(), name, "⚽", 1700))
+    digest = hashlib.sha256(name.encode("utf-8")).digest()
+    form_values = ("W", "D", "W", "L", "W", "W", "D", "D")
+    form = [form_values[(digest[index] + index) % len(form_values)] for index in range(5)]
+    return {
+        "code": code,
+        "name": chinese,
+        "english_name": name,
+        "flag": flag,
+        "elo": elo,
+        "form": form,
+    }
+
+
+def stage_name(row):
+    round_name = row.get("round", "")
+    if row.get("group"):
+        return "group"
+    if "Round of 32" in round_name:
+        return "round_of_32"
+    if "Round of 16" in round_name:
+        return "round_of_16"
+    if "Quarter" in round_name:
+        return "quarter_final"
+    if "Semi" in round_name:
+        return "semi_final"
+    if "Third" in round_name:
+        return "third_place"
+    return "final"
+
+
+def actual_outcome(home_score, away_score):
+    if home_score > away_score:
+        return "home"
+    if home_score < away_score:
+        return "away"
+    return "draw"
+
+
+def load_source():
+    if SOURCE == "mock":
+        fixture_path = ROOT / "tests" / "fixtures" / "openfootball-2026.json"
+        with fixture_path.open(encoding="utf-8") as handle:
+            payload = json.load(handle)
+        return payload.get("matches", []), "mock-fixture"
+    rows = OpenFootballProvider().fetch_fixtures()
+    return rows, "openfootball"
+
+
+def build_datasets(source_rows, source_name, generated_at):
+    usable_rows = [
+        row for row in source_rows
+        if is_known_team(row.get("team1", "")) and is_known_team(row.get("team2", ""))
+    ]
+    if not usable_rows:
+        raise RuntimeError("Provider returned no resolved World Cup fixtures")
+
+    matches, predictions, score_rows = [], [], []
+    odds_rows, upsets, divergences, reviews = [], [], [], []
+
+    for index, row in enumerate(usable_rows, 1):
+        match_id = "wc2026-{:03d}".format(int(row.get("num", index)))
+        home, away = team(row["team1"]), team(row["team2"])
+        match_time = parse_match_time(row)
+        score = row.get("score", {})
+        full_time = score.get("ft")
+        status = "finished" if full_time else (
+            "live" if match_time <= generated_at <= match_time + timedelta(hours=4) else "scheduled"
+        )
+        home_score, away_score = (full_time if full_time else (None, None))
+        group_name = row.get("group", "").replace("Group ", "")
         match = {
-            "match_id": match_id, "match_no": index, "stage": "group", "round": (index - 1) // 4 + 1,
-            "group_name": group, "home_team": home, "away_team": away, "match_time": match_time.isoformat(),
-            "stadium": stadium, "city": city, "status": status,
-            "home_score": [2, 1, 0, 2, 1][index - 1] if index <= 5 else None,
-            "away_score": [1, 1, 1, 2, 1][index - 1] if index <= 5 else None,
+            "match_id": match_id,
+            "match_no": int(row.get("num", index)),
+            "stage": stage_name(row),
+            "round": int(re.sub(r"\D", "", row.get("round", "1")) or 1),
+            "group_name": group_name,
+            "home_team": home,
+            "away_team": away,
+            "match_time": match_time.isoformat(),
+            "stadium": row.get("ground", "待定"),
+            "city": CITY_NAMES.get(row.get("ground", ""), row.get("ground", "待定")),
+            "status": status,
+            "home_score": home_score,
+            "away_score": away_score,
         }
-        if status == "live":
-            match["minute"] = 63
         matches.append(match)
 
         rating_delta = (home["elo"] - away["elo"]) / 400
-        lambda_home = max(0.55, 1.35 + rating_delta * 0.85 + (index % 3 - 1) * 0.12)
-        lambda_away = max(0.48, 1.08 - rating_delta * 0.65 + ((index + 1) % 3 - 1) * 0.1)
+        lambda_home = max(0.48, 1.34 + rating_delta * 0.82)
+        lambda_away = max(0.42, 1.08 - rating_delta * 0.64)
         matrix = score_matrix(lambda_home, lambda_away)
         elo_probs = elo_to_1x2(home["elo"], away["elo"])
         poisson_probs = matrix_to_1x2(matrix)
         model = blend(elo_probs, poisson_probs, 0.42)
 
-        market_shift = ((index % 5) - 2) * 0.009
-        market_seed = {
-            "home": max(0.08, model["home"] + market_shift),
-            "draw": max(0.12, model["draw"] - market_shift / 3),
-            "away": max(0.08, model["away"] - market_shift * 2 / 3),
+        # A deterministic proxy keeps the market-related UI usable until an odds key is configured.
+        proxy_shift = ((index % 7) - 3) * 0.004
+        market_proxy = {
+            "home": max(0.05, model["home"] + proxy_shift),
+            "draw": max(0.12, model["draw"] - proxy_shift / 3),
+            "away": max(0.05, model["away"] - proxy_shift * 2 / 3),
         }
-        market_odds = {key: 1 / value * 1.06 for key, value in market_seed.items()}
-        market = remove_vig(market_odds)
-        final = blend(model, market, 0.35)
+        total_proxy = sum(market_proxy.values())
+        market_proxy = {key: value / total_proxy for key, value in market_proxy.items()}
+        final = blend(model, market_proxy, MARKET_WEIGHT)
         totals = totals_from_matrix(matrix)
         winner = max(final, key=final.get)
-        confidence_gap = sorted(final.values(), reverse=True)[0] - sorted(final.values(), reverse=True)[1]
+        ordered = sorted(final.values(), reverse=True)
+        confidence_gap = ordered[0] - ordered[1]
         confidence = "high" if confidence_gap > 0.19 else ("medium" if confidence_gap > 0.08 else "low")
-        divergence = {key: model[key] - market[key] for key in model}
+        divergence = {key: model[key] - market_proxy[key] for key in model}
         largest = max(divergence, key=lambda key: abs(divergence[key]))
-        upset = int(min(96, max(18, (1 - max(final.values())) * 78 + abs(divergence["home"]) * 310 + (index % 4) * 5)))
+        upset = int(min(96, max(18, (1 - max(final.values())) * 82 + abs(divergence[largest]) * 250)))
         label_map = {"home": "主队优势", "draw": "平局路径突出", "away": "客队优势"}
 
         predictions.append({
             "match_id": match_id,
-            **{"model_{}_win_prob".format(key) if key != "draw" else "model_draw_prob": value for key, value in round_probs(model).items()},
-            **{"market_{}_win_prob".format(key) if key != "draw" else "market_draw_prob": value for key, value in round_probs(market).items()},
-            **{"final_{}_win_prob".format(key) if key != "draw" else "final_draw_prob": value for key, value in round_probs(final).items()},
-            "expected_home_goals": round(lambda_home, 2), "expected_away_goals": round(lambda_away, 2),
-            "over_25_prob": round(totals["over_25"], 4), "under_25_prob": round(totals["under_25"], 4),
-            "btts_prob": round(totals["btts"], 4), "upset_index": upset, "confidence_level": confidence,
-            "prediction_label": "{}，{}信心".format(label_map[winner], {"high": "高", "medium": "中", "low": "低"}[confidence]),
-            "summary": "{}略占优势，但模型保留{}与小比分路径。".format(home["name"] if winner == "home" else away["name"], "平局" if winner != "draw" else "双方"),
-            "factors": ["Elo 强度差异已纳入", "Poisson 预期进球完成校准", "市场概率权重为 35%"],
-            "updated_at": NOW.isoformat(),
+            "model_home_win_prob": round(model["home"], 4),
+            "model_draw_prob": round(model["draw"], 4),
+            "model_away_win_prob": round(model["away"], 4),
+            "market_home_win_prob": round(market_proxy["home"], 4),
+            "market_draw_prob": round(market_proxy["draw"], 4),
+            "market_away_win_prob": round(market_proxy["away"], 4),
+            "final_home_win_prob": round(final["home"], 4),
+            "final_draw_prob": round(final["draw"], 4),
+            "final_away_win_prob": round(final["away"], 4),
+            "expected_home_goals": round(lambda_home, 2),
+            "expected_away_goals": round(lambda_away, 2),
+            "over_25_prob": round(totals["over_25"], 4),
+            "under_25_prob": round(totals["under_25"], 4),
+            "btts_prob": round(totals["btts"], 4),
+            "upset_index": upset,
+            "confidence_level": confidence,
+            "prediction_label": "{}，{}信心".format(
+                label_map[winner], {"high": "高", "medium": "中", "low": "低"}[confidence]
+            ),
+            "summary": "{}与{}的赛前模型预测，需结合临场阵容复核。".format(home["name"], away["name"]),
+            "factors": ["Elo 强度差异", "Poisson 预期进球", "20% 市场代理校准"],
+            "updated_at": generated_at.isoformat(),
         })
-        score_rows.append({"match_id": match_id, "scores": [{"score": row["score"], "probability": round(row["probability"], 4)} for row in matrix[:5]]})
+        score_rows.append({
+            "match_id": match_id,
+            "scores": [
+                {"score": item["score"], "probability": round(item["probability"], 4)}
+                for item in matrix[:5]
+            ],
+        })
 
         history = []
         for step, hours in enumerate((24, 12, 6, 1, 0)):
             progress = step / 4
             history.append({
                 "time": (match_time - timedelta(hours=hours)).isoformat(),
-                "home": round(model["home"] + (market["home"] - model["home"]) * progress, 4),
-                "draw": round(model["draw"] + (market["draw"] - model["draw"]) * progress, 4),
-                "away": round(model["away"] + (market["away"] - model["away"]) * progress, 4),
+                "home": round(model["home"] + (market_proxy["home"] - model["home"]) * progress, 4),
+                "draw": round(model["draw"] + (market_proxy["draw"] - model["draw"]) * progress, 4),
+                "away": round(model["away"] + (market_proxy["away"] - model["away"]) * progress, 4),
             })
-        open_odds = 1 / max(0.08, model[winner]) * 1.06
-        current_odds = market_odds[winner]
         odds_rows.append({
-            "match_id": match_id, "market_type": "1x2", "selection": winner,
-            "open_odds": round(open_odds, 2), "current_odds": round(current_odds, 2),
-            "open_probability": round(model[winner], 4), "current_probability": round(market[winner], 4),
-            "change_24h": round(market[winner] - model[winner], 4),
-            "change_6h": round((market[winner] - model[winner]) * 0.5, 4),
-            "change_1h": round((market[winner] - model[winner]) * 0.2, 4),
-            "bookmaker_consensus": round(0.62 + (index % 4) * 0.08, 2),
-            "market_dispersion": round(0.025 + (index % 3) * 0.018, 3),
-            "signal": {"home": "主队升温", "draw": "平局升温", "away": "客队升温"}[winner],
-            "risk_note": "市场与模型存在{}分歧，需结合临场阵容复核。".format("明显" if abs(divergence[winner]) > 0.05 else "轻微"),
+            "match_id": match_id,
+            "market_type": "1x2-proxy",
+            "selection": winner,
+            "open_odds": round(1 / model[winner], 2),
+            "current_odds": round(1 / market_proxy[winner], 2),
+            "open_probability": round(model[winner], 4),
+            "current_probability": round(market_proxy[winner], 4),
+            "change_24h": round(market_proxy[winner] - model[winner], 4),
+            "change_6h": round((market_proxy[winner] - model[winner]) * 0.5, 4),
+            "change_1h": round((market_proxy[winner] - model[winner]) * 0.2, 4),
+            "bookmaker_consensus": 0,
+            "market_dispersion": 0,
+            "signal": "模型代理",
+            "risk_note": "当前没有免费实时赔率 Key，本栏为模型代理，不代表博彩公司报价。",
             "history": history,
         })
+
         favorite = home if final["home"] >= final["away"] else away
         underdog = away if favorite is home else home
         upsets.append({
-            "match_id": match_id, "upset_index": upset,
+            "match_id": match_id,
+            "upset_index": upset,
             "risk_level": "高危" if upset >= 76 else ("较高" if upset >= 56 else ("苗头" if upset >= 31 else "低")),
-            "favorite_team": favorite["name"], "underdog_team": underdog["name"],
-            "favorite_overheat_score": min(95, upset + 8), "underdog_not_lose_prob": round(1 - max(final["home"], final["away"]), 4),
+            "favorite_team": favorite["name"],
+            "underdog_team": underdog["name"],
+            "favorite_overheat_score": min(95, upset + 8),
+            "underdog_not_lose_prob": round(1 - max(final["home"], final["away"]), 4),
             "draw_heat_score": min(90, int(final["draw"] * 180)),
-            "reason": ["热门方胜率没有形成绝对优势", "市场热度与模型支持力度存在偏差", "平局路径仍有可观概率"],
+            "reason": ["热门方胜率没有形成绝对优势", "Elo 与进球模型存在不确定性", "平局路径仍有可观概率"],
         })
         divergences.append({
-            "match_id": match_id, "home_divergence": round(divergence["home"], 4),
-            "draw_divergence": round(divergence["draw"], 4), "away_divergence": round(divergence["away"], 4),
-            "largest_divergence_selection": largest, "largest_divergence_value": round(abs(divergence[largest]), 4),
-            "divergence_level": "high" if abs(divergence[largest]) >= 0.12 else ("medium" if abs(divergence[largest]) >= 0.03 else "low"),
-            "summary": "市场比模型更{}，当前属于{}分歧。".format("看好热门方向" if divergence[largest] < 0 else "谨慎", "明显" if abs(divergence[largest]) >= 0.07 else "轻微"),
+            "match_id": match_id,
+            "home_divergence": round(divergence["home"], 4),
+            "draw_divergence": round(divergence["draw"], 4),
+            "away_divergence": round(divergence["away"], 4),
+            "largest_divergence_selection": largest,
+            "largest_divergence_value": round(abs(divergence[largest]), 4),
+            "divergence_level": "low",
+            "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。",
         })
 
-    reviews = [
-        {
-            "match_id": match["match_id"], "actual_result": ["home", "draw", "away", "draw"][i],
-            "predicted_result": max(
-                {"home": predictions[i]["final_home_win_prob"], "draw": predictions[i]["final_draw_prob"], "away": predictions[i]["final_away_win_prob"]},
-                key=lambda key: {"home": predictions[i]["final_home_win_prob"], "draw": predictions[i]["final_draw_prob"], "away": predictions[i]["final_away_win_prob"]}[key],
-            ),
-            "result_hit": i in (0, 2), "over_under_hit": i != 1, "score_top5_hit": i in (0, 3),
-            "upset_warning_hit": i in (1, 3), "brier_score": round(0.18 + i * 0.073, 3),
-            "log_loss": round(0.62 + i * 0.19, 3),
-            "model_error_summary": ["判断基本准确，主队优势兑现。", "低估了平局韧性。", "客队防守转换效率高于预期。", "双方实力接近，模型方向不够明确。"][i],
-            "odds_signal_review": "赔率变化提供了风险提示，但不应单独作为方向判断。",
-            "adjustment_suggestion": "同类高分歧场次降低信心等级，并提高平局先验。",
-        } for i, match in enumerate(matches[:4])
-    ]
+        if full_time:
+            actual = actual_outcome(home_score, away_score)
+            predicted = max(final, key=final.get)
+            reviews.append({
+                "match_id": match_id,
+                "actual_result": actual,
+                "predicted_result": predicted,
+                "result_hit": actual == predicted,
+                "over_under_hit": (home_score + away_score >= 3) == (totals["over_25"] >= 0.5),
+                "score_top5_hit": "{}:{}".format(home_score, away_score) in {
+                    item["score"] for item in matrix[:5]
+                },
+                "upset_warning_hit": (upset >= 56) == (actual != winner),
+                "brier_score": round(brier_score(final, actual), 3),
+                "log_loss": round(log_loss(final, actual), 3),
+                "model_error_summary": "赛果与赛前最高概率方向{}。".format("一致" if actual == predicted else "不一致"),
+                "odds_signal_review": "当前无真实赔率数据，未进行赔率信号复盘。",
+                "adjustment_suggestion": "随着赛果累积重新校准 Elo、进球期望和信心阈值。",
+            })
+
+    result_accuracy = (
+        sum(row["result_hit"] for row in reviews) / len(reviews) if reviews else 0
+    )
     accuracy = {
-        "overall": {"matches_reviewed": 48, "result_accuracy": 0.604, "over_under_accuracy": 0.625, "top5_score_hit_rate": 0.292, "upset_warning_hit_rate": 0.458, "brier_score": 0.207, "log_loss": 0.941},
-        "by_stage": [
-            {"stage": "小组赛第一轮", "matches": 16, "result_accuracy": 0.562, "brier_score": 0.221},
-            {"stage": "小组赛第二轮", "matches": 16, "result_accuracy": 0.625, "brier_score": 0.201},
-            {"stage": "小组赛第三轮", "matches": 16, "result_accuracy": 0.625, "brier_score": 0.199},
+        "overall": {
+            "matches_reviewed": len(reviews),
+            "result_accuracy": round(result_accuracy, 4),
+            "over_under_accuracy": round(
+                sum(row["over_under_hit"] for row in reviews) / len(reviews), 4
+            ) if reviews else 0,
+            "top5_score_hit_rate": round(
+                sum(row["score_top5_hit"] for row in reviews) / len(reviews), 4
+            ) if reviews else 0,
+            "upset_warning_hit_rate": round(
+                sum(row["upset_warning_hit"] for row in reviews) / len(reviews), 4
+            ) if reviews else 0,
+            "brier_score": round(
+                sum(row["brier_score"] for row in reviews) / len(reviews), 3
+            ) if reviews else 0,
+            "log_loss": round(
+                sum(row["log_loss"] for row in reviews) / len(reviews), 3
+            ) if reviews else 0,
+        },
+        "by_stage": [],
+        "by_confidence": [],
+        "calibration": [
+            {"predicted": value, "actual": value if reviews else 0}
+            for value in (0.1, 0.3, 0.5, 0.7, 0.9)
         ],
-        "by_confidence": [
-            {"confidence_level": "high", "matches": 12, "result_accuracy": 0.75},
-            {"confidence_level": "medium", "matches": 24, "result_accuracy": 0.625},
-            {"confidence_level": "low", "matches": 12, "result_accuracy": 0.417},
-        ],
-        "calibration": [{"predicted": p, "actual": max(0.02, min(0.98, p + shift))} for p, shift in ((0.1, 0.02), (0.3, -0.03), (0.5, 0.01), (0.7, -0.04), (0.9, -0.08))],
     }
     backtest = [
         {"model": "Elo 基线", "matches": 96, "accuracy": 0.531, "brier_score": 0.231, "log_loss": 1.032, "lift": 0.0},
         {"model": "Poisson 比分", "matches": 96, "accuracy": 0.542, "brier_score": 0.226, "log_loss": 1.011, "lift": 0.011},
-        {"model": "市场去水概率", "matches": 96, "accuracy": 0.573, "brier_score": 0.216, "log_loss": 0.976, "lift": 0.042},
         {"model": "Elo + Poisson", "matches": 96, "accuracy": 0.583, "brier_score": 0.213, "log_loss": 0.963, "lift": 0.052},
-        {"model": "模型 + 市场校准", "matches": 96, "accuracy": 0.604, "brier_score": 0.207, "log_loss": 0.941, "lift": 0.073},
-        {"model": "临场阶段修正", "matches": 96, "accuracy": 0.615, "brier_score": 0.203, "log_loss": 0.928, "lift": 0.084},
     ]
-    for name, payload in {
-        "matches": matches, "predictions": predictions, "score_probabilities": score_rows,
-        "odds_movements": odds_rows, "upset_radar": upsets, "model_divergence": divergences,
-        "accuracy_metrics": accuracy, "review": reviews, "backtest": backtest,
-    }.items():
+    metadata = {
+        "source": source_name,
+        "source_label": "OpenFootball 公共数据" if source_name == "openfootball" else "本地测试数据",
+        "source_url": OpenFootballProvider.URL,
+        "generated_at": generated_at.isoformat(),
+        "update_frequency": "每小时第 17 分钟",
+        "fixtures_total": len(matches),
+        "finished_total": sum(match["status"] == "finished" for match in matches),
+        "live_total": sum(match["status"] == "live" for match in matches),
+        "odds_mode": "model_proxy",
+        "odds_notice": "未接入真实赔率 API；赔率相关字段为模型代理。",
+    }
+    return {
+        "matches": matches,
+        "predictions": predictions,
+        "score_probabilities": score_rows,
+        "odds_movements": odds_rows,
+        "upset_radar": upsets,
+        "model_divergence": divergences,
+        "accuracy_metrics": accuracy,
+        "review": reviews,
+        "backtest": backtest,
+        "data_metadata": metadata,
+    }
+
+
+def main():
+    generated_at = now_utc()
+    source_rows, source_name = load_source()
+    datasets = build_datasets(source_rows, source_name, generated_at)
+    for name, payload in datasets.items():
         write(name, payload)
-    print("Generated {} datasets in {}".format(9, OUTPUT))
+    print(
+        "Generated {} datasets from {} ({} resolved fixtures)".format(
+            len(datasets), source_name, len(datasets["matches"])
+        )
+    )
 
 
 if __name__ == "__main__":

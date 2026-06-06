@@ -9,4 +9,4 @@ class OpenFootballProvider(FixtureProvider):
 
     def fetch_fixtures(self) -> List[Dict]:
         payload = get_json(self.URL)
-        return payload.get("rounds", [])
+        return payload.get("matches", [])

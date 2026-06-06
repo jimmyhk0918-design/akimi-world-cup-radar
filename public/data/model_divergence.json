@@ -1,122 +1,722 @@
 [
   {
-    "match_id": "m001",
-    "home_divergence": 0.009,
-    "draw_divergence": -0.003,
-    "away_divergence": -0.006,
+    "match_id": "wc2026-001",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.009,
+    "largest_divergence_value": 0.008,
     "divergence_level": "low",
-    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m002",
+    "match_id": "wc2026-002",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-003",
     "home_divergence": 0.0,
     "draw_divergence": 0.0,
     "away_divergence": 0.0,
     "largest_divergence_selection": "home",
     "largest_divergence_value": 0.0,
     "divergence_level": "low",
-    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m003",
-    "home_divergence": -0.009,
-    "draw_divergence": 0.003,
-    "away_divergence": 0.006,
+    "match_id": "wc2026-004",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.009,
+    "largest_divergence_value": 0.004,
     "divergence_level": "low",
-    "summary": "市场比模型更看好热门方向，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m004",
-    "home_divergence": -0.018,
-    "draw_divergence": 0.006,
-    "away_divergence": 0.012,
+    "match_id": "wc2026-005",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.018,
+    "largest_divergence_value": 0.008,
     "divergence_level": "low",
-    "summary": "市场比模型更看好热门方向，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m005",
-    "home_divergence": 0.018,
-    "draw_divergence": -0.006,
-    "away_divergence": -0.012,
+    "match_id": "wc2026-006",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.018,
+    "largest_divergence_value": 0.012,
     "divergence_level": "low",
-    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m006",
-    "home_divergence": 0.009,
-    "draw_divergence": -0.003,
-    "away_divergence": -0.006,
+    "match_id": "wc2026-007",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.009,
+    "largest_divergence_value": 0.012,
     "divergence_level": "low",
-    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m007",
+    "match_id": "wc2026-008",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-009",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-010",
     "home_divergence": 0.0,
     "draw_divergence": 0.0,
     "away_divergence": 0.0,
     "largest_divergence_selection": "home",
     "largest_divergence_value": 0.0,
     "divergence_level": "low",
-    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m008",
-    "home_divergence": -0.009,
-    "draw_divergence": 0.003,
-    "away_divergence": 0.006,
+    "match_id": "wc2026-011",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.009,
+    "largest_divergence_value": 0.004,
     "divergence_level": "low",
-    "summary": "市场比模型更看好热门方向，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m009",
-    "home_divergence": -0.018,
-    "draw_divergence": 0.006,
-    "away_divergence": 0.012,
+    "match_id": "wc2026-012",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.018,
+    "largest_divergence_value": 0.008,
     "divergence_level": "low",
-    "summary": "市场比模型更看好热门方向，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m010",
-    "home_divergence": 0.018,
-    "draw_divergence": -0.006,
-    "away_divergence": -0.012,
+    "match_id": "wc2026-013",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.018,
+    "largest_divergence_value": 0.012,
     "divergence_level": "low",
-    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m011",
-    "home_divergence": 0.009,
-    "draw_divergence": -0.003,
-    "away_divergence": -0.006,
+    "match_id": "wc2026-014",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
     "largest_divergence_selection": "home",
-    "largest_divergence_value": 0.009,
+    "largest_divergence_value": 0.012,
     "divergence_level": "low",
-    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   },
   {
-    "match_id": "m012",
+    "match_id": "wc2026-015",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-016",
+    "home_divergence": 0.0096,
+    "draw_divergence": 0.0003,
+    "away_divergence": -0.0099,
+    "largest_divergence_selection": "away",
+    "largest_divergence_value": 0.0099,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-017",
     "home_divergence": 0.0,
     "draw_divergence": 0.0,
     "away_divergence": 0.0,
     "largest_divergence_selection": "home",
     "largest_divergence_value": 0.0,
     "divergence_level": "low",
-    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-018",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-019",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-020",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-021",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-022",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-023",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-024",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-025",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-026",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-027",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-028",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-029",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-030",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-031",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-032",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-033",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-034",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-035",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-036",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-037",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-038",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-039",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-040",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-041",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-042",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-043",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-044",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-045",
+    "home_divergence": 0.005,
+    "draw_divergence": 0.0014,
+    "away_divergence": -0.0064,
+    "largest_divergence_selection": "away",
+    "largest_divergence_value": 0.0064,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-046",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-047",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-048",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-049",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-050",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-051",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-052",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-053",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-054",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-055",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-056",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-057",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-058",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-059",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-060",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-061",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-062",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-063",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-064",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-065",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-066",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-067",
+    "home_divergence": -0.004,
+    "draw_divergence": 0.0013,
+    "away_divergence": 0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-068",
+    "home_divergence": -0.008,
+    "draw_divergence": 0.0027,
+    "away_divergence": 0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-069",
+    "home_divergence": -0.012,
+    "draw_divergence": 0.004,
+    "away_divergence": 0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-070",
+    "home_divergence": 0.012,
+    "draw_divergence": -0.004,
+    "away_divergence": -0.008,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.012,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-071",
+    "home_divergence": 0.008,
+    "draw_divergence": -0.0027,
+    "away_divergence": -0.0053,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.008,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-072",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。"
   }
 ]

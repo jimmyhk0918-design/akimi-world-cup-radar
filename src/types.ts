@@ -136,6 +136,19 @@ export interface BacktestRow {
   lift: number;
 }
 
+export interface DataMetadata {
+  source: string;
+  source_label: string;
+  source_url: string;
+  generated_at: string;
+  update_frequency: string;
+  fixtures_total: number;
+  finished_total: number;
+  live_total: number;
+  odds_mode: string;
+  odds_notice: string;
+}
+
 export interface RadarData {
   matches: Match[];
   predictions: Prediction[];
@@ -146,4 +159,5 @@ export interface RadarData {
   accuracy: AccuracyMetrics;
   reviews: Review[];
   backtest: BacktestRow[];
+  metadata: DataMetadata;
 }

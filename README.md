@@ -15,7 +15,8 @@
 - 多模型组合历史回测
 - 移动端适配
 - 系统设置密码门禁与会话锁定
-- 无 API Key 的 Mock 数据完整闭环
+- 无 API Key 的 OpenFootball 真实赛程与赛果
+- 每小时自动更新和 GitHub Actions 手动更新
 
 ## 技术栈
 
@@ -40,7 +41,8 @@ npm run build
 npm run preview
 ```
 
-前端通过 `public/data/*.json` 读取数据。`npm run generate:data` 会用固定随机种子重新生成稳定的 Mock 数据。
+前端通过 `public/data/*.json` 读取数据。`npm run generate:data` 默认从 OpenFootball
+公开 JSON 拉取 2026 世界杯赛程和赛果，再重新计算预测、比分概率、爆冷指数与复盘指标。
 
 ## 目录结构
 
@@ -58,12 +60,15 @@ workflow-templates/   Pages 部署与数据更新模板
 
 系统采用可替换 Provider，不让前端直接访问第三方 API：
 
-1. API-Football：赛程、比分、阵容与比赛事件主数据源。
-2. football-data.org：赛程和赛果备用源。
-3. OpenFootball：无 Key 冷启动及静态赛程降级源。
-4. 独立赔率 Provider：拉取胜平负、大小球和让球，并由 Actions 保存历史快照。
+1. OpenFootball：默认数据源，无需 API Key，提供公开赛程与赛果。
+2. API-Football：已保留 Provider，可在取得免费 Key 后补充阵容、事件和更及时的比赛状态。
+3. football-data.org：已保留 Provider，可作为带 Key 的备用赛程源。
 
-当前 `generate_data.py` 默认使用 Mock 数据。Provider 类已经提供接入边界，正式切换时应先把第三方结构转换为项目内部 JSON 契约，再交给模型计算。
+OpenFootball 更新频率由社区数据维护决定，不是秒级直播接口。系统每小时检查一次：
+源数据拉取或解析失败时任务会失败，并保留上一批有效 JSON，不会用空数据覆盖线上页面。
+
+可靠的免费实时赔率服务通常仍要求 API Key。当前赔率相关页面明确使用
+`model_proxy` 模型代理数据，不代表博彩公司报价。
 
 ## 环境变量与 Secrets
 
@@ -80,10 +85,10 @@ ODDS_API_KEY
 仓库变量：
 
 ```text
-USE_MOCK_DATA=true
+RADAR_DATA_SOURCE=openfootball
 ```
 
-没有 Key 时保持 `true`，系统仍可构建和完整展示。
+默认数据源不需要 Key。仅在接入 API-Football、football-data.org 或赔率服务时配置对应 Secret。
 
 ## 系统设置密码
 
@@ -113,21 +118,27 @@ VITE_SETTINGS_PASSWORD_HASH=生成的SHA-256
 
 1. 创建仓库 `akimi-world-cup-radar`。
 2. 推送代码到 `main`。
-3. 在 **Settings → Pages → Build and deployment** 中选择 **GitHub Actions**。
-4. 手动运行 `Deploy GitHub Pages`，或等待 push 自动触发。
+3. 在 **Settings → Pages → Build and deployment** 中选择从 `gh-pages` 分支发布。
+4. `.github/workflows/update-and-deploy.yml` 会在代码推送后自动构建并更新该分支。
 
 应用使用 Hash Router 和相对资源路径，因此可以直接部署在仓库子路径，不需要额外配置 404 回退。
 
 ## 数据更新 Workflow
 
-将 `workflow-templates/update-data.yml` 复制到 `.github/workflows/` 后，每小时第 17 分钟运行一次，也支持手动触发。它会：
+已启用 `.github/workflows/update-and-deploy.yml`，每小时第 17 分钟运行一次，也支持手动触发。它会：
 
-1. 生成或拉取数据。
+1. 从 OpenFootball 拉取公开赛程与赛果。
 2. 执行模型测试。
-3. 只在 JSON 变化时提交。
-4. 触发 Pages 重新部署。
+3. 重新计算预测数据并提交变化。
+4. 构建站点并更新 `gh-pages`。
 
-免费 API 有请求额度限制，因此 MVP 不采用 5 分钟轮询。未来可根据比赛时间动态调整调用频率，并对接口结果做本地缓存。
+手动更新方法：
+
+1. 打开 GitHub 仓库的 **Actions**。
+2. 选择 **Update Data and Deploy**。
+3. 点击 **Run workflow**。
+
+也可以在系统设置页解锁后点击“手动更新数据”，直接进入该 Actions 页面。
 
 ## 预测模型
 

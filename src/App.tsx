@@ -11,8 +11,8 @@ import {
   ResponsiveContainer, Tooltip, XAxis, YAxis,
 } from "recharts";
 import { loadRadarData } from "./lib/data";
-import { confidenceLabel, formatMatchTime, outcomeLabel, pct, riskTone, signedPct } from "./lib/format";
-import type { Match, Prediction, RadarData } from "./types";
+import { confidenceLabel, formatMatchTime, formatUpdatedAt, outcomeLabel, pct, riskTone, signedPct } from "./lib/format";
+import type { DataMetadata, Match, Prediction, RadarData } from "./types";
 
 const nav = [
   { to: "/", label: "赛事总览", icon: Home },
@@ -36,6 +36,13 @@ function App() {
   if (error) return <StatePanel title="数据加载失败" detail={error} />;
   if (!data) return <StatePanel title="正在同步雷达数据" detail="读取比赛、赔率与模型输出..." loading />;
 
+  const nextMatch = data.matches
+    .filter((match) => match.status === "scheduled")
+    .sort((a, b) => Date.parse(a.match_time) - Date.parse(b.match_time))[0];
+  const countdownDays = nextMatch
+    ? Math.max(0, Math.ceil((Date.parse(nextMatch.match_time) - Date.now()) / 86_400_000))
+    : 0;
+
   return (
     <div className="app-shell">
       <aside className={`sidebar ${menuOpen ? "open" : ""}`}>
@@ -52,8 +59,8 @@ function App() {
           ))}
         </nav>
         <div className="sidebar-foot">
-          <div className="data-status"><span className="live-dot" /><div><strong>Mock 数据在线</strong><small>Provider 可随时切换</small></div></div>
-          <div className="world-cup-count"><span>距离揭幕</span><strong>5 天</strong><small>数据时间 2026.06.06</small></div>
+          <div className="data-status"><span className="live-dot" /><div><strong>{data.metadata.source_label}</strong><small>{data.metadata.update_frequency}自动更新</small></div></div>
+          <div className="world-cup-count"><span>距离下一场</span><strong>{countdownDays} 天</strong><small>数据时间 {formatUpdatedAt(data.metadata.generated_at)}</small></div>
         </div>
       </aside>
       {menuOpen && <button className="menu-backdrop" onClick={() => setMenuOpen(false)} />}
@@ -62,7 +69,7 @@ function App() {
           <button className="icon-button menu-button" aria-label="打开导航菜单" onClick={() => setMenuOpen(true)}><Menu size={21} /></button>
           <div className="topbar-title"><Radio size={17} /><span>2026 FIFA WORLD CUP</span><b>研究模式</b></div>
           <div className="topbar-actions">
-            <span className="sync-time"><RefreshCw size={14} /> 06:00 已更新</span>
+            <span className="sync-time"><RefreshCw size={14} /> {formatUpdatedAt(data.metadata.generated_at)} 已更新</span>
             <button className="avatar">AK</button>
           </div>
         </header>
@@ -74,7 +81,7 @@ function App() {
           <Route path="/accuracy" element={<AccuracyPage data={data} />} />
           <Route path="/review" element={<ReviewPage data={data} />} />
           <Route path="/backtest" element={<BacktestPage data={data} />} />
-          <Route path="/settings" element={<SettingsPage />} />
+          <Route path="/settings" element={<SettingsPage metadata={data.metadata} />} />
         </Routes>
         <footer>本系统仅用于个人赛事数据分析、预测研究和模型复盘，不构成任何投注、购彩或投资建议。体育比赛结果具有高度不确定性，请理性看待模型结论。</footer>
       </main>
@@ -103,16 +110,16 @@ function Dashboard({ data }: { data: RadarData }) {
     </PageHeader>
     <section className="hero-grid">
       <div className="hero-card">
-        <div className="hero-copy"><span className="status-chip"><span className="live-dot" /> 模型运行正常</span><h2>世界杯开赛前<br /><em>最后校准窗口</em></h2><p>12 场模拟赛程已进入预测队列。当前模型与市场整体一致，但有 {highRisk} 场比赛呈现较高爆冷风险。</p><div className="hero-meta"><span><Database size={15} /> 9 组数据集</span><span><Activity size={15} /> 35% 市场权重</span></div></div>
+        <div className="hero-copy"><span className="status-chip"><span className="live-dot" /> 模型运行正常</span><h2>世界杯赛程<br /><em>持续自动校准</em></h2><p>{data.matches.length} 场已确定对阵进入预测队列，其中 {data.metadata.finished_total} 场已有赛果，{highRisk} 场呈现较高爆冷风险。</p><div className="hero-meta"><span><Database size={15} /> OpenFootball 赛程/赛果</span><span><Activity size={15} /> 赔率为模型代理</span></div></div>
         <div className="radar-visual"><div className="radar-ring ring-1" /><div className="radar-ring ring-2" /><div className="radar-ring ring-3" /><div className="radar-sweep" /><Crosshair size={28} /><span className="ping p1" /><span className="ping p2" /><span className="ping p3" /></div>
       </div>
       <div className="metric-stack">
         <MetricCard icon={Target} label="模型平均把握" value={`${avgConfidence}%`} note="较基线 +7.3%" tone="blue" />
         <MetricCard icon={ShieldAlert} label="高风险场次" value={`${highRisk}`} note="需关注临场阵容" tone="orange" />
-        <MetricCard icon={TrendingUp} label="最大市场异动" value={signedPct(hottest.change_24h)} note={`${hotMatch.home_team.name} vs ${hotMatch.away_team.name}`} tone="mint" />
+        <MetricCard icon={TrendingUp} label="最大代理偏移" value={signedPct(hottest.change_24h)} note={`${hotMatch.home_team.name} vs ${hotMatch.away_team.name}`} tone="mint" />
       </div>
     </section>
-    <SectionTitle title="即将进行" detail="模型按开赛时间自动提升市场与临场信息权重" action="查看全部 12 场" />
+    <SectionTitle title="即将进行" detail="按公开赛程与当前模型概率排序展示" action={`已载入 ${data.matches.length} 场`} />
     <div className="match-grid">{visible.map((match) => <MatchCard key={match.match_id} match={match} prediction={findPrediction(data, match.match_id)} scores={data.scores.find((s) => s.match_id === match.match_id)?.scores ?? []} />)}</div>
     <section className="dashboard-bottom">
       <div className="panel">
@@ -187,12 +194,12 @@ function MatchDetail({ data }: { data: RadarData }) {
       <div className="detail-team"><span>{match.away_team.flag}</span><h2>{match.away_team.name}</h2><small>{match.away_team.english_name} · Elo {match.away_team.elo}</small><FormDots form={match.away_team.form} /></div>
     </section>
     <div className="detail-grid">
-      <div className="panel span-2"><SectionTitle title="胜平负概率" detail="最终概率融合基础模型与去水市场概率" /><ProbabilityBar prediction={prediction} /><div className="prob-comparison">
+      <div className="panel span-2"><SectionTitle title="胜平负概率" detail="最终概率融合 Elo、Poisson 与模型代理校准" /><ProbabilityBar prediction={prediction} /><div className="prob-comparison">
         {(["home", "draw", "away"] as const).map((key) => <div key={key}><span>{outcomeLabel[key]}</span><b>{pct(prediction[`final_${key === "draw" ? "draw" : `${key}_win`}_prob` as keyof Prediction] as number)}</b><small>模型 {pct(prediction[`model_${key === "draw" ? "draw" : `${key}_win`}_prob` as keyof Prediction] as number)} · 市场 {pct(prediction[`market_${key === "draw" ? "draw" : `${key}_win`}_prob` as keyof Prediction] as number)}</small></div>)}
       </div></div>
       <div className="panel"><SectionTitle title="预期进球" /><div className="xg-pair"><div><span>{match.home_team.name}</span><strong>{prediction.expected_home_goals}</strong></div><i /><div><span>{match.away_team.name}</span><strong>{prediction.expected_away_goals}</strong></div></div><div className="total-bars"><span>大 2.5 <b>{pct(prediction.over_25_prob)}</b></span><span>小 2.5 <b>{pct(prediction.under_25_prob)}</b></span><span>双方进球 <b>{pct(prediction.btts_prob)}</b></span></div></div>
       <div className="panel"><SectionTitle title="比分路径 Top 5" /><div className="score-table">{scores.map((row, index) => <div key={row.score}><span>0{index + 1}</span><b>{row.score}</b><i><em style={{ width: pct(row.probability / scores[0].probability) }} /></i><strong>{pct(row.probability, 1)}</strong></div>)}</div></div>
-      <div className="panel span-2"><SectionTitle title="市场概率变化" detail="已去除平均返还率影响" /><div className="chart-wrap"><ResponsiveContainer width="100%" height={250}><LineChart data={chart}><CartesianGrid stroke="#1c2b3d" vertical={false} /><XAxis dataKey="label" stroke="#708198" /><YAxis domain={["dataMin - 0.03", "dataMax + 0.03"]} tickFormatter={(v) => pct(v)} stroke="#708198" /><Tooltip contentStyle={tooltipStyle} formatter={(v: number) => pct(v, 1)} /><Line type="monotone" dataKey="home" name="主胜" stroke="#35a7ff" strokeWidth={3} dot={false} /><Line type="monotone" dataKey="draw" name="平局" stroke="#9aa8ba" strokeWidth={2} dot={false} /><Line type="monotone" dataKey="away" name="客胜" stroke="#21d4a7" strokeWidth={3} dot={false} /></LineChart></ResponsiveContainer></div></div>
+      <div className="panel span-2"><SectionTitle title="代理概率变化" detail="用于保持模型页面可用，不代表真实赔率市场" /><div className="chart-wrap"><ResponsiveContainer width="100%" height={250}><LineChart data={chart}><CartesianGrid stroke="#1c2b3d" vertical={false} /><XAxis dataKey="label" stroke="#708198" /><YAxis domain={["dataMin - 0.03", "dataMax + 0.03"]} tickFormatter={(v) => pct(v)} stroke="#708198" /><Tooltip contentStyle={tooltipStyle} formatter={(v: number) => pct(v, 1)} /><Line type="monotone" dataKey="home" name="主胜" stroke="#35a7ff" strokeWidth={3} dot={false} /><Line type="monotone" dataKey="draw" name="平局" stroke="#9aa8ba" strokeWidth={2} dot={false} /><Line type="monotone" dataKey="away" name="客胜" stroke="#21d4a7" strokeWidth={3} dot={false} /></LineChart></ResponsiveContainer></div></div>
       <div className="panel insight-panel"><SectionTitle title="模型判断理由" />{prediction.factors.map((factor) => <p key={factor}><Sparkles size={15} />{factor}</p>)}<div className="summary-box">{prediction.summary}</div></div>
       <div className="panel insight-panel"><SectionTitle title="分歧与风险" /><div className="big-risk"><RiskBadge score={upset.upset_index} /><strong>{divergence.summary}</strong></div>{upset.reason.map((reason) => <p key={reason}><AlertTriangle size={15} />{reason}</p>)}</div>
     </div>
@@ -205,8 +212,8 @@ function FormDots({ form }: { form: string[] }) {
 
 function OddsPage({ data }: { data: RadarData }) {
   const rows = [...data.odds].sort((a, b) => Math.abs(b.change_24h) - Math.abs(a.change_24h));
-  return <div className="page"><PageHeader eyebrow="MARKET SIGNALS" title="赔率异动雷达" description="把赔率变化还原为市场概率，用于校准模型与识别市场情绪。"><span className="source-chip"><Database size={14} /> Mock Odds Provider</span></PageHeader>
-    <div className="stat-strip"><MiniStat label="监控比赛" value={`${rows.length}`} trend="全部市场正常" /><MiniStat label="24h 显著异动" value={`${rows.filter((r) => Math.abs(r.change_24h) >= .015).length}`} trend="阈值 1.5%" /><MiniStat label="平均一致性" value={pct(rows.reduce((s, r) => s + r.bookmaker_consensus, 0) / rows.length)} trend="多来源模拟" /><MiniStat label="最大分歧" value={pct(Math.max(...data.divergences.map((d) => d.largest_divergence_value)), 1)} trend="模型 vs 市场" /></div>
+  return <div className="page"><PageHeader eyebrow="MODEL PROXY" title="概率代理雷达" description="当前没有免费的实时赔率 Key，本页展示模型代理变化，不代表博彩公司报价。"><span className="source-chip"><Database size={14} /> Model Proxy</span></PageHeader>
+    <div className="stat-strip"><MiniStat label="覆盖比赛" value={`${rows.length}`} trend="已确定对阵" /><MiniStat label="24h 显著偏移" value={`${rows.filter((r) => Math.abs(r.change_24h) >= .015).length}`} trend="阈值 1.5%" /><MiniStat label="真实赔率源" value="未连接" trend="需要免费 API Key" /><MiniStat label="最大模型偏移" value={pct(Math.max(...data.divergences.map((d) => d.largest_divergence_value)), 1)} trend="模型内部校准" /></div>
     <div className="panel table-panel"><div className="table-toolbar"><SectionTitle title="异动排行榜" detail="按 24 小时隐含概率变化排序" /><button className="secondary-button">胜平负市场</button></div><div className="data-table odds-table"><div className="table-head"><span>比赛</span><span>方向</span><span>开盘</span><span>当前</span><span>24 小时</span><span>一致性</span><span>信号</span></div>{rows.map((row) => {
       const m = data.matches.find((x) => x.match_id === row.match_id)!;
       return <Link to={`/match/${row.match_id}`} className="table-row" key={row.match_id}><span className="match-cell"><b>{m.home_team.flag} {m.home_team.name}</b><small>{m.away_team.flag} {m.away_team.name}</small></span><span>{outcomeLabel[row.selection]}</span><span>{row.open_odds.toFixed(2)}</span><span><b>{row.current_odds.toFixed(2)}</b></span><span className={row.change_24h >= 0 ? "up" : "down"}>{row.change_24h >= 0 ? <TrendingUp size={15} /> : <TrendingDown size={15} />}{signedPct(row.change_24h)}</span><span>{pct(row.bookmaker_consensus)}</span><span><i className="signal-tag">{row.signal}</i></span></Link>;
@@ -258,17 +265,16 @@ function BacktestPage({ data }: { data: RadarData }) {
   return <div className="page"><PageHeader eyebrow="HISTORICAL VALIDATION" title="模型回测实验室" description="比较每一层特征是否真正改善样本外预测，而不是追求历史拟合。"><span className="source-chip"><FlaskConical size={14} /> 96 场验证集</span></PageHeader>
     <div className="panel"><SectionTitle title="模型组合对比" detail="胜平负准确率 · 相对 Elo 基线" /><div className="chart-wrap"><ResponsiveContainer width="100%" height={320}><AreaChart data={chartData}><defs><linearGradient id="accuracyFill" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stopColor="#35a7ff" stopOpacity={0.45} /><stop offset="100%" stopColor="#35a7ff" stopOpacity={0} /></linearGradient></defs><CartesianGrid stroke="#1c2b3d" vertical={false} /><XAxis dataKey="label" stroke="#708198" /><YAxis domain={[0.48, 0.66]} tickFormatter={(v) => pct(v)} stroke="#708198" /><Tooltip contentStyle={tooltipStyle} formatter={(v: number) => pct(v, 1)} /><Area dataKey="accuracy" name="准确率" type="monotone" stroke="#35a7ff" strokeWidth={3} fill="url(#accuracyFill)" /></AreaChart></ResponsiveContainer></div></div>
     <div className="panel table-panel"><SectionTitle title="完整评估指标" /><div className="data-table backtest-table"><div className="table-head"><span>模型组合</span><span>样本</span><span>准确率</span><span>Brier</span><span>Log Loss</span><span>提升</span></div>{data.backtest.map((row, i) => <div className={`table-row ${i === data.backtest.length - 1 ? "best-row" : ""}`} key={row.model}><span><b>{row.model}</b>{i === data.backtest.length - 1 && <i className="best-tag">当前最佳</i>}</span><span>{row.matches}</span><span><b>{pct(row.accuracy, 1)}</b></span><span>{row.brier_score}</span><span>{row.log_loss}</span><span className="positive">{row.lift ? `+${pct(row.lift, 1)}` : "基线"}</span></div>)}</div></div>
-    <div className="finding-grid"><div className="finding"><TrendingUp size={20} /><div><strong>市场校准有效</strong><p>加入去水市场概率后，准确率较 Elo 基线提升 7.3 个百分点。</p></div></div><div className="finding"><CircleGauge size={20} /><div><strong>校准优于硬命中</strong><p>Brier Score 由 0.231 降至 0.203，概率质量同步改善。</p></div></div><div className="finding"><AlertTriangle size={20} /><div><strong>仍需防止过拟合</strong><p>真实数据接入后将使用时间切分验证，不使用未来信息。</p></div></div></div>
+    <div className="finding-grid"><div className="finding"><TrendingUp size={20} /><div><strong>真实赛果持续累积</strong><p>OpenFootball 更新赛果后，系统会自动生成逐场复盘指标。</p></div></div><div className="finding"><CircleGauge size={20} /><div><strong>校准优于硬命中</strong><p>同时关注 Brier Score 与 Log Loss，避免只看胜平负命中率。</p></div></div><div className="finding"><AlertTriangle size={20} /><div><strong>仍需防止过拟合</strong><p>回测使用时间切分，不将未来赛果或赛后信息泄漏到赛前特征。</p></div></div></div>
   </div>;
 }
 
-function SettingsPage() {
+function SettingsPage({ metadata }: { metadata: DataMetadata }) {
   const [unlocked, setUnlocked] = useState(() => sessionStorage.getItem("akimi-settings-unlocked") === "true");
   const [password, setPassword] = useState("");
   const [passwordError, setPasswordError] = useState("");
   const [checking, setChecking] = useState(false);
-  const [mock, setMock] = useState(true);
-  const [marketWeight, setMarketWeight] = useState(35);
+  const [marketWeight, setMarketWeight] = useState(20);
 
   async function unlockSettings(event: React.FormEvent<HTMLFormElement>) {
     event.preventDefault();
@@ -314,10 +320,10 @@ function SettingsPage() {
     </div>;
   }
 
-  return <div className="page"><PageHeader eyebrow="SYSTEM CONFIGURATION" title="系统设置" description="参数仅保存在当前浏览器。正式数据更新由 GitHub Actions 环境变量控制。"><button className="secondary-button" onClick={lockSettings}><LogOut size={15} /> 锁定设置</button></PageHeader>
-    <div className="settings-grid"><div className="panel"><SectionTitle title="数据 Provider" /><SettingRow title="使用 Mock 数据" detail="无需 API Key，完整演示预测闭环"><button className={`toggle ${mock ? "on" : ""}`} onClick={() => setMock(!mock)}><i /></button></SettingRow><SettingRow title="API-Football" detail="赛程、比分、阵容与事件"><span className="not-connected">未连接</span></SettingRow><SettingRow title="Odds API" detail="赔率与市场快照"><span className="not-connected">未连接</span></SettingRow><SettingRow title="football-data.org" detail="备用赛程与赛果"><span className="not-connected">未连接</span></SettingRow></div>
-      <div className="panel"><SectionTitle title="模型参数" /><label className="slider-setting"><span><b>市场概率权重</b><small>当前 {marketWeight}%</small></span><input type="range" min="0" max="70" value={marketWeight} onChange={(e) => setMarketWeight(Number(e.target.value))} /></label><label className="slider-setting"><span><b>爆冷预警阈值</b><small>56 / 100</small></span><input type="range" min="20" max="90" defaultValue="56" /></label><label className="slider-setting"><span><b>低信心阈值</b><small>领先优势低于 8%</small></span><input type="range" min="2" max="20" defaultValue="8" /></label></div>
-      <div className="panel span-2 provider-note"><Database size={24} /><div><strong>免费数据源接入策略</strong><p>系统优先使用 API-Football，football-data.org 作为赛程与赛果备用，赔率由独立 Provider 拉取并在仓库中形成历史快照。所有密钥仅存在 GitHub Secrets，不会进入前端构建产物。</p></div></div></div>
+  return <div className="page"><PageHeader eyebrow="SYSTEM CONFIGURATION" title="系统设置" description="数据由 GitHub Actions 定时更新，也可在仓库中手动触发。"><a className="primary-button" href="https://github.com/jimmyhk0918-design/akimi-world-cup-radar/actions/workflows/update-and-deploy.yml" target="_blank" rel="noreferrer"><RefreshCw size={15} /> 手动更新数据</a><button className="secondary-button" onClick={lockSettings}><LogOut size={15} /> 锁定设置</button></PageHeader>
+    <div className="settings-grid"><div className="panel"><SectionTitle title="数据 Provider" /><SettingRow title="OpenFootball" detail="无需 API Key，公开赛程与赛果"><span className="source-connected">已连接</span></SettingRow><SettingRow title="自动更新时间" detail={metadata.update_frequency}><span className="source-connected">已启用</span></SettingRow><SettingRow title="真实赔率 API" detail={metadata.odds_notice}><span className="not-connected">未连接</span></SettingRow><SettingRow title="最近同步" detail={formatUpdatedAt(metadata.generated_at)}><span className="source-connected">{metadata.fixtures_total} 场</span></SettingRow></div>
+      <div className="panel"><SectionTitle title="模型参数" /><label className="slider-setting"><span><b>代理校准权重</b><small>当前 {marketWeight}%</small></span><input type="range" min="0" max="70" value={marketWeight} onChange={(e) => setMarketWeight(Number(e.target.value))} /></label><label className="slider-setting"><span><b>爆冷预警阈值</b><small>56 / 100</small></span><input type="range" min="20" max="90" defaultValue="56" /></label><label className="slider-setting"><span><b>低信心阈值</b><small>领先优势低于 8%</small></span><input type="range" min="2" max="20" defaultValue="8" /></label></div>
+      <div className="panel span-2 provider-note"><Database size={24} /><div><strong>当前数据说明</strong><p>赛程与赛果来自 OpenFootball 公共 JSON，由 GitHub Actions 每小时同步，也可手动触发。由于免费实时赔率服务需要 API Key，赔率异动页目前明确展示模型代理数据，不代表博彩公司报价。</p></div></div></div>
   </div>;
 }
 

@@ -12,7 +12,9 @@ class ProviderError(RuntimeError):
 def get_json(url: str, params: Optional[Dict] = None, headers: Optional[Dict] = None) -> Dict:
     if params:
         url = "{}?{}".format(url, urlencode(params))
-    request = Request(url, headers=headers or {})
+    request_headers = {"User-Agent": "akimi-world-cup-radar/1.0"}
+    request_headers.update(headers or {})
+    request = Request(url, headers=request_headers)
     try:
         with urlopen(request, timeout=20) as response:
             return json.loads(response.read().decode("utf-8"))
