@@ -16,7 +16,7 @@
 - 移动端适配
 - 系统设置密码门禁与会话锁定
 - 无 API Key 的 OpenFootball 真实赛程与赛果
-- 每小时自动更新和 GitHub Actions 手动更新
+- 每小时自动更新和一键手动更新脚本
 
 ## 技术栈
 
@@ -119,13 +119,13 @@ VITE_SETTINGS_PASSWORD_HASH=生成的SHA-256
 1. 创建仓库 `akimi-world-cup-radar`。
 2. 推送代码到 `main`。
 3. 在 **Settings → Pages → Build and deployment** 中选择从 `gh-pages` 分支发布。
-4. `.github/workflows/update-and-deploy.yml` 会在代码推送后自动构建并更新该分支。
+4. 本机自动任务或手动脚本会构建并更新该分支。
 
 应用使用 Hash Router 和相对资源路径，因此可以直接部署在仓库子路径，不需要额外配置 404 回退。
 
-## 数据更新 Workflow
+## 数据自动更新
 
-已启用 `.github/workflows/update-and-deploy.yml`，每小时第 17 分钟运行一次，也支持手动触发。它会：
+当前已在 Codex 中启用本机自动任务，每小时第 17 分钟运行一次。它会：
 
 1. 从 OpenFootball 拉取公开赛程与赛果。
 2. 执行模型测试。
@@ -134,11 +134,13 @@ VITE_SETTINGS_PASSWORD_HASH=生成的SHA-256
 
 手动更新方法：
 
-1. 打开 GitHub 仓库的 **Actions**。
-2. 选择 **Update Data and Deploy**。
-3. 点击 **Run workflow**。
+```bash
+bash scripts/update_and_publish.sh
+```
 
-也可以在系统设置页解锁后点击“手动更新数据”，直接进入该 Actions 页面。
+脚本会拉取数据、运行测试、构建页面、提交变化，并更新 `main` 与 `gh-pages`。
+`workflow-templates/update-and-deploy.yml` 保留了 GitHub Actions 云端方案；当前 GitHub
+令牌缺少 `workflow` 范围，因此尚未安装到 `.github/workflows/`。
 
 ## 预测模型
 

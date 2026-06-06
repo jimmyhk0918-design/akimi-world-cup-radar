@@ -1,0 +1,62 @@
+name: Update Data and Deploy
+
+on:
+  push:
+    branches: ["main"]
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: akimi-radar-update-deploy
+  cancel-in-progress: true
+
+jobs:
+  update-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+          fetch-depth: 0
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+      - name: Fetch free World Cup data
+        if: github.event_name != 'push'
+        env:
+          RADAR_DATA_SOURCE: openfootball
+        run: python scripts/generate_data.py
+      - run: python -m unittest discover -s tests -p "test_*.py"
+      - run: npm ci
+      - run: npm run build
+      - name: Commit refreshed datasets
+        if: github.event_name != 'push'
+        run: |
+          git config user.name "akimi-radar-bot"
+          git config user.email "actions@github.com"
+          git add public/data
+          git diff --cached --quiet || git commit -m "chore(data): refresh World Cup datasets"
+          git push origin HEAD:main
+      - name: Publish gh-pages
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          publish_dir="$(mktemp -d)"
+          cp -R dist/. "$publish_dir/"
+          cd "$publish_dir"
+          git init
+          git checkout -b gh-pages
+          git config user.name "akimi-radar-bot"
+          git config user.email "actions@github.com"
+          git add .
+          git commit -m "deploy: publish ${GITHUB_SHA::7}"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git push --force origin gh-pages
