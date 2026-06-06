@@ -1,0 +1,302 @@
+[
+  {
+    "match_id": "m001",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1258
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1103
+      },
+      {
+        "score": "0:1",
+        "probability": 0.0898
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0881
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0787
+      }
+    ]
+  },
+  {
+    "match_id": "m002",
+    "scores": [
+      {
+        "score": "1:0",
+        "probability": 0.1303
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1215
+      },
+      {
+        "score": "2:0",
+        "probability": 0.0998
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0931
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0851
+      }
+    ]
+  },
+  {
+    "match_id": "m003",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1312
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1245
+      },
+      {
+        "score": "0:1",
+        "probability": 0.1038
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0985
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0829
+      }
+    ]
+  },
+  {
+    "match_id": "m004",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1267
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1081
+      },
+      {
+        "score": "0:1",
+        "probability": 0.0931
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0862
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0795
+      }
+    ]
+  },
+  {
+    "match_id": "m005",
+    "scores": [
+      {
+        "score": "1:0",
+        "probability": 0.1318
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1202
+      },
+      {
+        "score": "2:0",
+        "probability": 0.1027
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0937
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0845
+      }
+    ]
+  },
+  {
+    "match_id": "m006",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1294
+      },
+      {
+        "score": "1:0",
+        "probability": 0.129
+      },
+      {
+        "score": "0:1",
+        "probability": 0.0973
+      },
+      {
+        "score": "0:0",
+        "probability": 0.097
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0861
+      }
+    ]
+  },
+  {
+    "match_id": "m007",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1248
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1123
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0898
+      },
+      {
+        "score": "0:1",
+        "probability": 0.0867
+      },
+      {
+        "score": "2:0",
+        "probability": 0.0808
+      }
+    ]
+  },
+  {
+    "match_id": "m008",
+    "scores": [
+      {
+        "score": "1:0",
+        "probability": 0.1305
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1213
+      },
+      {
+        "score": "2:0",
+        "probability": 0.1002
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0932
+      },
+      {
+        "score": "0:0",
+        "probability": 0.085
+      }
+    ]
+  },
+  {
+    "match_id": "m009",
+    "scores": [
+      {
+        "score": "1:0",
+        "probability": 0.1323
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1276
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0958
+      },
+      {
+        "score": "0:1",
+        "probability": 0.0924
+      },
+      {
+        "score": "2:0",
+        "probability": 0.0913
+      }
+    ]
+  },
+  {
+    "match_id": "m010",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1261
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1096
+      },
+      {
+        "score": "0:1",
+        "probability": 0.0909
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0876
+      },
+      {
+        "score": "0:0",
+        "probability": 0.079
+      }
+    ]
+  },
+  {
+    "match_id": "m011",
+    "scores": [
+      {
+        "score": "1:0",
+        "probability": 0.1324
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1196
+      },
+      {
+        "score": "2:0",
+        "probability": 0.1039
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0939
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0843
+      }
+    ]
+  },
+  {
+    "match_id": "m012",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1307
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1259
+      },
+      {
+        "score": "0:1",
+        "probability": 0.1017
+      },
+      {
+        "score": "0:0",
+        "probability": 0.098
+      },
+      {
+        "score": "2:1",
+        "probability": 0.084
+      }
+    ]
+  }
+]

@@ -1,0 +1,495 @@
+[
+  {
+    "match_id": "m001",
+    "match_no": 1,
+    "stage": "group",
+    "round": 1,
+    "group_name": "A",
+    "home_team": {
+      "code": "ARG",
+      "name": "阿根廷",
+      "english_name": "Argentina",
+      "flag": "🇦🇷",
+      "elo": 2118,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "away_team": {
+      "code": "ESP",
+      "name": "西班牙",
+      "english_name": "Spain",
+      "flag": "🇪🇸",
+      "elo": 2094,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-11T12:00:00+00:00",
+    "stadium": "纽约新泽西体育场",
+    "city": "纽约",
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 1
+  },
+  {
+    "match_id": "m002",
+    "match_no": 2,
+    "stage": "group",
+    "round": 1,
+    "group_name": "A",
+    "home_team": {
+      "code": "FRA",
+      "name": "法国",
+      "english_name": "France",
+      "flag": "🇫🇷",
+      "elo": 2076,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "away_team": {
+      "code": "ENG",
+      "name": "英格兰",
+      "english_name": "England",
+      "flag": "🏴",
+      "elo": 2047,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-11T15:00:00+00:00",
+    "stadium": "洛杉矶体育场",
+    "city": "洛杉矶",
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
+  },
+  {
+    "match_id": "m003",
+    "match_no": 3,
+    "stage": "group",
+    "round": 1,
+    "group_name": "B",
+    "home_team": {
+      "code": "BRA",
+      "name": "巴西",
+      "english_name": "Brazil",
+      "flag": "🇧🇷",
+      "elo": 2028,
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ]
+    },
+    "away_team": {
+      "code": "POR",
+      "name": "葡萄牙",
+      "english_name": "Portugal",
+      "flag": "🇵🇹",
+      "elo": 2012,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-11T19:00:00+00:00",
+    "stadium": "迈阿密体育场",
+    "city": "迈阿密",
+    "status": "finished",
+    "home_score": 0,
+    "away_score": 1
+  },
+  {
+    "match_id": "m004",
+    "match_no": 4,
+    "stage": "group",
+    "round": 1,
+    "group_name": "B",
+    "home_team": {
+      "code": "GER",
+      "name": "德国",
+      "english_name": "Germany",
+      "flag": "🇩🇪",
+      "elo": 1986,
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ]
+    },
+    "away_team": {
+      "code": "NED",
+      "name": "荷兰",
+      "english_name": "Netherlands",
+      "flag": "🇳🇱",
+      "elo": 1981,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-12T22:00:00+00:00",
+    "stadium": "多伦多体育场",
+    "city": "多伦多",
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 2
+  },
+  {
+    "match_id": "m005",
+    "match_no": 5,
+    "stage": "group",
+    "round": 2,
+    "group_name": "A",
+    "home_team": {
+      "code": "ARG",
+      "name": "阿根廷",
+      "english_name": "Argentina",
+      "flag": "🇦🇷",
+      "elo": 2118,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "away_team": {
+      "code": "FRA",
+      "name": "法国",
+      "english_name": "France",
+      "flag": "🇫🇷",
+      "elo": 2076,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-13T02:00:00+00:00",
+    "stadium": "达拉斯体育场",
+    "city": "达拉斯",
+    "status": "live",
+    "home_score": 1,
+    "away_score": 1,
+    "minute": 63
+  },
+  {
+    "match_id": "m006",
+    "match_no": 6,
+    "stage": "group",
+    "round": 2,
+    "group_name": "A",
+    "home_team": {
+      "code": "ESP",
+      "name": "西班牙",
+      "english_name": "Spain",
+      "flag": "🇪🇸",
+      "elo": 2094,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "away_team": {
+      "code": "ENG",
+      "name": "英格兰",
+      "english_name": "England",
+      "flag": "🏴",
+      "elo": 2047,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-13T05:00:00+00:00",
+    "stadium": "亚特兰大体育场",
+    "city": "亚特兰大",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "m007",
+    "match_no": 7,
+    "stage": "group",
+    "round": 2,
+    "group_name": "B",
+    "home_team": {
+      "code": "BRA",
+      "name": "巴西",
+      "english_name": "Brazil",
+      "flag": "🇧🇷",
+      "elo": 2028,
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ]
+    },
+    "away_team": {
+      "code": "GER",
+      "name": "德国",
+      "english_name": "Germany",
+      "flag": "🇩🇪",
+      "elo": 1986,
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ]
+    },
+    "match_time": "2026-06-13T09:00:00+00:00",
+    "stadium": "休斯敦体育场",
+    "city": "休斯敦",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "m008",
+    "match_no": 8,
+    "stage": "group",
+    "round": 2,
+    "group_name": "B",
+    "home_team": {
+      "code": "POR",
+      "name": "葡萄牙",
+      "english_name": "Portugal",
+      "flag": "🇵🇹",
+      "elo": 2012,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "away_team": {
+      "code": "NED",
+      "name": "荷兰",
+      "english_name": "Netherlands",
+      "flag": "🇳🇱",
+      "elo": 1981,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-14T12:00:00+00:00",
+    "stadium": "波士顿体育场",
+    "city": "波士顿",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "m009",
+    "match_no": 9,
+    "stage": "group",
+    "round": 3,
+    "group_name": "A",
+    "home_team": {
+      "code": "ARG",
+      "name": "阿根廷",
+      "english_name": "Argentina",
+      "flag": "🇦🇷",
+      "elo": 2118,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "away_team": {
+      "code": "ENG",
+      "name": "英格兰",
+      "english_name": "England",
+      "flag": "🏴",
+      "elo": 2047,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-14T16:00:00+00:00",
+    "stadium": "费城体育场",
+    "city": "费城",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "m010",
+    "match_no": 10,
+    "stage": "group",
+    "round": 3,
+    "group_name": "A",
+    "home_team": {
+      "code": "ESP",
+      "name": "西班牙",
+      "english_name": "Spain",
+      "flag": "🇪🇸",
+      "elo": 2094,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "away_team": {
+      "code": "FRA",
+      "name": "法国",
+      "english_name": "France",
+      "flag": "🇫🇷",
+      "elo": 2076,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-14T19:00:00+00:00",
+    "stadium": "西雅图体育场",
+    "city": "西雅图",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "m011",
+    "match_no": 11,
+    "stage": "group",
+    "round": 3,
+    "group_name": "B",
+    "home_team": {
+      "code": "BRA",
+      "name": "巴西",
+      "english_name": "Brazil",
+      "flag": "🇧🇷",
+      "elo": 2028,
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ]
+    },
+    "away_team": {
+      "code": "NED",
+      "name": "荷兰",
+      "english_name": "Netherlands",
+      "flag": "🇳🇱",
+      "elo": 1981,
+      "form": [
+        "D",
+        "W",
+        "W",
+        "L",
+        "W"
+      ]
+    },
+    "match_time": "2026-06-14T23:00:00+00:00",
+    "stadium": "旧金山湾区体育场",
+    "city": "旧金山",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "m012",
+    "match_no": 12,
+    "stage": "group",
+    "round": 3,
+    "group_name": "B",
+    "home_team": {
+      "code": "POR",
+      "name": "葡萄牙",
+      "english_name": "Portugal",
+      "flag": "🇵🇹",
+      "elo": 2012,
+      "form": [
+        "W",
+        "D",
+        "W",
+        "W",
+        "W"
+      ]
+    },
+    "away_team": {
+      "code": "GER",
+      "name": "德国",
+      "english_name": "Germany",
+      "flag": "🇩🇪",
+      "elo": 1986,
+      "form": [
+        "W",
+        "W",
+        "D",
+        "W",
+        "L"
+      ]
+    },
+    "match_time": "2026-06-16T02:00:00+00:00",
+    "stadium": "温哥华体育场",
+    "city": "温哥华",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  }
+]

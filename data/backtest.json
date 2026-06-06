@@ -1,0 +1,50 @@
+[
+  {
+    "model": "Elo 基线",
+    "matches": 96,
+    "accuracy": 0.531,
+    "brier_score": 0.231,
+    "log_loss": 1.032,
+    "lift": 0.0
+  },
+  {
+    "model": "Poisson 比分",
+    "matches": 96,
+    "accuracy": 0.542,
+    "brier_score": 0.226,
+    "log_loss": 1.011,
+    "lift": 0.011
+  },
+  {
+    "model": "市场去水概率",
+    "matches": 96,
+    "accuracy": 0.573,
+    "brier_score": 0.216,
+    "log_loss": 0.976,
+    "lift": 0.042
+  },
+  {
+    "model": "Elo + Poisson",
+    "matches": 96,
+    "accuracy": 0.583,
+    "brier_score": 0.213,
+    "log_loss": 0.963,
+    "lift": 0.052
+  },
+  {
+    "model": "模型 + 市场校准",
+    "matches": 96,
+    "accuracy": 0.604,
+    "brier_score": 0.207,
+    "log_loss": 0.941,
+    "lift": 0.073
+  },
+  {
+    "model": "临场阶段修正",
+    "matches": 96,
+    "accuracy": 0.615,
+    "brier_score": 0.203,
+    "log_loss": 0.928,
+    "lift": 0.084
+  }
+]
