@@ -2,11 +2,17 @@
   "source": "openfootball",
   "source_label": "OpenFootball 公共数据",
   "source_url": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-  "generated_at": "2026-06-06T18:11:11.362887+00:00",
+  "generated_at": "2026-06-06T19:01:51.018538+00:00",
   "update_frequency": "每小时第 17 分钟",
   "fixtures_total": 72,
   "finished_total": 0,
   "live_total": 0,
   "odds_mode": "model_proxy",
-  "odds_notice": "未接入真实赔率 API；赔率相关字段为模型代理。"
+  "odds_status": "missing_key",
+  "odds_notice": "尚未配置 Odds-API.io 免费 API Key；无覆盖场次使用模型代理。",
+  "odds_source": "Odds-API.io",
+  "odds_source_url": "https://odds-api.io",
+  "real_odds_matches": 0,
+  "proxy_odds_matches": 72,
+  "bookmakers_total": 0
 }
