@@ -2,7 +2,8 @@ import { useEffect, useMemo, useState } from "react";
 import {
   Activity, AlertTriangle, BarChart3, ChevronRight, CircleGauge, Clock3,
   Crosshair, Database, FlaskConical, Home, Menu, Radio, RefreshCw, Search,
-  Settings, ShieldAlert, Sparkles, Target, TrendingDown, TrendingUp, X,
+  KeyRound, Lock, LogOut, Settings, ShieldAlert, Sparkles, Target,
+  TrendingDown, TrendingUp, X,
 } from "lucide-react";
 import { Link, NavLink, Route, Routes, useParams } from "react-router-dom";
 import {
@@ -262,9 +263,58 @@ function BacktestPage({ data }: { data: RadarData }) {
 }
 
 function SettingsPage() {
+  const [unlocked, setUnlocked] = useState(() => sessionStorage.getItem("akimi-settings-unlocked") === "true");
+  const [password, setPassword] = useState("");
+  const [passwordError, setPasswordError] = useState("");
+  const [checking, setChecking] = useState(false);
   const [mock, setMock] = useState(true);
   const [marketWeight, setMarketWeight] = useState(35);
-  return <div className="page"><PageHeader eyebrow="SYSTEM CONFIGURATION" title="系统设置" description="参数仅保存在当前浏览器。正式数据更新由 GitHub Actions 环境变量控制。" />
+
+  async function unlockSettings(event: React.FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+    setChecking(true);
+    setPasswordError("");
+    const bytes = new TextEncoder().encode(password);
+    const digest = await crypto.subtle.digest("SHA-256", bytes);
+    const hash = Array.from(new Uint8Array(digest), (byte) => byte.toString(16).padStart(2, "0")).join("");
+    const expectedHash = import.meta.env.VITE_SETTINGS_PASSWORD_HASH
+      || "aa25183fef62c4aa58eaf44ae6bf5f1afd02ac6d762d5d93e0c61b175699d89b";
+    if (hash === expectedHash) {
+      sessionStorage.setItem("akimi-settings-unlocked", "true");
+      setUnlocked(true);
+      setPassword("");
+    } else {
+      setPasswordError("密码不正确，请重新输入。");
+    }
+    setChecking(false);
+  }
+
+  function lockSettings() {
+    sessionStorage.removeItem("akimi-settings-unlocked");
+    setUnlocked(false);
+    setPassword("");
+    setPasswordError("");
+  }
+
+  if (!unlocked) {
+    return <div className="page settings-gate-page">
+      <div className="settings-gate panel">
+        <div className="settings-lock-icon"><Lock size={28} /></div>
+        <span className="eyebrow">RESTRICTED SETTINGS</span>
+        <h1>系统设置已锁定</h1>
+        <p>请输入管理密码后访问数据源和模型参数。本次解锁仅在当前浏览器标签页有效。</p>
+        <form onSubmit={unlockSettings}>
+          <label htmlFor="settings-password">管理密码</label>
+          <div className="password-field"><KeyRound size={18} /><input id="settings-password" type="password" autoComplete="current-password" value={password} onChange={(event) => setPassword(event.target.value)} placeholder="请输入设置密码" autoFocus /></div>
+          {passwordError && <span className="password-error" role="alert">{passwordError}</span>}
+          <button className="primary-button unlock-button" type="submit" disabled={!password || checking}>{checking ? "正在验证..." : "解锁系统设置"}</button>
+        </form>
+        <small>静态站点密码门禁用于个人访问控制，不替代服务器端身份认证。</small>
+      </div>
+    </div>;
+  }
+
+  return <div className="page"><PageHeader eyebrow="SYSTEM CONFIGURATION" title="系统设置" description="参数仅保存在当前浏览器。正式数据更新由 GitHub Actions 环境变量控制。"><button className="secondary-button" onClick={lockSettings}><LogOut size={15} /> 锁定设置</button></PageHeader>
     <div className="settings-grid"><div className="panel"><SectionTitle title="数据 Provider" /><SettingRow title="使用 Mock 数据" detail="无需 API Key，完整演示预测闭环"><button className={`toggle ${mock ? "on" : ""}`} onClick={() => setMock(!mock)}><i /></button></SettingRow><SettingRow title="API-Football" detail="赛程、比分、阵容与事件"><span className="not-connected">未连接</span></SettingRow><SettingRow title="Odds API" detail="赔率与市场快照"><span className="not-connected">未连接</span></SettingRow><SettingRow title="football-data.org" detail="备用赛程与赛果"><span className="not-connected">未连接</span></SettingRow></div>
       <div className="panel"><SectionTitle title="模型参数" /><label className="slider-setting"><span><b>市场概率权重</b><small>当前 {marketWeight}%</small></span><input type="range" min="0" max="70" value={marketWeight} onChange={(e) => setMarketWeight(Number(e.target.value))} /></label><label className="slider-setting"><span><b>爆冷预警阈值</b><small>56 / 100</small></span><input type="range" min="20" max="90" defaultValue="56" /></label><label className="slider-setting"><span><b>低信心阈值</b><small>领先优势低于 8%</small></span><input type="range" min="2" max="20" defaultValue="8" /></label></div>
       <div className="panel span-2 provider-note"><Database size={24} /><div><strong>免费数据源接入策略</strong><p>系统优先使用 API-Football，football-data.org 作为赛程与赛果备用，赔率由独立 Provider 拉取并在仓库中形成历史快照。所有密钥仅存在 GitHub Secrets，不会进入前端构建产物。</p></div></div></div>

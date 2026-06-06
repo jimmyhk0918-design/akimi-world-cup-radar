@@ -14,6 +14,7 @@
 - 单场赛后复盘和模型调整建议
 - 多模型组合历史回测
 - 移动端适配
+- 系统设置密码门禁与会话锁定
 - 无 API Key 的 Mock 数据完整闭环
 
 ## 技术栈
@@ -83,6 +84,30 @@ USE_MOCK_DATA=true
 ```
 
 没有 Key 时保持 `true`，系统仍可构建和完整展示。
+
+## 系统设置密码
+
+系统设置页默认密码：
+
+```text
+akimi2026
+```
+
+验证成功后只在当前浏览器标签页保持解锁，关闭标签页或点击“锁定设置”后需要重新输入。
+
+修改密码时，先生成新密码的 SHA-256：
+
+```bash
+node -e "require('crypto').webcrypto.subtle.digest('SHA-256',new TextEncoder().encode('你的新密码')).then(x=>console.log(Buffer.from(x).toString('hex')))"
+```
+
+然后把输出值配置为构建环境变量：
+
+```text
+VITE_SETTINGS_PASSWORD_HASH=生成的SHA-256
+```
+
+这是静态站点的个人访问屏障，摘要仍会包含在前端构建中，不能替代服务器端登录和权限系统。
 
 ## GitHub Pages 部署
 
