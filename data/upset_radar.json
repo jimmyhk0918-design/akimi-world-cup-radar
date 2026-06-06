@@ -1,181 +1,1081 @@
 [
   {
-    "match_id": "m001",
-    "upset_index": 52,
+    "match_id": "wc2026-001",
+    "upset_index": 35,
     "risk_level": "苗头",
-    "favorite_team": "阿根廷",
-    "underdog_team": "西班牙",
-    "favorite_overheat_score": 60,
-    "underdog_not_lose_prob": 0.5783,
-    "draw_heat_score": 47,
+    "favorite_team": "墨西哥",
+    "underdog_team": "南非",
+    "favorite_overheat_score": 43,
+    "underdog_not_lose_prob": 0.4045,
+    "draw_heat_score": 44,
     "reason": [
       "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
+      "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
   },
   {
-    "match_id": "m002",
+    "match_id": "wc2026-002",
     "upset_index": 51,
     "risk_level": "苗头",
-    "favorite_team": "法国",
-    "underdog_team": "英格兰",
+    "favorite_team": "捷克",
+    "underdog_team": "韩国",
     "favorite_overheat_score": 59,
-    "underdog_not_lose_prob": 0.5371,
-    "draw_heat_score": 46,
-    "reason": [
-      "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
-      "平局路径仍有可观概率"
-    ]
-  },
-  {
-    "match_id": "m003",
-    "upset_index": 63,
-    "risk_level": "较高",
-    "favorite_team": "巴西",
-    "underdog_team": "葡萄牙",
-    "favorite_overheat_score": 71,
-    "underdog_not_lose_prob": 0.5843,
+    "underdog_not_lose_prob": 0.6157,
     "draw_heat_score": 48,
     "reason": [
       "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
+      "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
   },
   {
-    "match_id": "m004",
+    "match_id": "wc2026-003",
+    "upset_index": 34,
+    "risk_level": "苗头",
+    "favorite_team": "捷克",
+    "underdog_team": "南非",
+    "favorite_overheat_score": 42,
+    "underdog_not_lose_prob": 0.4148,
+    "draw_heat_score": 44,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-004",
+    "upset_index": 43,
+    "risk_level": "苗头",
+    "favorite_team": "墨西哥",
+    "underdog_team": "韩国",
+    "favorite_overheat_score": 51,
+    "underdog_not_lose_prob": 0.5162,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-005",
     "upset_index": 51,
     "risk_level": "苗头",
-    "favorite_team": "德国",
-    "underdog_team": "荷兰",
+    "favorite_team": "捷克",
+    "underdog_team": "墨西哥",
     "favorite_overheat_score": 59,
-    "underdog_not_lose_prob": 0.5879,
-    "draw_heat_score": 46,
-    "reason": [
-      "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
-      "平局路径仍有可观概率"
-    ]
-  },
-  {
-    "match_id": "m005",
-    "upset_index": 51,
-    "risk_level": "苗头",
-    "favorite_team": "阿根廷",
-    "underdog_team": "法国",
-    "favorite_overheat_score": 59,
-    "underdog_not_lose_prob": 0.5304,
-    "draw_heat_score": 46,
-    "reason": [
-      "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
-      "平局路径仍有可观概率"
-    ]
-  },
-  {
-    "match_id": "m006",
-    "upset_index": 56,
-    "risk_level": "较高",
-    "favorite_team": "西班牙",
-    "underdog_team": "英格兰",
-    "favorite_overheat_score": 64,
-    "underdog_not_lose_prob": 0.5593,
-    "draw_heat_score": 48,
-    "reason": [
-      "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
-      "平局路径仍有可观概率"
-    ]
-  },
-  {
-    "match_id": "m007",
-    "upset_index": 58,
-    "risk_level": "较高",
-    "favorite_team": "巴西",
-    "underdog_team": "德国",
-    "favorite_overheat_score": 66,
-    "underdog_not_lose_prob": 0.5573,
-    "draw_heat_score": 46,
-    "reason": [
-      "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
-      "平局路径仍有可观概率"
-    ]
-  },
-  {
-    "match_id": "m008",
-    "upset_index": 44,
-    "risk_level": "苗头",
-    "favorite_team": "葡萄牙",
-    "underdog_team": "荷兰",
-    "favorite_overheat_score": 52,
-    "underdog_not_lose_prob": 0.5319,
-    "draw_heat_score": 46,
-    "reason": [
-      "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
-      "平局路径仍有可观概率"
-    ]
-  },
-  {
-    "match_id": "m009",
-    "upset_index": 51,
-    "risk_level": "苗头",
-    "favorite_team": "阿根廷",
-    "underdog_team": "英格兰",
-    "favorite_overheat_score": 59,
-    "underdog_not_lose_prob": 0.5261,
+    "underdog_not_lose_prob": 0.6043,
     "draw_heat_score": 47,
     "reason": [
       "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
+      "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
   },
   {
-    "match_id": "m010",
-    "upset_index": 61,
-    "risk_level": "较高",
-    "favorite_team": "西班牙",
-    "underdog_team": "法国",
-    "favorite_overheat_score": 69,
-    "underdog_not_lose_prob": 0.5875,
+    "match_id": "wc2026-006",
+    "upset_index": 48,
+    "risk_level": "苗头",
+    "favorite_team": "韩国",
+    "underdog_team": "南非",
+    "favorite_overheat_score": 56,
+    "underdog_not_lose_prob": 0.5503,
     "draw_heat_score": 47,
     "reason": [
       "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
+      "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
   },
   {
-    "match_id": "m011",
-    "upset_index": 58,
-    "risk_level": "较高",
-    "favorite_team": "巴西",
-    "underdog_team": "荷兰",
-    "favorite_overheat_score": 66,
-    "underdog_not_lose_prob": 0.5223,
+    "match_id": "wc2026-007",
+    "upset_index": 41,
+    "risk_level": "苗头",
+    "favorite_team": "加拿大",
+    "underdog_team": "波黑",
+    "favorite_overheat_score": 49,
+    "underdog_not_lose_prob": 0.4683,
     "draw_heat_score": 46,
     "reason": [
       "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
+      "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
   },
   {
-    "match_id": "m012",
+    "match_id": "wc2026-008",
+    "upset_index": 37,
+    "risk_level": "苗头",
+    "favorite_team": "瑞士",
+    "underdog_team": "卡塔尔",
+    "favorite_overheat_score": 45,
+    "underdog_not_lose_prob": 0.4331,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-009",
+    "upset_index": 34,
+    "risk_level": "苗头",
+    "favorite_team": "瑞士",
+    "underdog_team": "波黑",
+    "favorite_overheat_score": 42,
+    "underdog_not_lose_prob": 0.4076,
+    "draw_heat_score": 44,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-010",
+    "upset_index": 34,
+    "risk_level": "苗头",
+    "favorite_team": "加拿大",
+    "underdog_team": "卡塔尔",
+    "favorite_overheat_score": 42,
+    "underdog_not_lose_prob": 0.4148,
+    "draw_heat_score": 44,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-011",
+    "upset_index": 43,
+    "risk_level": "苗头",
+    "favorite_team": "瑞士",
+    "underdog_team": "加拿大",
+    "favorite_overheat_score": 51,
+    "underdog_not_lose_prob": 0.521,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-012",
     "upset_index": 45,
     "risk_level": "苗头",
-    "favorite_team": "葡萄牙",
-    "underdog_team": "德国",
+    "favorite_team": "波黑",
+    "underdog_team": "卡塔尔",
     "favorite_overheat_score": 53,
-    "underdog_not_lose_prob": 0.5773,
+    "underdog_not_lose_prob": 0.5299,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-013",
+    "upset_index": 44,
+    "risk_level": "苗头",
+    "favorite_team": "巴西",
+    "underdog_team": "摩洛哥",
+    "favorite_overheat_score": 52,
+    "underdog_not_lose_prob": 0.5022,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-014",
+    "upset_index": 38,
+    "risk_level": "苗头",
+    "favorite_team": "苏格兰",
+    "underdog_team": "海地",
+    "favorite_overheat_score": 46,
+    "underdog_not_lose_prob": 0.4326,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-015",
+    "upset_index": 44,
+    "risk_level": "苗头",
+    "favorite_team": "摩洛哥",
+    "underdog_team": "苏格兰",
+    "favorite_overheat_score": 52,
+    "underdog_not_lose_prob": 0.5196,
     "draw_heat_score": 48,
     "reason": [
       "热门方胜率没有形成绝对优势",
-      "市场热度与模型支持力度存在偏差",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-016",
+    "upset_index": 23,
+    "risk_level": "低",
+    "favorite_team": "巴西",
+    "underdog_team": "海地",
+    "favorite_overheat_score": 31,
+    "underdog_not_lose_prob": 0.2508,
+    "draw_heat_score": 37,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-017",
+    "upset_index": 36,
+    "risk_level": "苗头",
+    "favorite_team": "巴西",
+    "underdog_team": "苏格兰",
+    "favorite_overheat_score": 44,
+    "underdog_not_lose_prob": 0.4439,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-018",
+    "upset_index": 23,
+    "risk_level": "低",
+    "favorite_team": "摩洛哥",
+    "underdog_team": "海地",
+    "favorite_overheat_score": 31,
+    "underdog_not_lose_prob": 0.2708,
+    "draw_heat_score": 39,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-019",
+    "upset_index": 45,
+    "risk_level": "苗头",
+    "favorite_team": "美国",
+    "underdog_team": "巴拉圭",
+    "favorite_overheat_score": 53,
+    "underdog_not_lose_prob": 0.5299,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-020",
+    "upset_index": 51,
+    "risk_level": "苗头",
+    "favorite_team": "土耳其",
+    "underdog_team": "澳大利亚",
+    "favorite_overheat_score": 59,
+    "underdog_not_lose_prob": 0.5935,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-021",
+    "upset_index": 47,
+    "risk_level": "苗头",
+    "favorite_team": "美国",
+    "underdog_team": "澳大利亚",
+    "favorite_overheat_score": 55,
+    "underdog_not_lose_prob": 0.5485,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-022",
+    "upset_index": 42,
+    "risk_level": "苗头",
+    "favorite_team": "土耳其",
+    "underdog_team": "巴拉圭",
+    "favorite_overheat_score": 50,
+    "underdog_not_lose_prob": 0.4949,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-023",
+    "upset_index": 46,
+    "risk_level": "苗头",
+    "favorite_team": "土耳其",
+    "underdog_team": "美国",
+    "favorite_overheat_score": 54,
+    "underdog_not_lose_prob": 0.5518,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-024",
+    "upset_index": 49,
+    "risk_level": "苗头",
+    "favorite_team": "巴拉圭",
+    "underdog_team": "澳大利亚",
+    "favorite_overheat_score": 57,
+    "underdog_not_lose_prob": 0.6059,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-025",
+    "upset_index": 23,
+    "risk_level": "低",
+    "favorite_team": "德国",
+    "underdog_team": "库拉索",
+    "favorite_overheat_score": 31,
+    "underdog_not_lose_prob": 0.2738,
+    "draw_heat_score": 39,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-026",
+    "upset_index": 49,
+    "risk_level": "苗头",
+    "favorite_team": "厄瓜多尔",
+    "underdog_team": "科特迪瓦",
+    "favorite_overheat_score": 57,
+    "underdog_not_lose_prob": 0.5833,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-027",
+    "upset_index": 36,
+    "risk_level": "苗头",
+    "favorite_team": "德国",
+    "underdog_team": "科特迪瓦",
+    "favorite_overheat_score": 44,
+    "underdog_not_lose_prob": 0.4076,
+    "draw_heat_score": 44,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-028",
+    "upset_index": 30,
+    "risk_level": "低",
+    "favorite_team": "厄瓜多尔",
+    "underdog_team": "库拉索",
+    "favorite_overheat_score": 38,
+    "underdog_not_lose_prob": 0.3319,
+    "draw_heat_score": 42,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-029",
+    "upset_index": 40,
+    "risk_level": "苗头",
+    "favorite_team": "科特迪瓦",
+    "underdog_team": "库拉索",
+    "favorite_overheat_score": 48,
+    "underdog_not_lose_prob": 0.4706,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-030",
+    "upset_index": 48,
+    "risk_level": "苗头",
+    "favorite_team": "德国",
+    "underdog_team": "厄瓜多尔",
+    "favorite_overheat_score": 56,
+    "underdog_not_lose_prob": 0.5759,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-031",
+    "upset_index": 41,
+    "risk_level": "苗头",
+    "favorite_team": "荷兰",
+    "underdog_team": "日本",
+    "favorite_overheat_score": 49,
+    "underdog_not_lose_prob": 0.5112,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-032",
+    "upset_index": 39,
+    "risk_level": "苗头",
+    "favorite_team": "瑞典",
+    "underdog_team": "突尼斯",
+    "favorite_overheat_score": 47,
+    "underdog_not_lose_prob": 0.4696,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-033",
+    "upset_index": 37,
+    "risk_level": "苗头",
+    "favorite_team": "荷兰",
+    "underdog_team": "瑞典",
+    "favorite_overheat_score": 45,
+    "underdog_not_lose_prob": 0.4288,
+    "draw_heat_score": 45,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-034",
+    "upset_index": 41,
+    "risk_level": "苗头",
+    "favorite_team": "日本",
+    "underdog_team": "突尼斯",
+    "favorite_overheat_score": 49,
+    "underdog_not_lose_prob": 0.4732,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-035",
+    "upset_index": 44,
+    "risk_level": "苗头",
+    "favorite_team": "日本",
+    "underdog_team": "瑞典",
+    "favorite_overheat_score": 52,
+    "underdog_not_lose_prob": 0.5051,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-036",
+    "upset_index": 35,
+    "risk_level": "苗头",
+    "favorite_team": "荷兰",
+    "underdog_team": "突尼斯",
+    "favorite_overheat_score": 43,
+    "underdog_not_lose_prob": 0.4051,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-037",
+    "upset_index": 35,
+    "risk_level": "苗头",
+    "favorite_team": "比利时",
+    "underdog_team": "埃及",
+    "favorite_overheat_score": 43,
+    "underdog_not_lose_prob": 0.4238,
+    "draw_heat_score": 45,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-038",
+    "upset_index": 29,
+    "risk_level": "低",
+    "favorite_team": "伊朗",
+    "underdog_team": "新西兰",
+    "favorite_overheat_score": 37,
+    "underdog_not_lose_prob": 0.3588,
+    "draw_heat_score": 43,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-039",
+    "upset_index": 40,
+    "risk_level": "苗头",
+    "favorite_team": "比利时",
+    "underdog_team": "伊朗",
+    "favorite_overheat_score": 48,
+    "underdog_not_lose_prob": 0.4787,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-040",
+    "upset_index": 41,
+    "risk_level": "苗头",
+    "favorite_team": "埃及",
+    "underdog_team": "新西兰",
+    "favorite_overheat_score": 49,
+    "underdog_not_lose_prob": 0.4857,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-041",
+    "upset_index": 53,
+    "risk_level": "苗头",
+    "favorite_team": "伊朗",
+    "underdog_team": "埃及",
+    "favorite_overheat_score": 61,
+    "underdog_not_lose_prob": 0.6129,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-042",
+    "upset_index": 31,
+    "risk_level": "苗头",
+    "favorite_team": "比利时",
+    "underdog_team": "新西兰",
+    "favorite_overheat_score": 39,
+    "underdog_not_lose_prob": 0.3458,
+    "draw_heat_score": 44,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-043",
+    "upset_index": 23,
+    "risk_level": "低",
+    "favorite_team": "西班牙",
+    "underdog_team": "佛得角",
+    "favorite_overheat_score": 31,
+    "underdog_not_lose_prob": 0.2636,
+    "draw_heat_score": 38,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-044",
+    "upset_index": 31,
+    "risk_level": "苗头",
+    "favorite_team": "乌拉圭",
+    "underdog_team": "沙特阿拉伯",
+    "favorite_overheat_score": 39,
+    "underdog_not_lose_prob": 0.3737,
+    "draw_heat_score": 45,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-045",
+    "upset_index": 22,
+    "risk_level": "低",
+    "favorite_team": "西班牙",
+    "underdog_team": "沙特阿拉伯",
+    "favorite_overheat_score": 30,
+    "underdog_not_lose_prob": 0.2554,
+    "draw_heat_score": 37,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-046",
+    "upset_index": 27,
+    "risk_level": "低",
+    "favorite_team": "乌拉圭",
+    "underdog_team": "佛得角",
+    "favorite_overheat_score": 35,
+    "underdog_not_lose_prob": 0.3287,
+    "draw_heat_score": 41,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-047",
+    "upset_index": 47,
+    "risk_level": "苗头",
+    "favorite_team": "佛得角",
+    "underdog_team": "沙特阿拉伯",
+    "favorite_overheat_score": 55,
+    "underdog_not_lose_prob": 0.5593,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-048",
+    "upset_index": 47,
+    "risk_level": "苗头",
+    "favorite_team": "西班牙",
+    "underdog_team": "乌拉圭",
+    "favorite_overheat_score": 55,
+    "underdog_not_lose_prob": 0.5372,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-049",
+    "upset_index": 34,
+    "risk_level": "苗头",
+    "favorite_team": "法国",
+    "underdog_team": "塞内加尔",
+    "favorite_overheat_score": 42,
+    "underdog_not_lose_prob": 0.3782,
+    "draw_heat_score": 43,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-050",
+    "upset_index": 40,
+    "risk_level": "苗头",
+    "favorite_team": "挪威",
+    "underdog_team": "伊拉克",
+    "favorite_overheat_score": 48,
+    "underdog_not_lose_prob": 0.4706,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-051",
+    "upset_index": 22,
+    "risk_level": "低",
+    "favorite_team": "法国",
+    "underdog_team": "伊拉克",
+    "favorite_overheat_score": 30,
+    "underdog_not_lose_prob": 0.265,
+    "draw_heat_score": 38,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-052",
+    "upset_index": 47,
+    "risk_level": "苗头",
+    "favorite_team": "挪威",
+    "underdog_team": "塞内加尔",
+    "favorite_overheat_score": 55,
+    "underdog_not_lose_prob": 0.5809,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-053",
+    "upset_index": 38,
+    "risk_level": "苗头",
+    "favorite_team": "法国",
+    "underdog_team": "挪威",
+    "favorite_overheat_score": 46,
+    "underdog_not_lose_prob": 0.4585,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-054",
+    "upset_index": 34,
+    "risk_level": "苗头",
+    "favorite_team": "塞内加尔",
+    "underdog_team": "伊拉克",
+    "favorite_overheat_score": 42,
+    "underdog_not_lose_prob": 0.4013,
+    "draw_heat_score": 44,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-055",
+    "upset_index": 27,
+    "risk_level": "低",
+    "favorite_team": "阿根廷",
+    "underdog_team": "阿尔及利亚",
+    "favorite_overheat_score": 35,
+    "underdog_not_lose_prob": 0.2993,
+    "draw_heat_score": 40,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-056",
+    "upset_index": 30,
+    "risk_level": "低",
+    "favorite_team": "奥地利",
+    "underdog_team": "约旦",
+    "favorite_overheat_score": 38,
+    "underdog_not_lose_prob": 0.3414,
+    "draw_heat_score": 42,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-057",
+    "upset_index": 32,
+    "risk_level": "苗头",
+    "favorite_team": "阿根廷",
+    "underdog_team": "奥地利",
+    "favorite_overheat_score": 40,
+    "underdog_not_lose_prob": 0.3759,
+    "draw_heat_score": 43,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-058",
+    "upset_index": 42,
+    "risk_level": "苗头",
+    "favorite_team": "阿尔及利亚",
+    "underdog_team": "约旦",
+    "favorite_overheat_score": 50,
+    "underdog_not_lose_prob": 0.5019,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-059",
+    "upset_index": 46,
+    "risk_level": "苗头",
+    "favorite_team": "奥地利",
+    "underdog_team": "阿尔及利亚",
+    "favorite_overheat_score": 54,
+    "underdog_not_lose_prob": 0.563,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-060",
+    "upset_index": 24,
+    "risk_level": "低",
+    "favorite_team": "阿根廷",
+    "underdog_team": "约旦",
+    "favorite_overheat_score": 32,
+    "underdog_not_lose_prob": 0.2882,
+    "draw_heat_score": 41,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-061",
+    "upset_index": 26,
+    "risk_level": "低",
+    "favorite_team": "葡萄牙",
+    "underdog_team": "刚果民主共和国",
+    "favorite_overheat_score": 34,
+    "underdog_not_lose_prob": 0.2979,
+    "draw_heat_score": 40,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-062",
+    "upset_index": 37,
+    "risk_level": "苗头",
+    "favorite_team": "哥伦比亚",
+    "underdog_team": "乌兹别克斯坦",
+    "favorite_overheat_score": 45,
+    "underdog_not_lose_prob": 0.4161,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-063",
+    "upset_index": 28,
+    "risk_level": "低",
+    "favorite_team": "葡萄牙",
+    "underdog_team": "乌兹别克斯坦",
+    "favorite_overheat_score": 36,
+    "underdog_not_lose_prob": 0.3159,
+    "draw_heat_score": 41,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-064",
+    "upset_index": 29,
+    "risk_level": "低",
+    "favorite_team": "哥伦比亚",
+    "underdog_team": "刚果民主共和国",
+    "favorite_overheat_score": 37,
+    "underdog_not_lose_prob": 0.3311,
+    "draw_heat_score": 42,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-065",
+    "upset_index": 52,
+    "risk_level": "苗头",
+    "favorite_team": "葡萄牙",
+    "underdog_team": "哥伦比亚",
+    "favorite_overheat_score": 60,
+    "underdog_not_lose_prob": 0.6235,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-066",
+    "upset_index": 50,
+    "risk_level": "苗头",
+    "favorite_team": "刚果民主共和国",
+    "underdog_team": "乌兹别克斯坦",
+    "favorite_overheat_score": 58,
+    "underdog_not_lose_prob": 0.616,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-067",
+    "upset_index": 38,
+    "risk_level": "苗头",
+    "favorite_team": "英格兰",
+    "underdog_team": "克罗地亚",
+    "favorite_overheat_score": 46,
+    "underdog_not_lose_prob": 0.4545,
+    "draw_heat_score": 45,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-068",
+    "upset_index": 52,
+    "risk_level": "苗头",
+    "favorite_team": "加纳",
+    "underdog_team": "巴拿马",
+    "favorite_overheat_score": 60,
+    "underdog_not_lose_prob": 0.6194,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-069",
+    "upset_index": 26,
+    "risk_level": "低",
+    "favorite_team": "英格兰",
+    "underdog_team": "加纳",
+    "favorite_overheat_score": 34,
+    "underdog_not_lose_prob": 0.284,
+    "draw_heat_score": 39,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-070",
+    "upset_index": 41,
+    "risk_level": "苗头",
+    "favorite_team": "克罗地亚",
+    "underdog_team": "巴拿马",
+    "favorite_overheat_score": 49,
+    "underdog_not_lose_prob": 0.47,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-071",
+    "upset_index": 31,
+    "risk_level": "苗头",
+    "favorite_team": "英格兰",
+    "underdog_team": "巴拿马",
+    "favorite_overheat_score": 39,
+    "underdog_not_lose_prob": 0.3615,
+    "draw_heat_score": 45,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-072",
+    "upset_index": 31,
+    "risk_level": "苗头",
+    "favorite_team": "克罗地亚",
+    "underdog_team": "加纳",
+    "favorite_overheat_score": 39,
+    "underdog_not_lose_prob": 0.3737,
+    "draw_heat_score": 43,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
   }
