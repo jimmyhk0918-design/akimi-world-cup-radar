@@ -1,0 +1,182 @@
+[
+  {
+    "match_id": "m001",
+    "upset_index": 52,
+    "risk_level": "苗头",
+    "favorite_team": "阿根廷",
+    "underdog_team": "西班牙",
+    "favorite_overheat_score": 60,
+    "underdog_not_lose_prob": 0.5783,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m002",
+    "upset_index": 51,
+    "risk_level": "苗头",
+    "favorite_team": "法国",
+    "underdog_team": "英格兰",
+    "favorite_overheat_score": 59,
+    "underdog_not_lose_prob": 0.5371,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m003",
+    "upset_index": 63,
+    "risk_level": "较高",
+    "favorite_team": "巴西",
+    "underdog_team": "葡萄牙",
+    "favorite_overheat_score": 71,
+    "underdog_not_lose_prob": 0.5843,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m004",
+    "upset_index": 51,
+    "risk_level": "苗头",
+    "favorite_team": "德国",
+    "underdog_team": "荷兰",
+    "favorite_overheat_score": 59,
+    "underdog_not_lose_prob": 0.5879,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m005",
+    "upset_index": 51,
+    "risk_level": "苗头",
+    "favorite_team": "阿根廷",
+    "underdog_team": "法国",
+    "favorite_overheat_score": 59,
+    "underdog_not_lose_prob": 0.5304,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m006",
+    "upset_index": 56,
+    "risk_level": "较高",
+    "favorite_team": "西班牙",
+    "underdog_team": "英格兰",
+    "favorite_overheat_score": 64,
+    "underdog_not_lose_prob": 0.5593,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m007",
+    "upset_index": 58,
+    "risk_level": "较高",
+    "favorite_team": "巴西",
+    "underdog_team": "德国",
+    "favorite_overheat_score": 66,
+    "underdog_not_lose_prob": 0.5573,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m008",
+    "upset_index": 44,
+    "risk_level": "苗头",
+    "favorite_team": "葡萄牙",
+    "underdog_team": "荷兰",
+    "favorite_overheat_score": 52,
+    "underdog_not_lose_prob": 0.5319,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m009",
+    "upset_index": 51,
+    "risk_level": "苗头",
+    "favorite_team": "阿根廷",
+    "underdog_team": "英格兰",
+    "favorite_overheat_score": 59,
+    "underdog_not_lose_prob": 0.5261,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m010",
+    "upset_index": 61,
+    "risk_level": "较高",
+    "favorite_team": "西班牙",
+    "underdog_team": "法国",
+    "favorite_overheat_score": 69,
+    "underdog_not_lose_prob": 0.5875,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m011",
+    "upset_index": 58,
+    "risk_level": "较高",
+    "favorite_team": "巴西",
+    "underdog_team": "荷兰",
+    "favorite_overheat_score": 66,
+    "underdog_not_lose_prob": 0.5223,
+    "draw_heat_score": 46,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "m012",
+    "upset_index": 45,
+    "risk_level": "苗头",
+    "favorite_team": "葡萄牙",
+    "underdog_team": "德国",
+    "favorite_overheat_score": 53,
+    "underdog_not_lose_prob": 0.5773,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "市场热度与模型支持力度存在偏差",
+      "平局路径仍有可观概率"
+    ]
+  }
+]

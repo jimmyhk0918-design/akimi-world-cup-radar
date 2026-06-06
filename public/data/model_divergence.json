@@ -1,0 +1,122 @@
+[
+  {
+    "match_id": "m001",
+    "home_divergence": 0.009,
+    "draw_divergence": -0.003,
+    "away_divergence": -0.006,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.009,
+    "divergence_level": "low",
+    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m002",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m003",
+    "home_divergence": -0.009,
+    "draw_divergence": 0.003,
+    "away_divergence": 0.006,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.009,
+    "divergence_level": "low",
+    "summary": "市场比模型更看好热门方向，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m004",
+    "home_divergence": -0.018,
+    "draw_divergence": 0.006,
+    "away_divergence": 0.012,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.018,
+    "divergence_level": "low",
+    "summary": "市场比模型更看好热门方向，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m005",
+    "home_divergence": 0.018,
+    "draw_divergence": -0.006,
+    "away_divergence": -0.012,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.018,
+    "divergence_level": "low",
+    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m006",
+    "home_divergence": 0.009,
+    "draw_divergence": -0.003,
+    "away_divergence": -0.006,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.009,
+    "divergence_level": "low",
+    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m007",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m008",
+    "home_divergence": -0.009,
+    "draw_divergence": 0.003,
+    "away_divergence": 0.006,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.009,
+    "divergence_level": "low",
+    "summary": "市场比模型更看好热门方向，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m009",
+    "home_divergence": -0.018,
+    "draw_divergence": 0.006,
+    "away_divergence": 0.012,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.018,
+    "divergence_level": "low",
+    "summary": "市场比模型更看好热门方向，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m010",
+    "home_divergence": 0.018,
+    "draw_divergence": -0.006,
+    "away_divergence": -0.012,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.018,
+    "divergence_level": "low",
+    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m011",
+    "home_divergence": 0.009,
+    "draw_divergence": -0.003,
+    "away_divergence": -0.006,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.009,
+    "divergence_level": "low",
+    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+  },
+  {
+    "match_id": "m012",
+    "home_divergence": 0.0,
+    "draw_divergence": 0.0,
+    "away_divergence": 0.0,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.0,
+    "divergence_level": "low",
+    "summary": "市场比模型更谨慎，当前属于轻微分歧。"
+  }
+]
