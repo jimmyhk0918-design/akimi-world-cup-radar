@@ -15,6 +15,13 @@ try:
         score_matrix,
         totals_from_matrix,
     )
+    from .providers.http import ProviderError
+    from .providers.odds_api_io import (
+        OddsApiIoProvider,
+        event_key,
+        match_events,
+        parse_event_odds,
+    )
     from .providers.openfootball import OpenFootballProvider
 except ImportError:
     from models.football import (
@@ -26,13 +33,21 @@ except ImportError:
         score_matrix,
         totals_from_matrix,
     )
+    from providers.http import ProviderError
+    from providers.odds_api_io import (
+        OddsApiIoProvider,
+        event_key,
+        match_events,
+        parse_event_odds,
+    )
     from providers.openfootball import OpenFootballProvider
 
 
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT = Path(os.getenv("RADAR_OUTPUT_DIR", ROOT / "public" / "data"))
 SOURCE = os.getenv("RADAR_DATA_SOURCE", "openfootball").lower()
-MARKET_WEIGHT = 0.20
+PROXY_MARKET_WEIGHT = 0.20
+REAL_MARKET_WEIGHT = 0.35
 
 TEAM_INFO = {
     "Algeria": ("ALG", "阿尔及利亚", "🇩🇿", 1760),
@@ -194,7 +209,109 @@ def load_source():
     return rows, "openfootball"
 
 
-def build_datasets(source_rows, source_name, generated_at):
+def load_existing_odds():
+    path = OUTPUT / "odds_movements.json"
+    if not path.exists():
+        return {}
+    try:
+        with path.open(encoding="utf-8") as handle:
+            return {row["match_id"]: row for row in json.load(handle)}
+    except (OSError, ValueError, KeyError):
+        return {}
+
+
+def fetch_market_odds(source_rows):
+    api_key = os.getenv("ODDS_API_KEY", "")
+    if not api_key:
+        return {}, {
+            "mode": "model_proxy",
+            "status": "missing_key",
+            "notice": "尚未配置 Odds-API.io 免费 API Key；无覆盖场次使用模型代理。",
+        }
+
+    resolved = [
+        row for row in source_rows
+        if is_known_team(row.get("team1", "")) and is_known_team(row.get("team2", ""))
+    ]
+    dates = [parse_match_time(row) for row in resolved]
+    provider = OddsApiIoProvider(api_key=api_key)
+    try:
+        events = provider.fetch_events(
+            (min(dates) - timedelta(days=1)).isoformat().replace("+00:00", "Z"),
+            (max(dates) + timedelta(days=1)).isoformat().replace("+00:00", "Z"),
+        )
+        events_by_match = match_events(events)
+        matched_events = {
+            event_key(row["team1"], row["team2"]): events_by_match[event_key(row["team1"], row["team2"])]
+            for row in resolved
+            if event_key(row["team1"], row["team2"]) in events_by_match
+        }
+        odds_payloads = provider.fetch_odds(
+            event["id"] for event in matched_events.values()
+        )
+        parsed_by_event_id = {
+            payload.get("id"): parse_event_odds(payload) for payload in odds_payloads
+        }
+        market_by_match = {}
+        for key, event in matched_events.items():
+            parsed = parsed_by_event_id.get(event["id"])
+            if parsed:
+                market_by_match[key] = parsed
+        return market_by_match, {
+            "mode": "real_time",
+            "status": "connected",
+            "notice": "Odds-API.io 实时赔率已连接；未覆盖场次自动使用模型代理。",
+            "events_found": len(events),
+        }
+    except (ProviderError, ValueError, KeyError, TypeError) as error:
+        return {}, {
+            "mode": "model_proxy",
+            "status": "provider_error",
+            "notice": "实时赔率暂时不可用，已安全降级为模型代理：{}".format(error),
+        }
+
+
+def history_change(history, outcome, generated_at, hours):
+    if not history:
+        return 0
+    target = generated_at - timedelta(hours=hours)
+    candidate = min(
+        history,
+        key=lambda row: abs(
+            datetime.fromisoformat(row["time"].replace("Z", "+00:00")) - target
+        ),
+    )
+    return history[-1][outcome] - candidate[outcome]
+
+
+def append_odds_history(previous, probabilities, generated_at):
+    history = list(previous.get("history", [])) if previous else []
+    snapshot = {
+        "time": generated_at.isoformat(),
+        "home": round(probabilities["home"], 4),
+        "draw": round(probabilities["draw"], 4),
+        "away": round(probabilities["away"], 4),
+    }
+    if not history or history[-1] != snapshot:
+        history.append(snapshot)
+    return history[-168:]
+
+
+def build_datasets(
+    source_rows,
+    source_name,
+    generated_at,
+    real_odds=None,
+    odds_state=None,
+    previous_odds=None,
+):
+    real_odds = real_odds or {}
+    odds_state = odds_state or {
+        "mode": "model_proxy",
+        "status": "not_requested",
+        "notice": "实时赔率未请求。",
+    }
+    previous_odds = previous_odds or {}
     usable_rows = [
         row for row in source_rows
         if is_known_team(row.get("team1", "")) and is_known_team(row.get("team2", ""))
@@ -241,7 +358,7 @@ def build_datasets(source_rows, source_name, generated_at):
         poisson_probs = matrix_to_1x2(matrix)
         model = blend(elo_probs, poisson_probs, 0.42)
 
-        # A deterministic proxy keeps the market-related UI usable until an odds key is configured.
+        # A deterministic proxy keeps uncovered matches usable without pretending to be a bookmaker quote.
         proxy_shift = ((index % 7) - 3) * 0.004
         market_proxy = {
             "home": max(0.05, model["home"] + proxy_shift),
@@ -250,13 +367,16 @@ def build_datasets(source_rows, source_name, generated_at):
         }
         total_proxy = sum(market_proxy.values())
         market_proxy = {key: value / total_proxy for key, value in market_proxy.items()}
-        final = blend(model, market_proxy, MARKET_WEIGHT)
+        real_market = real_odds.get(event_key(row["team1"], row["team2"]))
+        market = real_market["probabilities"] if real_market else market_proxy
+        market_weight = REAL_MARKET_WEIGHT if real_market else PROXY_MARKET_WEIGHT
+        final = blend(model, market, market_weight)
         totals = totals_from_matrix(matrix)
         winner = max(final, key=final.get)
         ordered = sorted(final.values(), reverse=True)
         confidence_gap = ordered[0] - ordered[1]
         confidence = "high" if confidence_gap > 0.19 else ("medium" if confidence_gap > 0.08 else "low")
-        divergence = {key: model[key] - market_proxy[key] for key in model}
+        divergence = {key: model[key] - market[key] for key in model}
         largest = max(divergence, key=lambda key: abs(divergence[key]))
         upset = int(min(96, max(18, (1 - max(final.values())) * 82 + abs(divergence[largest]) * 250)))
         label_map = {"home": "主队优势", "draw": "平局路径突出", "away": "客队优势"}
@@ -266,9 +386,9 @@ def build_datasets(source_rows, source_name, generated_at):
             "model_home_win_prob": round(model["home"], 4),
             "model_draw_prob": round(model["draw"], 4),
             "model_away_win_prob": round(model["away"], 4),
-            "market_home_win_prob": round(market_proxy["home"], 4),
-            "market_draw_prob": round(market_proxy["draw"], 4),
-            "market_away_win_prob": round(market_proxy["away"], 4),
+            "market_home_win_prob": round(market["home"], 4),
+            "market_draw_prob": round(market["draw"], 4),
+            "market_away_win_prob": round(market["away"], 4),
             "final_home_win_prob": round(final["home"], 4),
             "final_draw_prob": round(final["draw"], 4),
             "final_away_win_prob": round(final["away"], 4),
@@ -283,7 +403,14 @@ def build_datasets(source_rows, source_name, generated_at):
                 label_map[winner], {"high": "高", "medium": "中", "low": "低"}[confidence]
             ),
             "summary": "{}与{}的赛前模型预测，需结合临场阵容复核。".format(home["name"], away["name"]),
-            "factors": ["Elo 强度差异", "Poisson 预期进球", "20% 市场代理校准"],
+            "factors": [
+                "Elo 强度差异",
+                "Poisson 预期进球",
+                "{}% {}校准".format(
+                    round(market_weight * 100),
+                    "实时赔率" if real_market else "模型代理",
+                ),
+            ],
             "updated_at": generated_at.isoformat(),
         })
         score_rows.append({
@@ -294,30 +421,59 @@ def build_datasets(source_rows, source_name, generated_at):
             ],
         })
 
-        history = []
-        for step, hours in enumerate((24, 12, 6, 1, 0)):
-            progress = step / 4
-            history.append({
-                "time": (match_time - timedelta(hours=hours)).isoformat(),
-                "home": round(model["home"] + (market_proxy["home"] - model["home"]) * progress, 4),
-                "draw": round(model["draw"] + (market_proxy["draw"] - model["draw"]) * progress, 4),
-                "away": round(model["away"] + (market_proxy["away"] - model["away"]) * progress, 4),
-            })
+        previous = previous_odds.get(match_id)
+        if real_market:
+            history = append_odds_history(previous, market, generated_at)
+            open_probability = history[0][winner]
+            current_odds = real_market["odds"][winner]
+            open_odds = previous.get("open_odds", round(1 / open_probability, 2)) if previous else round(1 / open_probability, 2)
+            change_24h = history_change(history, winner, generated_at, 24)
+            change_6h = history_change(history, winner, generated_at, 6)
+            change_1h = history_change(history, winner, generated_at, 1)
+            market_type = "1x2-real"
+            consensus = max(0, min(1, 1 - real_market["dispersion"] * 10))
+            dispersion = real_market["dispersion"]
+            signal = "实时赔率"
+            risk_note = "{} 家博彩公司实时赔率，最近更新 {}。".format(
+                real_market["bookmaker_count"],
+                real_market["updated_at"],
+            )
+        else:
+            history = []
+            for step, hours in enumerate((24, 12, 6, 1, 0)):
+                progress = step / 4
+                history.append({
+                    "time": (match_time - timedelta(hours=hours)).isoformat(),
+                    "home": round(model["home"] + (market["home"] - model["home"]) * progress, 4),
+                    "draw": round(model["draw"] + (market["draw"] - model["draw"]) * progress, 4),
+                    "away": round(model["away"] + (market["away"] - model["away"]) * progress, 4),
+                })
+            open_probability = model[winner]
+            current_odds = round(1 / market[winner], 2)
+            open_odds = round(1 / model[winner], 2)
+            change_24h = market[winner] - model[winner]
+            change_6h = change_24h * 0.5
+            change_1h = change_24h * 0.2
+            market_type = "1x2-proxy"
+            consensus = 0
+            dispersion = 0
+            signal = "模型代理"
+            risk_note = "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。"
         odds_rows.append({
             "match_id": match_id,
-            "market_type": "1x2-proxy",
+            "market_type": market_type,
             "selection": winner,
-            "open_odds": round(1 / model[winner], 2),
-            "current_odds": round(1 / market_proxy[winner], 2),
-            "open_probability": round(model[winner], 4),
-            "current_probability": round(market_proxy[winner], 4),
-            "change_24h": round(market_proxy[winner] - model[winner], 4),
-            "change_6h": round((market_proxy[winner] - model[winner]) * 0.5, 4),
-            "change_1h": round((market_proxy[winner] - model[winner]) * 0.2, 4),
-            "bookmaker_consensus": 0,
-            "market_dispersion": 0,
-            "signal": "模型代理",
-            "risk_note": "当前没有免费实时赔率 Key，本栏为模型代理，不代表博彩公司报价。",
+            "open_odds": round(open_odds, 2),
+            "current_odds": round(current_odds, 2),
+            "open_probability": round(open_probability, 4),
+            "current_probability": round(market[winner], 4),
+            "change_24h": round(change_24h, 4),
+            "change_6h": round(change_6h, 4),
+            "change_1h": round(change_1h, 4),
+            "bookmaker_consensus": round(consensus, 4),
+            "market_dispersion": round(dispersion, 4),
+            "signal": signal,
+            "risk_note": risk_note,
             "history": history,
         })
 
@@ -342,7 +498,11 @@ def build_datasets(source_rows, source_name, generated_at):
             "largest_divergence_selection": largest,
             "largest_divergence_value": round(abs(divergence[largest]), 4),
             "divergence_level": "low",
-            "summary": "当前比较对象为模型代理，接入真实赔率后才具备市场分歧含义。",
+            "summary": (
+                "模型与实时市场的概率差异。"
+                if real_market else
+                "当前比较对象为模型代理，不具备真实市场分歧含义。"
+            ),
         })
 
         if full_time:
@@ -361,7 +521,11 @@ def build_datasets(source_rows, source_name, generated_at):
                 "brier_score": round(brier_score(final, actual), 3),
                 "log_loss": round(log_loss(final, actual), 3),
                 "model_error_summary": "赛果与赛前最高概率方向{}。".format("一致" if actual == predicted else "不一致"),
-                "odds_signal_review": "当前无真实赔率数据，未进行赔率信号复盘。",
+                "odds_signal_review": (
+                    "已纳入赛前实时赔率快照。"
+                    if real_market else
+                    "该场无真实赔率数据，未进行赔率信号复盘。"
+                ),
                 "adjustment_suggestion": "随着赛果累积重新校准 Elo、进球期望和信心阈值。",
             })
 
@@ -409,8 +573,18 @@ def build_datasets(source_rows, source_name, generated_at):
         "fixtures_total": len(matches),
         "finished_total": sum(match["status"] == "finished" for match in matches),
         "live_total": sum(match["status"] == "live" for match in matches),
-        "odds_mode": "model_proxy",
-        "odds_notice": "未接入真实赔率 API；赔率相关字段为模型代理。",
+        "odds_mode": odds_state["mode"],
+        "odds_status": odds_state["status"],
+        "odds_notice": odds_state["notice"],
+        "odds_source": "Odds-API.io",
+        "odds_source_url": "https://odds-api.io",
+        "real_odds_matches": sum(row["market_type"] == "1x2-real" for row in odds_rows),
+        "proxy_odds_matches": sum(row["market_type"] == "1x2-proxy" for row in odds_rows),
+        "bookmakers_total": len({
+            bookmaker
+            for market in real_odds.values()
+            for bookmaker in market.get("bookmakers", [])
+        }),
     }
     return {
         "matches": matches,
@@ -429,12 +603,23 @@ def build_datasets(source_rows, source_name, generated_at):
 def main():
     generated_at = now_utc()
     source_rows, source_name = load_source()
-    datasets = build_datasets(source_rows, source_name, generated_at)
+    real_odds, odds_state = fetch_market_odds(source_rows)
+    datasets = build_datasets(
+        source_rows,
+        source_name,
+        generated_at,
+        real_odds=real_odds,
+        odds_state=odds_state,
+        previous_odds=load_existing_odds(),
+    )
     for name, payload in datasets.items():
         write(name, payload)
     print(
-        "Generated {} datasets from {} ({} resolved fixtures)".format(
-            len(datasets), source_name, len(datasets["matches"])
+        "Generated {} datasets from {} ({} fixtures, {} real odds matches)".format(
+            len(datasets),
+            source_name,
+            len(datasets["matches"]),
+            datasets["data_metadata"]["real_odds_matches"],
         )
     )
 

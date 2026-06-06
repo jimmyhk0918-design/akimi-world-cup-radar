@@ -1,0 +1,35 @@
+{
+  "id": 123456,
+  "home": "Mexico",
+  "away": "South Africa",
+  "date": "2026-06-11T19:00:00Z",
+  "status": "pending",
+  "bookmakers": {
+    "Bet365": [
+      {
+        "name": "ML",
+        "updatedAt": "2026-06-07T01:00:00Z",
+        "odds": [
+          {
+            "home": "1.80",
+            "draw": "3.50",
+            "away": "5.00"
+          }
+        ]
+      }
+    ],
+    "Unibet": [
+      {
+        "name": "ML",
+        "updatedAt": "2026-06-07T01:01:00Z",
+        "odds": [
+          {
+            "home": "1.85",
+            "draw": "3.45",
+            "away": "4.80"
+          }
+        ]
+      }
+    ]
+  }
+}

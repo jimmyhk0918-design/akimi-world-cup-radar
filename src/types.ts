@@ -146,7 +146,13 @@ export interface DataMetadata {
   finished_total: number;
   live_total: number;
   odds_mode: string;
+  odds_status: string;
   odds_notice: string;
+  odds_source: string;
+  odds_source_url: string;
+  real_odds_matches: number;
+  proxy_odds_matches: number;
+  bookmakers_total: number;
 }
 
 export interface RadarData {

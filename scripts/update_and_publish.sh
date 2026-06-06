@@ -11,6 +11,12 @@ if nc -z 127.0.0.1 7897 >/dev/null 2>&1; then
 fi
 
 cd "$ROOT"
+if [[ -f .env ]]; then
+  set -a
+  # shellcheck disable=SC1091
+  source .env
+  set +a
+fi
 RADAR_DATA_SOURCE=openfootball python3 scripts/generate_data.py
 npm run test:model
 npm run build

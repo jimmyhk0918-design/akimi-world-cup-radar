@@ -1,5 +1,5 @@
 import json
-from typing import Dict, Optional
+from typing import Any, Dict, Optional
 from urllib.error import HTTPError, URLError
 from urllib.parse import urlencode
 from urllib.request import Request, urlopen
@@ -9,7 +9,7 @@ class ProviderError(RuntimeError):
     pass
 
 
-def get_json(url: str, params: Optional[Dict] = None, headers: Optional[Dict] = None) -> Dict:
+def get_json(url: str, params: Optional[Dict] = None, headers: Optional[Dict] = None) -> Any:
     if params:
         url = "{}?{}".format(url, urlencode(params))
     request_headers = {"User-Agent": "akimi-world-cup-radar/1.0"}

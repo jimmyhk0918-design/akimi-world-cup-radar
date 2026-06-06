@@ -67,8 +67,24 @@ workflow-templates/   Pages 部署与数据更新模板
 OpenFootball 更新频率由社区数据维护决定，不是秒级直播接口。系统每小时检查一次：
 源数据拉取或解析失败时任务会失败，并保留上一批有效 JSON，不会用空数据覆盖线上页面。
 
-可靠的免费实时赔率服务通常仍要求 API Key。当前赔率相关页面明确使用
-`model_proxy` 模型代理数据，不代表博彩公司报价。
+实时赔率使用 Odds-API.io。免费账号仍需 API Key；Key 仅由本机更新脚本或服务器端
+任务读取，不进入前端构建。接口未配置、暂时失败或未覆盖某场时，该场自动降级为
+`model_proxy`，页面会明确标识，不冒充博彩公司报价。
+
+配置实时赔率：
+
+1. 在 [Odds-API.io](https://odds-api.io) 注册免费账号并取得 API Key。
+2. 在项目根目录创建 `.env`：
+
+```text
+ODDS_API_KEY=你的Key
+ODDS_BOOKMAKERS=Bet365,Unibet,Betfair,Pinnacle
+```
+
+3. 运行 `bash scripts/update_and_publish.sh`。
+
+系统会按比赛双方名称匹配事件，使用批量赔率接口获取多家公司胜平负赔率，执行去水、
+平均概率、模型融合并保存每小时历史快照。批量接口每次最多处理 10 场，以减少额度消耗。
 
 ## 环境变量与 Secrets
 
@@ -88,7 +104,8 @@ ODDS_API_KEY
 RADAR_DATA_SOURCE=openfootball
 ```
 
-默认数据源不需要 Key。仅在接入 API-Football、football-data.org 或赔率服务时配置对应 Secret。
+赛程数据源不需要 Key。`ODDS_API_KEY` 用于 Odds-API.io 实时赔率；不得以 `VITE_`
+开头，也不得提交到仓库。
 
 ## 系统设置密码
 

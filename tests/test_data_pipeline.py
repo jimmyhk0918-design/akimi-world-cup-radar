@@ -6,6 +6,7 @@ import unittest
 from pathlib import Path
 
 from scripts.generate_data import build_datasets, parse_match_time
+from scripts.providers.odds_api_io import event_key, parse_event_odds
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -45,6 +46,20 @@ class DataPipelineTests(unittest.TestCase):
             )
         self.assertEqual(result.returncode, 0, result.stderr)
         self.assertIn("mock-fixture", result.stdout)
+
+    def test_parses_multi_bookmaker_moneyline_odds(self):
+        with (ROOT / "tests" / "fixtures" / "odds-api-io-event.json").open() as handle:
+            event = json.load(handle)
+        parsed = parse_event_odds(event)
+        self.assertEqual(parsed["bookmaker_count"], 2)
+        self.assertAlmostEqual(sum(parsed["probabilities"].values()), 1.0, places=8)
+        self.assertEqual(parsed["updated_at"], "2026-06-07T01:01:00Z")
+
+    def test_event_key_normalizes_common_country_names(self):
+        self.assertEqual(
+            event_key("United States", "Korea Republic"),
+            event_key("USA", "South Korea"),
+        )
 
 
 if __name__ == "__main__":
