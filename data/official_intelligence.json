@@ -1,0 +1,41 @@
+{
+  "_instructions": {
+    "description": "官方赛前情报人工复核入口。只有 status 为 confirmed/verified/automatic 的项目会影响预测。",
+    "required_for_confirmed_lineup_or_availability": [
+      "source_name",
+      "source_url",
+      "published_at",
+      "summary"
+    ],
+    "impact_range": "-1.0 到 1.0，正数利好本队，负数不利本队",
+    "feature_keys": [
+      "recent_form",
+      "availability",
+      "lineup",
+      "fatigue",
+      "motivation",
+      "tactical",
+      "weather",
+      "market"
+    ],
+    "example": {
+      "wc2026-001": {
+        "features": {
+          "availability": {
+            "status": "confirmed",
+            "home_impact": 0.1,
+            "away_impact": -0.5,
+            "summary": "官方确认客队一名关键球员缺席。",
+            "source_name": "球队官方网站",
+            "source_url": "https://example.com/official-news",
+            "published_at": "2026-06-11T12:00:00Z",
+            "details": [
+              "球员姓名 · 位置 · 缺席原因"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "matches": {}
+}

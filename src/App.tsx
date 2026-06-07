@@ -12,7 +12,7 @@ import {
 } from "recharts";
 import { loadRadarData } from "./lib/data";
 import { confidenceLabel, formatMatchTime, formatUpdatedAt, outcomeLabel, pct, riskTone, signedPct } from "./lib/format";
-import type { DataMetadata, Match, Prediction, RadarData } from "./types";
+import type { DataMetadata, Match, MatchIntelligence, Prediction, RadarData } from "./types";
 
 const nav = [
   { to: "/", label: "赛事总览", icon: Home },
@@ -183,15 +183,16 @@ function MatchDetail({ data }: { data: RadarData }) {
   const odds = data.odds.find((row) => row.match_id === match.match_id)!;
   const divergence = data.divergences.find((row) => row.match_id === match.match_id)!;
   const upset = data.upsets.find((row) => row.match_id === match.match_id)!;
+  const intelligence = data.intelligence.find((row) => row.match_id === match.match_id)!;
   const chart = odds.history.map((item) => ({ ...item, label: new Date(item.time).toLocaleDateString("zh-CN", { month: "numeric", day: "numeric" }) }));
   return <div className="page">
     <PageHeader eyebrow={`${match.group_name} 组 · 第 ${match.round} 轮`} title={`${match.home_team.name} vs ${match.away_team.name}`} description={`${formatMatchTime(match.match_time)} · ${match.city} · ${match.stadium}`}>
       <RiskBadge score={prediction.upset_index} />
     </PageHeader>
     <section className="detail-hero panel">
-      <div className="detail-team"><span>{match.home_team.flag}</span><h2>{match.home_team.name}</h2><small>{match.home_team.english_name} · Elo {match.home_team.elo}</small><FormDots form={match.home_team.form} /></div>
+      <div className="detail-team"><span>{match.home_team.flag}</span><h2>{match.home_team.name}</h2><small>{match.home_team.english_name} · Elo {match.home_team.elo}</small></div>
       <div className="detail-center"><span>模型预测</span><strong>{pct(Math.max(prediction.final_home_win_prob, prediction.final_draw_prob, prediction.final_away_win_prob))}</strong><b>{prediction.prediction_label}</b><small>更新于 06:00</small></div>
-      <div className="detail-team"><span>{match.away_team.flag}</span><h2>{match.away_team.name}</h2><small>{match.away_team.english_name} · Elo {match.away_team.elo}</small><FormDots form={match.away_team.form} /></div>
+      <div className="detail-team"><span>{match.away_team.flag}</span><h2>{match.away_team.name}</h2><small>{match.away_team.english_name} · Elo {match.away_team.elo}</small></div>
     </section>
     <div className="detail-grid">
       <div className="panel span-2"><SectionTitle title="胜平负概率" detail="最终概率融合 Elo、Poisson 与模型代理校准" /><ProbabilityBar prediction={prediction} /><div className="prob-comparison">
@@ -202,12 +203,33 @@ function MatchDetail({ data }: { data: RadarData }) {
       <div className="panel span-2"><SectionTitle title="代理概率变化" detail="用于保持模型页面可用，不代表真实赔率市场" /><div className="chart-wrap"><ResponsiveContainer width="100%" height={250}><LineChart data={chart}><CartesianGrid stroke="#1c2b3d" vertical={false} /><XAxis dataKey="label" stroke="#708198" /><YAxis domain={["dataMin - 0.03", "dataMax + 0.03"]} tickFormatter={(v) => pct(v)} stroke="#708198" /><Tooltip contentStyle={tooltipStyle} formatter={(v: number) => pct(v, 1)} /><Line type="monotone" dataKey="home" name="主胜" stroke="#35a7ff" strokeWidth={3} dot={false} /><Line type="monotone" dataKey="draw" name="平局" stroke="#9aa8ba" strokeWidth={2} dot={false} /><Line type="monotone" dataKey="away" name="客胜" stroke="#21d4a7" strokeWidth={3} dot={false} /></LineChart></ResponsiveContainer></div></div>
       <div className="panel insight-panel"><SectionTitle title="模型判断理由" />{prediction.factors.map((factor) => <p key={factor}><Sparkles size={15} />{factor}</p>)}<div className="summary-box">{prediction.summary}</div></div>
       <div className="panel insight-panel"><SectionTitle title="分歧与风险" /><div className="big-risk"><RiskBadge score={upset.upset_index} /><strong>{divergence.summary}</strong></div>{upset.reason.map((reason) => <p key={reason}><AlertTriangle size={15} />{reason}</p>)}</div>
+      <IntelligencePanel intelligence={intelligence} />
     </div>
   </div>;
 }
 
-function FormDots({ form }: { form: string[] }) {
-  return <div className="form-dots">{form.map((item, i) => <i className={item.toLowerCase()} key={`${item}${i}`}>{item}</i>)}</div>;
+function IntelligencePanel({ intelligence }: { intelligence: MatchIntelligence }) {
+  const statusLabel: Record<string, string> = {
+    confirmed: "官方确认",
+    verified: "已核验",
+    automatic: "自动数据",
+    pending_official: "等待官方",
+    forecast_pending: "等待预报",
+    proxy: "代理数据",
+    missing: "缺少数据",
+  };
+  return <div className="panel span-2 intelligence-panel">
+    <SectionTitle title="赛前八维情报" detail={`可信覆盖 ${intelligence.confirmed_features}/${intelligence.total_features} · 完整度 ${pct(intelligence.completeness)}`} />
+    <div className="intelligence-grid">{Object.entries(intelligence.features).map(([key, feature]) =>
+      <article className="intelligence-item" key={key}>
+        <div><strong>{feature.label}</strong><span className={`intel-status ${feature.status}`}>{statusLabel[feature.status] ?? feature.status}</span></div>
+        <p>{feature.summary}</p>
+        <small>主队影响 {signedPct(feature.home_impact)} · 客队影响 {signedPct(feature.away_impact)}</small>
+        {feature.source_url && <a href={feature.source_url} target="_blank" rel="noreferrer">{feature.source_name || "查看来源"} <ChevronRight size={12} /></a>}
+      </article>
+    )}</div>
+    <div className="intelligence-warning"><AlertTriangle size={15} />{intelligence.warning}</div>
+  </div>;
 }
 
 function OddsPage({ data }: { data: RadarData }) {

@@ -11,13 +11,7 @@
       "english_name": "Mexico",
       "flag": "🇲🇽",
       "elo": 1840,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "RSA",
@@ -25,13 +19,7 @@
       "english_name": "South Africa",
       "flag": "🇿🇦",
       "elo": 1635,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-11T19:00:00+00:00",
     "stadium": "Mexico City",
@@ -52,13 +40,7 @@
       "english_name": "South Korea",
       "flag": "🇰🇷",
       "elo": 1765,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CZE",
@@ -66,13 +48,7 @@
       "english_name": "Czech Republic",
       "flag": "🇨🇿",
       "elo": 1825,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-12T02:00:00+00:00",
     "stadium": "Guadalajara (Zapopan)",
@@ -93,13 +69,7 @@
       "english_name": "Czech Republic",
       "flag": "🇨🇿",
       "elo": 1825,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "RSA",
@@ -107,13 +77,7 @@
       "english_name": "South Africa",
       "flag": "🇿🇦",
       "elo": 1635,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-18T16:00:00+00:00",
     "stadium": "Atlanta",
@@ -134,13 +98,7 @@
       "english_name": "Mexico",
       "flag": "🇲🇽",
       "elo": 1840,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "KOR",
@@ -148,13 +106,7 @@
       "english_name": "South Korea",
       "flag": "🇰🇷",
       "elo": 1765,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-19T01:00:00+00:00",
     "stadium": "Guadalajara (Zapopan)",
@@ -175,13 +127,7 @@
       "english_name": "Czech Republic",
       "flag": "🇨🇿",
       "elo": 1825,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "MEX",
@@ -189,13 +135,7 @@
       "english_name": "Mexico",
       "flag": "🇲🇽",
       "elo": 1840,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-25T01:00:00+00:00",
     "stadium": "Mexico City",
@@ -216,13 +156,7 @@
       "english_name": "South Africa",
       "flag": "🇿🇦",
       "elo": 1635,
-      "form": [
-        "D",
-        "W",
-        "D",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "KOR",
@@ -230,13 +164,7 @@
       "english_name": "South Korea",
       "flag": "🇰🇷",
       "elo": 1765,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-25T01:00:00+00:00",
     "stadium": "Monterrey (Guadalupe)",
@@ -257,13 +185,7 @@
       "english_name": "Canada",
       "flag": "🇨🇦",
       "elo": 1810,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "BIH",
@@ -271,13 +193,7 @@
       "english_name": "Bosnia & Herzegovina",
       "flag": "🇧🇦",
       "elo": 1680,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-12T19:00:00+00:00",
     "stadium": "Toronto",
@@ -298,13 +214,7 @@
       "english_name": "Qatar",
       "flag": "🇶🇦",
       "elo": 1620,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "SUI",
@@ -312,13 +222,7 @@
       "english_name": "Switzerland",
       "flag": "🇨🇭",
       "elo": 1880,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-13T19:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
@@ -339,13 +243,7 @@
       "english_name": "Switzerland",
       "flag": "🇨🇭",
       "elo": 1880,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "BIH",
@@ -353,13 +251,7 @@
       "english_name": "Bosnia & Herzegovina",
       "flag": "🇧🇦",
       "elo": 1680,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-18T19:00:00+00:00",
     "stadium": "Los Angeles (Inglewood)",
@@ -380,13 +272,7 @@
       "english_name": "Canada",
       "flag": "🇨🇦",
       "elo": 1810,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "QAT",
@@ -394,13 +280,7 @@
       "english_name": "Qatar",
       "flag": "🇶🇦",
       "elo": 1620,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-18T22:00:00+00:00",
     "stadium": "Vancouver",
@@ -421,13 +301,7 @@
       "english_name": "Switzerland",
       "flag": "🇨🇭",
       "elo": 1880,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CAN",
@@ -435,13 +309,7 @@
       "english_name": "Canada",
       "flag": "🇨🇦",
       "elo": 1810,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-24T19:00:00+00:00",
     "stadium": "Vancouver",
@@ -462,13 +330,7 @@
       "english_name": "Bosnia & Herzegovina",
       "flag": "🇧🇦",
       "elo": 1680,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "QAT",
@@ -476,13 +338,7 @@
       "english_name": "Qatar",
       "flag": "🇶🇦",
       "elo": 1620,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-24T19:00:00+00:00",
     "stadium": "Seattle",
@@ -503,13 +359,7 @@
       "english_name": "Brazil",
       "flag": "🇧🇷",
       "elo": 2028,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "MAR",
@@ -517,13 +367,7 @@
       "english_name": "Morocco",
       "flag": "🇲🇦",
       "elo": 1940,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-13T22:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
@@ -544,13 +388,7 @@
       "english_name": "Haiti",
       "flag": "🇭🇹",
       "elo": 1520,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "SCO",
@@ -558,13 +396,7 @@
       "english_name": "Scotland",
       "flag": "🏴",
       "elo": 1780,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-14T01:00:00+00:00",
     "stadium": "Boston (Foxborough)",
@@ -585,13 +417,7 @@
       "english_name": "Scotland",
       "flag": "🏴",
       "elo": 1780,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "MAR",
@@ -599,13 +425,7 @@
       "english_name": "Morocco",
       "flag": "🇲🇦",
       "elo": 1940,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-19T22:00:00+00:00",
     "stadium": "Boston (Foxborough)",
@@ -626,13 +446,7 @@
       "english_name": "Brazil",
       "flag": "🇧🇷",
       "elo": 2028,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "HAI",
@@ -640,13 +454,7 @@
       "english_name": "Haiti",
       "flag": "🇭🇹",
       "elo": 1520,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-20T00:30:00+00:00",
     "stadium": "Philadelphia",
@@ -667,13 +475,7 @@
       "english_name": "Scotland",
       "flag": "🏴",
       "elo": 1780,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "BRA",
@@ -681,13 +483,7 @@
       "english_name": "Brazil",
       "flag": "🇧🇷",
       "elo": 2028,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-24T22:00:00+00:00",
     "stadium": "Miami (Miami Gardens)",
@@ -708,13 +504,7 @@
       "english_name": "Morocco",
       "flag": "🇲🇦",
       "elo": 1940,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "HAI",
@@ -722,13 +512,7 @@
       "english_name": "Haiti",
       "flag": "🇭🇹",
       "elo": 1520,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-24T22:00:00+00:00",
     "stadium": "Atlanta",
@@ -749,13 +533,7 @@
       "english_name": "USA",
       "flag": "🇺🇸",
       "elo": 1830,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "PAR",
@@ -763,13 +541,7 @@
       "english_name": "Paraguay",
       "flag": "🇵🇾",
       "elo": 1770,
-      "form": [
-        "D",
-        "W",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-13T01:00:00+00:00",
     "stadium": "Los Angeles (Inglewood)",
@@ -790,13 +562,7 @@
       "english_name": "Australia",
       "flag": "🇦🇺",
       "elo": 1785,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "TUR",
@@ -804,13 +570,7 @@
       "english_name": "Turkey",
       "flag": "🇹🇷",
       "elo": 1870,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-14T04:00:00+00:00",
     "stadium": "Vancouver",
@@ -831,13 +591,7 @@
       "english_name": "USA",
       "flag": "🇺🇸",
       "elo": 1830,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "AUS",
@@ -845,13 +599,7 @@
       "english_name": "Australia",
       "flag": "🇦🇺",
       "elo": 1785,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-19T19:00:00+00:00",
     "stadium": "Seattle",
@@ -872,13 +620,7 @@
       "english_name": "Turkey",
       "flag": "🇹🇷",
       "elo": 1870,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "PAR",
@@ -886,13 +628,7 @@
       "english_name": "Paraguay",
       "flag": "🇵🇾",
       "elo": 1770,
-      "form": [
-        "D",
-        "W",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-20T03:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
@@ -913,13 +649,7 @@
       "english_name": "Turkey",
       "flag": "🇹🇷",
       "elo": 1870,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "USA",
@@ -927,13 +657,7 @@
       "english_name": "USA",
       "flag": "🇺🇸",
       "elo": 1830,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-26T02:00:00+00:00",
     "stadium": "Los Angeles (Inglewood)",
@@ -954,13 +678,7 @@
       "english_name": "Paraguay",
       "flag": "🇵🇾",
       "elo": 1770,
-      "form": [
-        "D",
-        "W",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "AUS",
@@ -968,13 +686,7 @@
       "english_name": "Australia",
       "flag": "🇦🇺",
       "elo": 1785,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-26T02:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
@@ -995,13 +707,7 @@
       "english_name": "Germany",
       "flag": "🇩🇪",
       "elo": 1986,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CUW",
@@ -1009,13 +715,7 @@
       "english_name": "Curaçao",
       "flag": "🇨🇼",
       "elo": 1575,
-      "form": [
-        "L",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-14T17:00:00+00:00",
     "stadium": "Houston",
@@ -1036,13 +736,7 @@
       "english_name": "Ivory Coast",
       "flag": "🇨🇮",
       "elo": 1790,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "ECU",
@@ -1050,13 +744,7 @@
       "english_name": "Ecuador",
       "flag": "🇪🇨",
       "elo": 1885,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-14T23:00:00+00:00",
     "stadium": "Philadelphia",
@@ -1077,13 +765,7 @@
       "english_name": "Germany",
       "flag": "🇩🇪",
       "elo": 1986,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CIV",
@@ -1091,13 +773,7 @@
       "english_name": "Ivory Coast",
       "flag": "🇨🇮",
       "elo": 1790,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-20T20:00:00+00:00",
     "stadium": "Toronto",
@@ -1118,13 +794,7 @@
       "english_name": "Ecuador",
       "flag": "🇪🇨",
       "elo": 1885,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CUW",
@@ -1132,13 +802,7 @@
       "english_name": "Curaçao",
       "flag": "🇨🇼",
       "elo": 1575,
-      "form": [
-        "L",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-21T00:00:00+00:00",
     "stadium": "Kansas City",
@@ -1159,13 +823,7 @@
       "english_name": "Curaçao",
       "flag": "🇨🇼",
       "elo": 1575,
-      "form": [
-        "L",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CIV",
@@ -1173,13 +831,7 @@
       "english_name": "Ivory Coast",
       "flag": "🇨🇮",
       "elo": 1790,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-25T20:00:00+00:00",
     "stadium": "Philadelphia",
@@ -1200,13 +852,7 @@
       "english_name": "Ecuador",
       "flag": "🇪🇨",
       "elo": 1885,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "GER",
@@ -1214,13 +860,7 @@
       "english_name": "Germany",
       "flag": "🇩🇪",
       "elo": 1986,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-25T20:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
@@ -1241,13 +881,7 @@
       "english_name": "Netherlands",
       "flag": "🇳🇱",
       "elo": 1981,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "JPN",
@@ -1255,13 +889,7 @@
       "english_name": "Japan",
       "flag": "🇯🇵",
       "elo": 1900,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "L",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-14T20:00:00+00:00",
     "stadium": "Dallas (Arlington)",
@@ -1282,13 +910,7 @@
       "english_name": "Sweden",
       "flag": "🇸🇪",
       "elo": 1810,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "TUN",
@@ -1296,13 +918,7 @@
       "english_name": "Tunisia",
       "flag": "🇹🇳",
       "elo": 1685,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-15T02:00:00+00:00",
     "stadium": "Monterrey (Guadalupe)",
@@ -1323,13 +939,7 @@
       "english_name": "Netherlands",
       "flag": "🇳🇱",
       "elo": 1981,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "SWE",
@@ -1337,13 +947,7 @@
       "english_name": "Sweden",
       "flag": "🇸🇪",
       "elo": 1810,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-20T17:00:00+00:00",
     "stadium": "Houston",
@@ -1364,13 +968,7 @@
       "english_name": "Tunisia",
       "flag": "🇹🇳",
       "elo": 1685,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "JPN",
@@ -1378,13 +976,7 @@
       "english_name": "Japan",
       "flag": "🇯🇵",
       "elo": 1900,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "L",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-21T04:00:00+00:00",
     "stadium": "Monterrey (Guadalupe)",
@@ -1405,13 +997,7 @@
       "english_name": "Japan",
       "flag": "🇯🇵",
       "elo": 1900,
-      "form": [
-        "W",
-        "L",
-        "D",
-        "L",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "SWE",
@@ -1419,13 +1005,7 @@
       "english_name": "Sweden",
       "flag": "🇸🇪",
       "elo": 1810,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-25T23:00:00+00:00",
     "stadium": "Dallas (Arlington)",
@@ -1446,13 +1026,7 @@
       "english_name": "Tunisia",
       "flag": "🇹🇳",
       "elo": 1685,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "NED",
@@ -1460,13 +1034,7 @@
       "english_name": "Netherlands",
       "flag": "🇳🇱",
       "elo": 1981,
-      "form": [
-        "W",
-        "D",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-25T23:00:00+00:00",
     "stadium": "Kansas City",
@@ -1487,13 +1055,7 @@
       "english_name": "Belgium",
       "flag": "🇧🇪",
       "elo": 1930,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "EGY",
@@ -1501,13 +1063,7 @@
       "english_name": "Egypt",
       "flag": "🇪🇬",
       "elo": 1750,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-15T19:00:00+00:00",
     "stadium": "Seattle",
@@ -1528,13 +1084,7 @@
       "english_name": "Iran",
       "flag": "🇮🇷",
       "elo": 1815,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "NZL",
@@ -1542,13 +1092,7 @@
       "english_name": "New Zealand",
       "flag": "🇳🇿",
       "elo": 1550,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-16T01:00:00+00:00",
     "stadium": "Los Angeles (Inglewood)",
@@ -1569,13 +1113,7 @@
       "english_name": "Belgium",
       "flag": "🇧🇪",
       "elo": 1930,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "IRN",
@@ -1583,13 +1121,7 @@
       "english_name": "Iran",
       "flag": "🇮🇷",
       "elo": 1815,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-21T19:00:00+00:00",
     "stadium": "Los Angeles (Inglewood)",
@@ -1610,13 +1142,7 @@
       "english_name": "New Zealand",
       "flag": "🇳🇿",
       "elo": 1550,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "EGY",
@@ -1624,13 +1150,7 @@
       "english_name": "Egypt",
       "flag": "🇪🇬",
       "elo": 1750,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-22T01:00:00+00:00",
     "stadium": "Vancouver",
@@ -1651,13 +1171,7 @@
       "english_name": "Egypt",
       "flag": "🇪🇬",
       "elo": 1750,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "IRN",
@@ -1665,13 +1179,7 @@
       "english_name": "Iran",
       "flag": "🇮🇷",
       "elo": 1815,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-27T03:00:00+00:00",
     "stadium": "Seattle",
@@ -1692,13 +1200,7 @@
       "english_name": "New Zealand",
       "flag": "🇳🇿",
       "elo": 1550,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "BEL",
@@ -1706,13 +1208,7 @@
       "english_name": "Belgium",
       "flag": "🇧🇪",
       "elo": 1930,
-      "form": [
-        "W",
-        "D",
-        "L",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-27T03:00:00+00:00",
     "stadium": "Vancouver",
@@ -1733,13 +1229,7 @@
       "english_name": "Spain",
       "flag": "🇪🇸",
       "elo": 2094,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CPV",
@@ -1747,13 +1237,7 @@
       "english_name": "Cape Verde",
       "flag": "🇨🇻",
       "elo": 1640,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-15T16:00:00+00:00",
     "stadium": "Atlanta",
@@ -1774,13 +1258,7 @@
       "english_name": "Saudi Arabia",
       "flag": "🇸🇦",
       "elo": 1610,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "URU",
@@ -1788,13 +1266,7 @@
       "english_name": "Uruguay",
       "flag": "🇺🇾",
       "elo": 1950,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-15T22:00:00+00:00",
     "stadium": "Miami (Miami Gardens)",
@@ -1815,13 +1287,7 @@
       "english_name": "Spain",
       "flag": "🇪🇸",
       "elo": 2094,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "KSA",
@@ -1829,13 +1295,7 @@
       "english_name": "Saudi Arabia",
       "flag": "🇸🇦",
       "elo": 1610,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-21T16:00:00+00:00",
     "stadium": "Atlanta",
@@ -1856,13 +1316,7 @@
       "english_name": "Uruguay",
       "flag": "🇺🇾",
       "elo": 1950,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CPV",
@@ -1870,13 +1324,7 @@
       "english_name": "Cape Verde",
       "flag": "🇨🇻",
       "elo": 1640,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-21T22:00:00+00:00",
     "stadium": "Miami (Miami Gardens)",
@@ -1897,13 +1345,7 @@
       "english_name": "Cape Verde",
       "flag": "🇨🇻",
       "elo": 1640,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "KSA",
@@ -1911,13 +1353,7 @@
       "english_name": "Saudi Arabia",
       "flag": "🇸🇦",
       "elo": 1610,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-27T00:00:00+00:00",
     "stadium": "Houston",
@@ -1938,13 +1374,7 @@
       "english_name": "Uruguay",
       "flag": "🇺🇾",
       "elo": 1950,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "ESP",
@@ -1952,13 +1382,7 @@
       "english_name": "Spain",
       "flag": "🇪🇸",
       "elo": 2094,
-      "form": [
-        "D",
-        "W",
-        "W",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-27T00:00:00+00:00",
     "stadium": "Guadalajara (Zapopan)",
@@ -1979,13 +1403,7 @@
       "english_name": "France",
       "flag": "🇫🇷",
       "elo": 2076,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "SEN",
@@ -1993,13 +1411,7 @@
       "english_name": "Senegal",
       "flag": "🇸🇳",
       "elo": 1835,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-16T19:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
@@ -2020,13 +1432,7 @@
       "english_name": "Iraq",
       "flag": "🇮🇶",
       "elo": 1630,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "NOR",
@@ -2034,13 +1440,7 @@
       "english_name": "Norway",
       "flag": "🇳🇴",
       "elo": 1845,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-16T22:00:00+00:00",
     "stadium": "Boston (Foxborough)",
@@ -2061,13 +1461,7 @@
       "english_name": "France",
       "flag": "🇫🇷",
       "elo": 2076,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "IRQ",
@@ -2075,13 +1469,7 @@
       "english_name": "Iraq",
       "flag": "🇮🇶",
       "elo": 1630,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-22T21:00:00+00:00",
     "stadium": "Philadelphia",
@@ -2102,13 +1490,7 @@
       "english_name": "Norway",
       "flag": "🇳🇴",
       "elo": 1845,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "SEN",
@@ -2116,13 +1498,7 @@
       "english_name": "Senegal",
       "flag": "🇸🇳",
       "elo": 1835,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-23T00:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
@@ -2143,13 +1519,7 @@
       "english_name": "Norway",
       "flag": "🇳🇴",
       "elo": 1845,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "D",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "FRA",
@@ -2157,13 +1527,7 @@
       "english_name": "France",
       "flag": "🇫🇷",
       "elo": 2076,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-26T19:00:00+00:00",
     "stadium": "Boston (Foxborough)",
@@ -2184,13 +1548,7 @@
       "english_name": "Senegal",
       "flag": "🇸🇳",
       "elo": 1835,
-      "form": [
-        "D",
-        "D",
-        "D",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "IRQ",
@@ -2198,13 +1556,7 @@
       "english_name": "Iraq",
       "flag": "🇮🇶",
       "elo": 1630,
-      "form": [
-        "D",
-        "D",
-        "W",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-26T19:00:00+00:00",
     "stadium": "Toronto",
@@ -2225,13 +1577,7 @@
       "english_name": "Argentina",
       "flag": "🇦🇷",
       "elo": 2118,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "ALG",
@@ -2239,13 +1585,7 @@
       "english_name": "Algeria",
       "flag": "🇩🇿",
       "elo": 1760,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-17T01:00:00+00:00",
     "stadium": "Kansas City",
@@ -2266,13 +1606,7 @@
       "english_name": "Austria",
       "flag": "🇦🇹",
       "elo": 1875,
-      "form": [
-        "D",
-        "L",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "JOR",
@@ -2280,13 +1614,7 @@
       "english_name": "Jordan",
       "flag": "🇯🇴",
       "elo": 1580,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-17T04:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
@@ -2307,13 +1635,7 @@
       "english_name": "Argentina",
       "flag": "🇦🇷",
       "elo": 2118,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "AUT",
@@ -2321,13 +1643,7 @@
       "english_name": "Austria",
       "flag": "🇦🇹",
       "elo": 1875,
-      "form": [
-        "D",
-        "L",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-22T17:00:00+00:00",
     "stadium": "Dallas (Arlington)",
@@ -2348,13 +1664,7 @@
       "english_name": "Jordan",
       "flag": "🇯🇴",
       "elo": 1580,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "ALG",
@@ -2362,13 +1672,7 @@
       "english_name": "Algeria",
       "flag": "🇩🇿",
       "elo": 1760,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-23T03:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
@@ -2389,13 +1693,7 @@
       "english_name": "Algeria",
       "flag": "🇩🇿",
       "elo": 1760,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "AUT",
@@ -2403,13 +1701,7 @@
       "english_name": "Austria",
       "flag": "🇦🇹",
       "elo": 1875,
-      "form": [
-        "D",
-        "L",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-28T02:00:00+00:00",
     "stadium": "Kansas City",
@@ -2430,13 +1722,7 @@
       "english_name": "Jordan",
       "flag": "🇯🇴",
       "elo": 1580,
-      "form": [
-        "W",
-        "W",
-        "L",
-        "W",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "ARG",
@@ -2444,13 +1730,7 @@
       "english_name": "Argentina",
       "flag": "🇦🇷",
       "elo": 2118,
-      "form": [
-        "W",
-        "W",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-28T02:00:00+00:00",
     "stadium": "Dallas (Arlington)",
@@ -2471,13 +1751,7 @@
       "english_name": "Portugal",
       "flag": "🇵🇹",
       "elo": 2012,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "COD",
@@ -2485,13 +1759,7 @@
       "english_name": "DR Congo",
       "flag": "🇨🇩",
       "elo": 1650,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-17T17:00:00+00:00",
     "stadium": "Houston",
@@ -2512,13 +1780,7 @@
       "english_name": "Uzbekistan",
       "flag": "🇺🇿",
       "elo": 1675,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "COL",
@@ -2526,13 +1788,7 @@
       "english_name": "Colombia",
       "flag": "🇨🇴",
       "elo": 1960,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-18T02:00:00+00:00",
     "stadium": "Mexico City",
@@ -2553,13 +1809,7 @@
       "english_name": "Portugal",
       "flag": "🇵🇹",
       "elo": 2012,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "UZB",
@@ -2567,13 +1817,7 @@
       "english_name": "Uzbekistan",
       "flag": "🇺🇿",
       "elo": 1675,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-23T17:00:00+00:00",
     "stadium": "Houston",
@@ -2594,13 +1838,7 @@
       "english_name": "Colombia",
       "flag": "🇨🇴",
       "elo": 1960,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "COD",
@@ -2608,13 +1846,7 @@
       "english_name": "DR Congo",
       "flag": "🇨🇩",
       "elo": 1650,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-24T02:00:00+00:00",
     "stadium": "Guadalajara (Zapopan)",
@@ -2635,13 +1867,7 @@
       "english_name": "Colombia",
       "flag": "🇨🇴",
       "elo": 1960,
-      "form": [
-        "L",
-        "W",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "POR",
@@ -2649,13 +1875,7 @@
       "english_name": "Portugal",
       "flag": "🇵🇹",
       "elo": 2012,
-      "form": [
-        "W",
-        "D",
-        "W",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-27T23:30:00+00:00",
     "stadium": "Miami (Miami Gardens)",
@@ -2676,13 +1896,7 @@
       "english_name": "DR Congo",
       "flag": "🇨🇩",
       "elo": 1650,
-      "form": [
-        "W",
-        "W",
-        "D",
-        "D",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "UZB",
@@ -2690,13 +1904,7 @@
       "english_name": "Uzbekistan",
       "flag": "🇺🇿",
       "elo": 1675,
-      "form": [
-        "L",
-        "L",
-        "L",
-        "W",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-27T23:30:00+00:00",
     "stadium": "Atlanta",
@@ -2717,13 +1925,7 @@
       "english_name": "England",
       "flag": "🏴",
       "elo": 2047,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CRO",
@@ -2731,13 +1933,7 @@
       "english_name": "Croatia",
       "flag": "🇭🇷",
       "elo": 1905,
-      "form": [
-        "L",
-        "D",
-        "W",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-17T20:00:00+00:00",
     "stadium": "Dallas (Arlington)",
@@ -2758,13 +1954,7 @@
       "english_name": "Ghana",
       "flag": "🇬🇭",
       "elo": 1660,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "PAN",
@@ -2772,13 +1962,7 @@
       "english_name": "Panama",
       "flag": "🇵🇦",
       "elo": 1690,
-      "form": [
-        "L",
-        "D",
-        "D",
-        "L",
-        "D"
-      ]
+      "form": []
     },
     "match_time": "2026-06-17T23:00:00+00:00",
     "stadium": "Toronto",
@@ -2799,13 +1983,7 @@
       "english_name": "England",
       "flag": "🏴",
       "elo": 2047,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "GHA",
@@ -2813,13 +1991,7 @@
       "english_name": "Ghana",
       "flag": "🇬🇭",
       "elo": 1660,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-23T20:00:00+00:00",
     "stadium": "Boston (Foxborough)",
@@ -2840,13 +2012,7 @@
       "english_name": "Panama",
       "flag": "🇵🇦",
       "elo": 1690,
-      "form": [
-        "L",
-        "D",
-        "D",
-        "L",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "CRO",
@@ -2854,13 +2020,7 @@
       "english_name": "Croatia",
       "flag": "🇭🇷",
       "elo": 1905,
-      "form": [
-        "L",
-        "D",
-        "W",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-23T23:00:00+00:00",
     "stadium": "Toronto",
@@ -2881,13 +2041,7 @@
       "english_name": "Panama",
       "flag": "🇵🇦",
       "elo": 1690,
-      "form": [
-        "L",
-        "D",
-        "D",
-        "L",
-        "D"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "ENG",
@@ -2895,13 +2049,7 @@
       "english_name": "England",
       "flag": "🏴",
       "elo": 2047,
-      "form": [
-        "W",
-        "L",
-        "W",
-        "D",
-        "W"
-      ]
+      "form": []
     },
     "match_time": "2026-06-27T21:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
@@ -2922,13 +2070,7 @@
       "english_name": "Croatia",
       "flag": "🇭🇷",
       "elo": 1905,
-      "form": [
-        "L",
-        "D",
-        "W",
-        "L",
-        "W"
-      ]
+      "form": []
     },
     "away_team": {
       "code": "GHA",
@@ -2936,13 +2078,7 @@
       "english_name": "Ghana",
       "flag": "🇬🇭",
       "elo": 1660,
-      "form": [
-        "W",
-        "L",
-        "L",
-        "W",
-        "L"
-      ]
+      "form": []
     },
     "match_time": "2026-06-27T21:00:00+00:00",
     "stadium": "Philadelphia",

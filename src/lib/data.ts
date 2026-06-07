@@ -9,7 +9,7 @@ async function json<T>(name: string): Promise<T> {
 }
 
 export async function loadRadarData(): Promise<RadarData> {
-  const [matches, predictions, scores, odds, upsets, divergences, accuracy, reviews, backtest, metadata] =
+  const [matches, predictions, scores, odds, upsets, divergences, accuracy, reviews, backtest, metadata, intelligence] =
     await Promise.all([
       json<RadarData["matches"]>("matches"),
       json<RadarData["predictions"]>("predictions"),
@@ -21,6 +21,7 @@ export async function loadRadarData(): Promise<RadarData> {
       json<RadarData["reviews"]>("review"),
       json<RadarData["backtest"]>("backtest"),
       json<RadarData["metadata"]>("data_metadata"),
+      json<RadarData["intelligence"]>("match_intelligence"),
     ]);
-  return { matches, predictions, scores, odds, upsets, divergences, accuracy, reviews, backtest, metadata };
+  return { matches, predictions, scores, odds, upsets, divergences, accuracy, reviews, backtest, metadata, intelligence };
 }

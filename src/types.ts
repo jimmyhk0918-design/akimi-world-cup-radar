@@ -49,6 +49,31 @@ export interface Prediction {
   summary: string;
   factors: string[];
   updated_at: string;
+  intelligence_completeness: number;
+}
+
+export interface IntelligenceFeature {
+  label: string;
+  status: string;
+  home_impact: number;
+  away_impact: number;
+  summary: string;
+  source_name: string;
+  source_url: string;
+  published_at: string;
+  updated_at: string;
+  details: string[];
+}
+
+export interface MatchIntelligence {
+  match_id: string;
+  features: Record<string, IntelligenceFeature>;
+  completeness: number;
+  confirmed_features: number;
+  total_features: number;
+  home_context_adjustment: number;
+  away_context_adjustment: number;
+  warning: string;
 }
 
 export interface ScoreProbability {
@@ -166,4 +191,5 @@ export interface RadarData {
   reviews: Review[];
   backtest: BacktestRow[];
   metadata: DataMetadata;
+  intelligence: MatchIntelligence[];
 }

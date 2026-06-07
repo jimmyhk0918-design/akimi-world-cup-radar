@@ -1,4 +1,3 @@
-import hashlib
 import json
 import os
 import re
@@ -14,6 +13,12 @@ try:
         matrix_to_1x2,
         score_matrix,
         totals_from_matrix,
+    )
+    from .models.context import (
+        adjust_expected_goals,
+        default_intelligence,
+        merge_intelligence,
+        score_intelligence,
     )
     from .providers.http import ProviderError
     from .providers.odds_api_io import (
@@ -32,6 +37,12 @@ except ImportError:
         matrix_to_1x2,
         score_matrix,
         totals_from_matrix,
+    )
+    from models.context import (
+        adjust_expected_goals,
+        default_intelligence,
+        merge_intelligence,
+        score_intelligence,
     )
     from providers.http import ProviderError
     from providers.odds_api_io import (
@@ -161,16 +172,13 @@ def is_known_team(name):
 
 def team(name):
     code, chinese, flag, elo = TEAM_INFO.get(name, (name[:3].upper(), name, "⚽", 1700))
-    digest = hashlib.sha256(name.encode("utf-8")).digest()
-    form_values = ("W", "D", "W", "L", "W", "W", "D", "D")
-    form = [form_values[(digest[index] + index) % len(form_values)] for index in range(5)]
     return {
         "code": code,
         "name": chinese,
         "english_name": name,
         "flag": flag,
         "elo": elo,
-        "form": form,
+        "form": [],
     }
 
 
@@ -218,6 +226,14 @@ def load_existing_odds():
             return {row["match_id"]: row for row in json.load(handle)}
     except (OSError, ValueError, KeyError):
         return {}
+
+
+def load_official_intelligence():
+    path = ROOT / "data" / "official_intelligence.json"
+    if not path.exists():
+        return {}
+    with path.open(encoding="utf-8") as handle:
+        return json.load(handle).get("matches", {})
 
 
 def fetch_market_odds(source_rows):
@@ -304,6 +320,7 @@ def build_datasets(
     real_odds=None,
     odds_state=None,
     previous_odds=None,
+    intelligence_overrides=None,
 ):
     real_odds = real_odds or {}
     odds_state = odds_state or {
@@ -312,6 +329,7 @@ def build_datasets(
         "notice": "实时赔率未请求。",
     }
     previous_odds = previous_odds or {}
+    intelligence_overrides = intelligence_overrides or {}
     usable_rows = [
         row for row in source_rows
         if is_known_team(row.get("team1", "")) and is_known_team(row.get("team2", ""))
@@ -320,7 +338,7 @@ def build_datasets(
         raise RuntimeError("Provider returned no resolved World Cup fixtures")
 
     matches, predictions, score_rows = [], [], []
-    odds_rows, upsets, divergences, reviews = [], [], [], []
+    odds_rows, upsets, divergences, reviews, intelligence_rows = [], [], [], [], []
 
     for index, row in enumerate(usable_rows, 1):
         match_id = "wc2026-{:03d}".format(int(row.get("num", index)))
@@ -353,6 +371,16 @@ def build_datasets(
         rating_delta = (home["elo"] - away["elo"]) / 400
         lambda_home = max(0.48, 1.34 + rating_delta * 0.82)
         lambda_away = max(0.42, 1.08 - rating_delta * 0.64)
+        real_market = real_odds.get(event_key(row["team1"], row["team2"]))
+        intelligence = default_intelligence(match_id, market_is_real=bool(real_market))
+        intelligence = merge_intelligence(
+            intelligence, intelligence_overrides.get(match_id, {})
+        )
+        intelligence = score_intelligence(intelligence)
+        lambda_home, lambda_away = adjust_expected_goals(
+            lambda_home, lambda_away, intelligence
+        )
+        intelligence_rows.append(intelligence)
         matrix = score_matrix(lambda_home, lambda_away)
         elo_probs = elo_to_1x2(home["elo"], away["elo"])
         poisson_probs = matrix_to_1x2(matrix)
@@ -367,7 +395,6 @@ def build_datasets(
         }
         total_proxy = sum(market_proxy.values())
         market_proxy = {key: value / total_proxy for key, value in market_proxy.items()}
-        real_market = real_odds.get(event_key(row["team1"], row["team2"]))
         market = real_market["probabilities"] if real_market else market_proxy
         market_weight = REAL_MARKET_WEIGHT if real_market else PROXY_MARKET_WEIGHT
         final = blend(model, market, market_weight)
@@ -376,6 +403,8 @@ def build_datasets(
         ordered = sorted(final.values(), reverse=True)
         confidence_gap = ordered[0] - ordered[1]
         confidence = "high" if confidence_gap > 0.19 else ("medium" if confidence_gap > 0.08 else "low")
+        if intelligence["completeness"] < 0.5 and confidence == "high":
+            confidence = "medium"
         divergence = {key: model[key] - market[key] for key in model}
         largest = max(divergence, key=lambda key: abs(divergence[key]))
         upset = int(min(96, max(18, (1 - max(final.values())) * 82 + abs(divergence[largest]) * 250)))
@@ -402,7 +431,9 @@ def build_datasets(
             "prediction_label": "{}，{}信心".format(
                 label_map[winner], {"high": "高", "medium": "中", "low": "低"}[confidence]
             ),
-            "summary": "{}与{}的赛前模型预测，需结合临场阵容复核。".format(home["name"], away["name"]),
+            "summary": "{}与{}的赛前模型预测；动态情报完整度 {}%。".format(
+                home["name"], away["name"], round(intelligence["completeness"] * 100)
+            ),
             "factors": [
                 "Elo 强度差异",
                 "Poisson 预期进球",
@@ -410,7 +441,9 @@ def build_datasets(
                     round(market_weight * 100),
                     "实时赔率" if real_market else "模型代理",
                 ),
+                "动态情报 {}/8 项可信".format(intelligence["confirmed_features"]),
             ],
+            "intelligence_completeness": intelligence["completeness"],
             "updated_at": generated_at.isoformat(),
         })
         score_rows.append({
@@ -597,6 +630,7 @@ def build_datasets(
         "review": reviews,
         "backtest": backtest,
         "data_metadata": metadata,
+        "match_intelligence": intelligence_rows,
     }
 
 
@@ -611,6 +645,7 @@ def main():
         real_odds=real_odds,
         odds_state=odds_state,
         previous_odds=load_existing_odds(),
+        intelligence_overrides=load_official_intelligence(),
     )
     for name, payload in datasets.items():
         write(name, payload)
