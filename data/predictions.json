@@ -16,15 +16,17 @@
     "under_25_prob": 0.5409,
     "btts_prob": 0.4376,
     "upset_index": 35,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "墨西哥与南非的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "墨西哥与南非的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-002",
@@ -45,13 +47,15 @@
     "upset_index": 51,
     "confidence_level": "low",
     "prediction_label": "客队优势，低信心",
-    "summary": "韩国与捷克的赛前模型预测，需结合临场阵容复核。",
+    "summary": "韩国与捷克的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-003",
@@ -70,15 +74,17 @@
     "under_25_prob": 0.5426,
     "btts_prob": 0.444,
     "upset_index": 34,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "捷克与南非的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "捷克与南非的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-004",
@@ -97,15 +103,17 @@
     "under_25_prob": 0.5558,
     "btts_prob": 0.4785,
     "upset_index": 43,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "墨西哥与韩国的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "墨西哥与韩国的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-005",
@@ -126,13 +134,15 @@
     "upset_index": 51,
     "confidence_level": "low",
     "prediction_label": "主队优势，低信心",
-    "summary": "捷克与墨西哥的赛前模型预测，需结合临场阵容复核。",
+    "summary": "捷克与墨西哥的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-006",
@@ -153,13 +163,15 @@
     "upset_index": 48,
     "confidence_level": "medium",
     "prediction_label": "客队优势，中信心",
-    "summary": "南非与韩国的赛前模型预测，需结合临场阵容复核。",
+    "summary": "南非与韩国的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-007",
@@ -178,15 +190,17 @@
     "under_25_prob": 0.5495,
     "btts_prob": 0.4651,
     "upset_index": 41,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "加拿大与波黑的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "加拿大与波黑的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-008",
@@ -205,15 +219,17 @@
     "under_25_prob": 0.5953,
     "btts_prob": 0.4297,
     "upset_index": 37,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "卡塔尔与瑞士的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "卡塔尔与瑞士的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-009",
@@ -232,15 +248,17 @@
     "under_25_prob": 0.5415,
     "btts_prob": 0.4398,
     "upset_index": 34,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "瑞士与波黑的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "瑞士与波黑的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-010",
@@ -259,15 +277,17 @@
     "under_25_prob": 0.5426,
     "btts_prob": 0.444,
     "upset_index": 34,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "加拿大与卡塔尔的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "加拿大与卡塔尔的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-011",
@@ -286,15 +306,17 @@
     "under_25_prob": 0.5564,
     "btts_prob": 0.4795,
     "upset_index": 43,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "瑞士与加拿大的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "瑞士与加拿大的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-012",
@@ -313,15 +335,17 @@
     "under_25_prob": 0.5576,
     "btts_prob": 0.4812,
     "upset_index": 45,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "波黑与卡塔尔的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "波黑与卡塔尔的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-013",
@@ -340,15 +364,17 @@
     "under_25_prob": 0.5543,
     "btts_prob": 0.4759,
     "upset_index": 44,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "巴西与摩洛哥的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "巴西与摩洛哥的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-014",
@@ -367,15 +393,17 @@
     "under_25_prob": 0.5953,
     "btts_prob": 0.4297,
     "upset_index": 38,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "海地与苏格兰的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "海地与苏格兰的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-015",
@@ -394,15 +422,17 @@
     "under_25_prob": 0.5834,
     "btts_prob": 0.4692,
     "upset_index": 44,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "苏格兰与摩洛哥的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "苏格兰与摩洛哥的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-016",
@@ -421,15 +451,17 @@
     "under_25_prob": 0.4706,
     "btts_prob": 0.3112,
     "upset_index": 23,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "巴西与海地的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "巴西与海地的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-017",
@@ -448,15 +480,17 @@
     "under_25_prob": 0.5939,
     "btts_prob": 0.4357,
     "upset_index": 36,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "苏格兰与巴西的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "苏格兰与巴西的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-018",
@@ -475,15 +509,17 @@
     "under_25_prob": 0.5142,
     "btts_prob": 0.3049,
     "upset_index": 23,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "摩洛哥与海地的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "摩洛哥与海地的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-019",
@@ -502,15 +538,17 @@
     "under_25_prob": 0.5576,
     "btts_prob": 0.4812,
     "upset_index": 45,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "美国与巴拉圭的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "美国与巴拉圭的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-020",
@@ -531,13 +569,15 @@
     "upset_index": 51,
     "confidence_level": "low",
     "prediction_label": "客队优势，低信心",
-    "summary": "澳大利亚与土耳其的赛前模型预测，需结合临场阵容复核。",
+    "summary": "澳大利亚与土耳其的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-021",
@@ -558,13 +598,15 @@
     "upset_index": 47,
     "confidence_level": "medium",
     "prediction_label": "主队优势，中信心",
-    "summary": "美国与澳大利亚的赛前模型预测，需结合临场阵容复核。",
+    "summary": "美国与澳大利亚的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-022",
@@ -583,15 +625,17 @@
     "under_25_prob": 0.5529,
     "btts_prob": 0.4731,
     "upset_index": 42,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "土耳其与巴拉圭的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "土耳其与巴拉圭的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-023",
@@ -612,13 +656,15 @@
     "upset_index": 46,
     "confidence_level": "medium",
     "prediction_label": "主队优势，中信心",
-    "summary": "土耳其与美国的赛前模型预测，需结合临场阵容复核。",
+    "summary": "土耳其与美国的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-024",
@@ -639,13 +685,15 @@
     "upset_index": 49,
     "confidence_level": "low",
     "prediction_label": "主队优势，低信心",
-    "summary": "巴拉圭与澳大利亚的赛前模型预测，需结合临场阵容复核。",
+    "summary": "巴拉圭与澳大利亚的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-025",
@@ -664,15 +712,17 @@
     "under_25_prob": 0.5182,
     "btts_prob": 0.3056,
     "upset_index": 23,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "德国与库拉索的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "德国与库拉索的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-026",
@@ -693,13 +743,15 @@
     "upset_index": 49,
     "confidence_level": "medium",
     "prediction_label": "客队优势，中信心",
-    "summary": "科特迪瓦与厄瓜多尔的赛前模型预测，需结合临场阵容复核。",
+    "summary": "科特迪瓦与厄瓜多尔的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-027",
@@ -718,15 +770,17 @@
     "under_25_prob": 0.542,
     "btts_prob": 0.4415,
     "upset_index": 36,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "德国与科特迪瓦的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "德国与科特迪瓦的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-028",
@@ -745,15 +799,17 @@
     "under_25_prob": 0.5292,
     "btts_prob": 0.3809,
     "upset_index": 30,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "厄瓜多尔与库拉索的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "厄瓜多尔与库拉索的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-029",
@@ -772,15 +828,17 @@
     "under_25_prob": 0.59,
     "btts_prob": 0.4503,
     "upset_index": 40,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "库拉索与科特迪瓦的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "库拉索与科特迪瓦的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-030",
@@ -801,13 +859,15 @@
     "upset_index": 48,
     "confidence_level": "medium",
     "prediction_label": "客队优势，中信心",
-    "summary": "厄瓜多尔与德国的赛前模型预测，需结合临场阵容复核。",
+    "summary": "厄瓜多尔与德国的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-031",
@@ -826,15 +886,17 @@
     "under_25_prob": 0.5551,
     "btts_prob": 0.4773,
     "upset_index": 41,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "荷兰与日本的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "荷兰与日本的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-032",
@@ -853,15 +915,17 @@
     "under_25_prob": 0.5501,
     "btts_prob": 0.4666,
     "upset_index": 39,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "瑞典与突尼斯的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "瑞典与突尼斯的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-033",
@@ -880,15 +944,17 @@
     "under_25_prob": 0.5448,
     "btts_prob": 0.4514,
     "upset_index": 37,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "荷兰与瑞典的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "荷兰与瑞典的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-034",
@@ -907,15 +973,17 @@
     "under_25_prob": 0.59,
     "btts_prob": 0.4503,
     "upset_index": 41,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "突尼斯与日本的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "突尼斯与日本的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-035",
@@ -934,15 +1002,17 @@
     "under_25_prob": 0.5541,
     "btts_prob": 0.4754,
     "upset_index": 44,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "日本与瑞典的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "日本与瑞典的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-036",
@@ -961,15 +1031,17 @@
     "under_25_prob": 0.5997,
     "btts_prob": 0.4097,
     "upset_index": 35,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "突尼斯与荷兰的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "突尼斯与荷兰的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-037",
@@ -988,15 +1060,17 @@
     "under_25_prob": 0.5438,
     "btts_prob": 0.448,
     "upset_index": 35,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "比利时与埃及的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "比利时与埃及的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-038",
@@ -1015,15 +1089,17 @@
     "under_25_prob": 0.5342,
     "btts_prob": 0.4079,
     "upset_index": 29,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "伊朗与新西兰的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "伊朗与新西兰的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-039",
@@ -1042,15 +1118,17 @@
     "under_25_prob": 0.5512,
     "btts_prob": 0.4694,
     "upset_index": 40,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "比利时与伊朗的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "比利时与伊朗的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-040",
@@ -1069,15 +1147,17 @@
     "under_25_prob": 0.5882,
     "btts_prob": 0.4561,
     "upset_index": 41,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "新西兰与埃及的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "新西兰与埃及的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-041",
@@ -1098,13 +1178,15 @@
     "upset_index": 53,
     "confidence_level": "low",
     "prediction_label": "客队优势，低信心",
-    "summary": "埃及与伊朗的赛前模型预测，需结合临场阵容复核。",
+    "summary": "埃及与伊朗的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-042",
@@ -1123,15 +1205,17 @@
     "under_25_prob": 0.6098,
     "btts_prob": 0.3499,
     "upset_index": 31,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "新西兰与比利时的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "新西兰与比利时的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-043",
@@ -1150,15 +1234,17 @@
     "under_25_prob": 0.4971,
     "btts_prob": 0.3075,
     "upset_index": 23,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "西班牙与佛得角的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "西班牙与佛得角的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-044",
@@ -1177,15 +1263,17 @@
     "under_25_prob": 0.605,
     "btts_prob": 0.3808,
     "upset_index": 31,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "沙特阿拉伯与乌拉圭的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "沙特阿拉伯与乌拉圭的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-045",
@@ -1204,15 +1292,17 @@
     "under_25_prob": 0.4823,
     "btts_prob": 0.3096,
     "upset_index": 22,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "西班牙与沙特阿拉伯的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "西班牙与沙特阿拉伯的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-046",
@@ -1231,15 +1321,17 @@
     "under_25_prob": 0.5292,
     "btts_prob": 0.3809,
     "upset_index": 27,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "乌拉圭与佛得角的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "乌拉圭与佛得角的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-047",
@@ -1260,13 +1352,15 @@
     "upset_index": 47,
     "confidence_level": "medium",
     "prediction_label": "主队优势，中信心",
-    "summary": "佛得角与沙特阿拉伯的赛前模型预测，需结合临场阵容复核。",
+    "summary": "佛得角与沙特阿拉伯的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-048",
@@ -1285,15 +1379,17 @@
     "under_25_prob": 0.5815,
     "btts_prob": 0.4734,
     "upset_index": 47,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "乌拉圭与西班牙的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "乌拉圭与西班牙的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-049",
@@ -1312,15 +1408,17 @@
     "under_25_prob": 0.5369,
     "btts_prob": 0.4206,
     "upset_index": 34,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "法国与塞内加尔的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "法国与塞内加尔的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-050",
@@ -1339,15 +1437,17 @@
     "under_25_prob": 0.59,
     "btts_prob": 0.4503,
     "upset_index": 40,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "伊拉克与挪威的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "伊拉克与挪威的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-051",
@@ -1366,15 +1466,17 @@
     "under_25_prob": 0.5011,
     "btts_prob": 0.3069,
     "upset_index": 22,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "法国与伊拉克的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "法国与伊拉克的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-052",
@@ -1395,13 +1497,15 @@
     "upset_index": 47,
     "confidence_level": "medium",
     "prediction_label": "主队优势，中信心",
-    "summary": "挪威与塞内加尔的赛前模型预测，需结合临场阵容复核。",
+    "summary": "挪威与塞内加尔的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-053",
@@ -1420,15 +1524,17 @@
     "under_25_prob": 0.5919,
     "btts_prob": 0.4435,
     "upset_index": 38,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "挪威与法国的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "挪威与法国的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-054",
@@ -1447,15 +1553,17 @@
     "under_25_prob": 0.5409,
     "btts_prob": 0.4376,
     "upset_index": 34,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "塞内加尔与伊拉克的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "塞内加尔与伊拉克的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-055",
@@ -1474,15 +1582,17 @@
     "under_25_prob": 0.5239,
     "btts_prob": 0.3477,
     "upset_index": 27,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "阿根廷与阿尔及利亚的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "阿根廷与阿尔及利亚的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-056",
@@ -1501,15 +1611,17 @@
     "under_25_prob": 0.5308,
     "btts_prob": 0.3903,
     "upset_index": 30,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "奥地利与约旦的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "奥地利与约旦的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-057",
@@ -1528,15 +1640,17 @@
     "under_25_prob": 0.5367,
     "btts_prob": 0.4196,
     "upset_index": 32,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "阿根廷与奥地利的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "阿根廷与奥地利的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-058",
@@ -1555,15 +1669,17 @@
     "under_25_prob": 0.5858,
     "btts_prob": 0.4631,
     "upset_index": 42,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "约旦与阿尔及利亚的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "约旦与阿尔及利亚的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-059",
@@ -1584,13 +1700,15 @@
     "upset_index": 46,
     "confidence_level": "medium",
     "prediction_label": "客队优势，中信心",
-    "summary": "阿尔及利亚与奥地利的赛前模型预测，需结合临场阵容复核。",
+    "summary": "阿尔及利亚与奥地利的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-060",
@@ -1609,15 +1727,17 @@
     "under_25_prob": 0.5648,
     "btts_prob": 0.3264,
     "upset_index": 24,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "约旦与阿根廷的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "约旦与阿根廷的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-061",
@@ -1636,15 +1756,17 @@
     "under_25_prob": 0.5235,
     "btts_prob": 0.3448,
     "upset_index": 26,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "葡萄牙与刚果民主共和国的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "葡萄牙与刚果民主共和国的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-062",
@@ -1663,15 +1785,17 @@
     "under_25_prob": 0.5983,
     "btts_prob": 0.4162,
     "upset_index": 37,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "乌兹别克斯坦与哥伦比亚的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "乌兹别克斯坦与哥伦比亚的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-063",
@@ -1690,15 +1814,17 @@
     "under_25_prob": 0.5262,
     "btts_prob": 0.3628,
     "upset_index": 28,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "葡萄牙与乌兹别克斯坦的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "葡萄牙与乌兹别克斯坦的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-064",
@@ -1717,15 +1843,17 @@
     "under_25_prob": 0.5292,
     "btts_prob": 0.3809,
     "upset_index": 29,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "哥伦比亚与刚果民主共和国的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "哥伦比亚与刚果民主共和国的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-065",
@@ -1746,13 +1874,15 @@
     "upset_index": 52,
     "confidence_level": "low",
     "prediction_label": "客队优势，低信心",
-    "summary": "哥伦比亚与葡萄牙的赛前模型预测，需结合临场阵容复核。",
+    "summary": "哥伦比亚与葡萄牙的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-066",
@@ -1773,13 +1903,15 @@
     "upset_index": 50,
     "confidence_level": "low",
     "prediction_label": "主队优势，低信心",
-    "summary": "刚果民主共和国与乌兹别克斯坦的赛前模型预测，需结合临场阵容复核。",
+    "summary": "刚果民主共和国与乌兹别克斯坦的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-067",
@@ -1798,15 +1930,17 @@
     "under_25_prob": 0.5481,
     "btts_prob": 0.4614,
     "upset_index": 38,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "英格兰与克罗地亚的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "英格兰与克罗地亚的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-068",
@@ -1827,13 +1961,15 @@
     "upset_index": 52,
     "confidence_level": "low",
     "prediction_label": "主队优势，低信心",
-    "summary": "加纳与巴拿马的赛前模型预测，需结合临场阵容复核。",
+    "summary": "加纳与巴拿马的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-069",
@@ -1852,15 +1988,17 @@
     "under_25_prob": 0.5208,
     "btts_prob": 0.3254,
     "upset_index": 26,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "英格兰与加纳的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "英格兰与加纳的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-070",
@@ -1879,15 +2017,17 @@
     "under_25_prob": 0.59,
     "btts_prob": 0.4503,
     "upset_index": 41,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "巴拿马与克罗地亚的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "巴拿马与克罗地亚的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-071",
@@ -1906,15 +2046,17 @@
     "under_25_prob": 0.607,
     "btts_prob": 0.3682,
     "upset_index": 31,
-    "confidence_level": "high",
-    "prediction_label": "客队优势，高信心",
-    "summary": "巴拿马与英格兰的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "客队优势，中信心",
+    "summary": "巴拿马与英格兰的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   },
   {
     "match_id": "wc2026-072",
@@ -1933,14 +2075,16 @@
     "under_25_prob": 0.5364,
     "btts_prob": 0.4185,
     "upset_index": 31,
-    "confidence_level": "high",
-    "prediction_label": "主队优势，高信心",
-    "summary": "克罗地亚与加纳的赛前模型预测，需结合临场阵容复核。",
+    "confidence_level": "medium",
+    "prediction_label": "主队优势，中信心",
+    "summary": "克罗地亚与加纳的赛前模型预测；动态情报完整度 0%。",
     "factors": [
       "Elo 强度差异",
       "Poisson 预期进球",
-      "20% 模型代理校准"
+      "20% 模型代理校准",
+      "动态情报 0/8 项可信"
     ],
-    "updated_at": "2026-06-06T19:01:51.018538+00:00"
+    "intelligence_completeness": 0,
+    "updated_at": "2026-06-07T04:21:08.646558+00:00"
   }
 ]
