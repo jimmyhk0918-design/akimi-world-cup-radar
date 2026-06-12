@@ -28,10 +28,30 @@ function App() {
   const [data, setData] = useState<RadarData | null>(null);
   const [error, setError] = useState("");
   const [menuOpen, setMenuOpen] = useState(false);
+  const [refreshing, setRefreshing] = useState(false);
+  const [refreshError, setRefreshError] = useState("");
+
+  async function fetchData(cacheBust = false) {
+    const next = await loadRadarData({ cacheBust });
+    setData(next);
+    setError("");
+  }
 
   useEffect(() => {
-    loadRadarData().then(setData).catch((reason) => setError(String(reason)));
+    fetchData().catch((reason) => setError(String(reason)));
   }, []);
+
+  async function handleRefresh() {
+    setRefreshing(true);
+    setRefreshError("");
+    try {
+      await fetchData(true);
+    } catch (reason) {
+      setRefreshError(String(reason));
+    } finally {
+      setRefreshing(false);
+    }
+  }
 
   if (error) return <StatePanel title="数据加载失败" detail={error} />;
   if (!data) return <StatePanel title="正在同步雷达数据" detail="读取比赛、赔率与模型输出..." loading />;
@@ -69,10 +89,21 @@ function App() {
           <button className="icon-button menu-button" aria-label="打开导航菜单" onClick={() => setMenuOpen(true)}><Menu size={21} /></button>
           <div className="topbar-title"><Radio size={17} /><span>2026 FIFA WORLD CUP</span><b>研究模式</b></div>
           <div className="topbar-actions">
-            <span className="sync-time"><RefreshCw size={14} /> {formatUpdatedAt(data.metadata.generated_at)} 已更新</span>
             <button className="avatar">AK</button>
           </div>
         </header>
+        <div className="global-refresh-bar">
+          <div className="global-refresh-copy">
+            <span className="eyebrow">DATA CONTROL</span>
+            <strong>当前数据时间 {formatUpdatedAt(data.metadata.generated_at)}</strong>
+            <small>{refreshing ? "正在重新拉取最新 JSON 数据..." : "如果页面还在显示旧比赛状态，可手动刷新一次。"}</small>
+          </div>
+          <button className="secondary-button refresh-button prominent" onClick={handleRefresh} disabled={refreshing}>
+            <RefreshCw className={refreshing ? "spin" : ""} size={15} />
+            {refreshing ? "刷新中..." : "手动刷新数据"}
+          </button>
+        </div>
+        {refreshError && <div className="refresh-error-banner"><AlertTriangle size={15} /> {refreshError}</div>}
         <Routes>
           <Route path="/" element={<Dashboard data={data} />} />
           <Route path="/match/:id" element={<MatchDetail data={data} />} />

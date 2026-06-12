@@ -346,8 +346,12 @@ def build_datasets(
         match_time = parse_match_time(row)
         score = row.get("score", {})
         full_time = score.get("ft")
+        # Some public fixture feeds lag on publishing final scores; once the live window has passed,
+        # keep the match out of "scheduled" even if full-time score data has not landed yet.
         status = "finished" if full_time else (
-            "live" if match_time <= generated_at <= match_time + timedelta(hours=4) else "scheduled"
+            "live" if match_time <= generated_at <= match_time + timedelta(hours=4) else (
+                "finished" if generated_at > match_time + timedelta(hours=4) else "scheduled"
+            )
         )
         home_score, away_score = (full_time if full_time else (None, None))
         group_name = row.get("group", "").replace("Group ", "")
