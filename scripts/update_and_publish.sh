@@ -29,7 +29,8 @@ fi
 
 publish_dir="$(mktemp -d)"
 trap 'rm -rf "$publish_dir"' EXIT
-git clone --quiet --branch gh-pages --single-branch origin "$publish_dir"
+origin_url="$(git remote get-url origin)"
+git clone --quiet --branch gh-pages --single-branch "$origin_url" "$publish_dir"
 find "$publish_dir" -mindepth 1 -maxdepth 1 ! -name .git -exec rm -rf {} +
 cp -R dist/. "$publish_dir/"
 touch "$publish_dir/.nojekyll"
