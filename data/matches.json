@@ -952,9 +952,9 @@
     "match_time": "2026-06-20T17:00:00+00:00",
     "stadium": "Houston",
     "city": "休斯敦",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 5,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-034",
