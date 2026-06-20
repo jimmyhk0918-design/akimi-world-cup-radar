@@ -25,8 +25,8 @@
     "stadium": "Mexico City",
     "city": "墨西哥城",
     "status": "finished",
-    "home_score": null,
-    "away_score": null
+    "home_score": 2,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-002",
@@ -53,9 +53,9 @@
     "match_time": "2026-06-12T02:00:00+00:00",
     "stadium": "Guadalajara (Zapopan)",
     "city": "瓜达拉哈拉",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-003",
@@ -82,9 +82,9 @@
     "match_time": "2026-06-18T16:00:00+00:00",
     "stadium": "Atlanta",
     "city": "亚特兰大",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-004",
@@ -111,9 +111,9 @@
     "match_time": "2026-06-19T01:00:00+00:00",
     "stadium": "Guadalajara (Zapopan)",
     "city": "瓜达拉哈拉",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-005",
@@ -198,9 +198,9 @@
     "match_time": "2026-06-12T19:00:00+00:00",
     "stadium": "Toronto",
     "city": "多伦多",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-008",
@@ -227,9 +227,9 @@
     "match_time": "2026-06-13T19:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
     "city": "旧金山湾区",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-009",
@@ -256,9 +256,9 @@
     "match_time": "2026-06-18T19:00:00+00:00",
     "stadium": "Los Angeles (Inglewood)",
     "city": "洛杉矶",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 4,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-010",
@@ -285,9 +285,9 @@
     "match_time": "2026-06-18T22:00:00+00:00",
     "stadium": "Vancouver",
     "city": "温哥华",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 6,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-011",
@@ -372,9 +372,9 @@
     "match_time": "2026-06-13T22:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
     "city": "纽约/新泽西",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-014",
@@ -401,9 +401,9 @@
     "match_time": "2026-06-14T01:00:00+00:00",
     "stadium": "Boston (Foxborough)",
     "city": "波士顿",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 0,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-015",
@@ -430,9 +430,9 @@
     "match_time": "2026-06-19T22:00:00+00:00",
     "stadium": "Boston (Foxborough)",
     "city": "波士顿",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 0,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-016",
@@ -459,9 +459,9 @@
     "match_time": "2026-06-20T00:30:00+00:00",
     "stadium": "Philadelphia",
     "city": "费城",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 3,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-017",
@@ -546,9 +546,9 @@
     "match_time": "2026-06-13T01:00:00+00:00",
     "stadium": "Los Angeles (Inglewood)",
     "city": "洛杉矶",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 4,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-020",
@@ -575,9 +575,9 @@
     "match_time": "2026-06-14T04:00:00+00:00",
     "stadium": "Vancouver",
     "city": "温哥华",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-021",
@@ -604,9 +604,9 @@
     "match_time": "2026-06-19T19:00:00+00:00",
     "stadium": "Seattle",
     "city": "西雅图",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-022",
@@ -633,9 +633,9 @@
     "match_time": "2026-06-20T03:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
     "city": "旧金山湾区",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 0,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-023",
@@ -720,9 +720,9 @@
     "match_time": "2026-06-14T17:00:00+00:00",
     "stadium": "Houston",
     "city": "休斯敦",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 7,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-026",
@@ -749,9 +749,9 @@
     "match_time": "2026-06-14T23:00:00+00:00",
     "stadium": "Philadelphia",
     "city": "费城",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-027",
@@ -894,9 +894,9 @@
     "match_time": "2026-06-14T20:00:00+00:00",
     "stadium": "Dallas (Arlington)",
     "city": "达拉斯",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 2
   },
   {
     "match_id": "wc2026-032",
@@ -923,9 +923,9 @@
     "match_time": "2026-06-15T02:00:00+00:00",
     "stadium": "Monterrey (Guadalupe)",
     "city": "蒙特雷",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 5,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-033",
@@ -1068,9 +1068,9 @@
     "match_time": "2026-06-15T19:00:00+00:00",
     "stadium": "Seattle",
     "city": "西雅图",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-038",
@@ -1097,9 +1097,9 @@
     "match_time": "2026-06-16T01:00:00+00:00",
     "stadium": "Los Angeles (Inglewood)",
     "city": "洛杉矶",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 2
   },
   {
     "match_id": "wc2026-039",
@@ -1242,9 +1242,9 @@
     "match_time": "2026-06-15T16:00:00+00:00",
     "stadium": "Atlanta",
     "city": "亚特兰大",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 0,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-044",
@@ -1271,9 +1271,9 @@
     "match_time": "2026-06-15T22:00:00+00:00",
     "stadium": "Miami (Miami Gardens)",
     "city": "Miami (Miami Gardens)",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-045",
@@ -1416,9 +1416,9 @@
     "match_time": "2026-06-16T19:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
     "city": "纽约/新泽西",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 3,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-050",
@@ -1445,9 +1445,9 @@
     "match_time": "2026-06-16T22:00:00+00:00",
     "stadium": "Boston (Foxborough)",
     "city": "波士顿",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 4
   },
   {
     "match_id": "wc2026-051",
@@ -1590,9 +1590,9 @@
     "match_time": "2026-06-17T01:00:00+00:00",
     "stadium": "Kansas City",
     "city": "堪萨斯城",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 3,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-056",
@@ -1619,9 +1619,9 @@
     "match_time": "2026-06-17T04:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
     "city": "旧金山湾区",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 3,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-057",
@@ -1764,9 +1764,9 @@
     "match_time": "2026-06-17T17:00:00+00:00",
     "stadium": "Houston",
     "city": "休斯敦",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-062",
@@ -1793,9 +1793,9 @@
     "match_time": "2026-06-18T02:00:00+00:00",
     "stadium": "Mexico City",
     "city": "墨西哥城",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 3
   },
   {
     "match_id": "wc2026-063",
@@ -1938,9 +1938,9 @@
     "match_time": "2026-06-17T20:00:00+00:00",
     "stadium": "Dallas (Arlington)",
     "city": "达拉斯",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 4,
+    "away_score": 2
   },
   {
     "match_id": "wc2026-068",
@@ -1967,9 +1967,9 @@
     "match_time": "2026-06-17T23:00:00+00:00",
     "stadium": "Toronto",
     "city": "多伦多",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-069",

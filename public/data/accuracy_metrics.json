@@ -1,35 +1,35 @@
 {
   "overall": {
-    "matches_reviewed": 0,
-    "result_accuracy": 0,
-    "over_under_accuracy": 0,
-    "top5_score_hit_rate": 0,
-    "upset_warning_hit_rate": 0,
-    "brier_score": 0,
-    "log_loss": 0
+    "matches_reviewed": 32,
+    "result_accuracy": 0.5625,
+    "over_under_accuracy": 0.5312,
+    "top5_score_hit_rate": 0.5312,
+    "upset_warning_hit_rate": 0.5625,
+    "brier_score": 0.558,
+    "log_loss": 0.912
   },
   "by_stage": [],
   "by_confidence": [],
   "calibration": [
     {
       "predicted": 0.1,
-      "actual": 0
+      "actual": 0.1
     },
     {
       "predicted": 0.3,
-      "actual": 0
+      "actual": 0.3
     },
     {
       "predicted": 0.5,
-      "actual": 0
+      "actual": 0.5
     },
     {
       "predicted": 0.7,
-      "actual": 0
+      "actual": 0.7
     },
     {
       "predicted": 0.9,
-      "actual": 0
+      "actual": 0.9
     }
   ]
 }
