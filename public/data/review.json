@@ -392,6 +392,20 @@
     "adjustment_suggestion": "随着赛果累积重新校准 Elo、进球期望和信心阈值。"
   },
   {
+    "match_id": "wc2026-045",
+    "actual_result": "home",
+    "predicted_result": "home",
+    "result_hit": true,
+    "over_under_hit": true,
+    "score_top5_hit": true,
+    "upset_warning_hit": true,
+    "brier_score": 0.112,
+    "log_loss": 0.295,
+    "model_error_summary": "赛果与赛前最高概率方向一致。",
+    "odds_signal_review": "该场无真实赔率数据，未进行赔率信号复盘。",
+    "adjustment_suggestion": "随着赛果累积重新校准 Elo、进球期望和信心阈值。"
+  },
+  {
     "match_id": "wc2026-049",
     "actual_result": "home",
     "predicted_result": "home",
