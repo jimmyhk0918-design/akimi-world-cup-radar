@@ -1300,9 +1300,9 @@
     "match_time": "2026-06-21T16:00:00+00:00",
     "stadium": "Atlanta",
     "city": "亚特兰大",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 4,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-046",
