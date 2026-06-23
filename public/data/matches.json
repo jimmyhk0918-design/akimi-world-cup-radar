@@ -1677,9 +1677,9 @@
     "match_time": "2026-06-23T03:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
     "city": "旧金山湾区",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 2
   },
   {
     "match_id": "wc2026-059",
