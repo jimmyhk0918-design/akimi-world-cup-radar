@@ -314,7 +314,7 @@
     "match_time": "2026-06-24T19:00:00+00:00",
     "stadium": "Vancouver",
     "city": "温哥华",
-    "status": "scheduled",
+    "status": "live",
     "home_score": null,
     "away_score": null
   },
@@ -343,7 +343,7 @@
     "match_time": "2026-06-24T19:00:00+00:00",
     "stadium": "Seattle",
     "city": "西雅图",
-    "status": "scheduled",
+    "status": "live",
     "home_score": null,
     "away_score": null
   },
