@@ -2,7 +2,7 @@
   "source": "openfootball",
   "source_label": "OpenFootball 公共数据",
   "source_url": "https://raw.githubusercontent.com/openfootball/worldcup.json/master/2026/worldcup.json",
-  "generated_at": "2026-06-24T09:50:12.691645+00:00",
+  "generated_at": "2026-06-24T09:50:46.405075+00:00",
   "update_frequency": "每小时第 17 分钟",
   "fixtures_total": 72,
   "finished_total": 48,
