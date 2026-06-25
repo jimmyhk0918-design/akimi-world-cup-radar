@@ -2086,5 +2086,34 @@
     "status": "scheduled",
     "home_score": null,
     "away_score": null
+  },
+  {
+    "match_id": "wc2026-073",
+    "match_no": 73,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "RSA",
+      "name": "南非",
+      "english_name": "South Africa",
+      "flag": "🇿🇦",
+      "elo": 1635,
+      "form": []
+    },
+    "away_team": {
+      "code": "CAN",
+      "name": "加拿大",
+      "english_name": "Canada",
+      "flag": "🇨🇦",
+      "elo": 1810,
+      "form": []
+    },
+    "match_time": "2026-06-28T19:00:00+00:00",
+    "stadium": "Los Angeles (Inglewood)",
+    "city": "洛杉矶",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
   }
 ]

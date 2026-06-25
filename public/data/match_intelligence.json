@@ -7702,5 +7702,112 @@
     "home_context_adjustment": 0,
     "away_context_adjustment": 0,
     "warning": "动态情报覆盖有限，缺失项保持中性且不会被模型臆测。"
+  },
+  {
+    "match_id": "wc2026-073",
+    "features": {
+      "recent_form": {
+        "label": "最近10场状态",
+        "status": "missing",
+        "home_impact": 0.0,
+        "away_impact": 0.0,
+        "summary": "暂无可靠数据，保持中性。",
+        "source_name": "",
+        "source_url": "",
+        "published_at": "",
+        "updated_at": "",
+        "details": []
+      },
+      "availability": {
+        "label": "伤病与停赛",
+        "status": "pending_official",
+        "home_impact": 0.0,
+        "away_impact": 0.0,
+        "summary": "暂无可靠数据，保持中性。",
+        "source_name": "",
+        "source_url": "",
+        "published_at": "",
+        "updated_at": "",
+        "details": []
+      },
+      "lineup": {
+        "label": "预计与确认首发",
+        "status": "pending_official",
+        "home_impact": 0.0,
+        "away_impact": 0.0,
+        "summary": "暂无可靠数据，保持中性。",
+        "source_name": "",
+        "source_url": "",
+        "published_at": "",
+        "updated_at": "",
+        "details": []
+      },
+      "fatigue": {
+        "label": "赛程疲劳",
+        "status": "missing",
+        "home_impact": 0.0,
+        "away_impact": 0.0,
+        "summary": "暂无可靠数据，保持中性。",
+        "source_name": "",
+        "source_url": "",
+        "published_at": "",
+        "updated_at": "",
+        "details": []
+      },
+      "motivation": {
+        "label": "比赛动机",
+        "status": "missing",
+        "home_impact": 0.0,
+        "away_impact": 0.0,
+        "summary": "暂无可靠数据，保持中性。",
+        "source_name": "",
+        "source_url": "",
+        "published_at": "",
+        "updated_at": "",
+        "details": []
+      },
+      "tactical": {
+        "label": "战术克制",
+        "status": "missing",
+        "home_impact": 0.0,
+        "away_impact": 0.0,
+        "summary": "暂无可靠数据，保持中性。",
+        "source_name": "",
+        "source_url": "",
+        "published_at": "",
+        "updated_at": "",
+        "details": []
+      },
+      "weather": {
+        "label": "天气与场地",
+        "status": "forecast_pending",
+        "home_impact": 0.0,
+        "away_impact": 0.0,
+        "summary": "暂无可靠数据，保持中性。",
+        "source_name": "",
+        "source_url": "",
+        "published_at": "",
+        "updated_at": "",
+        "details": []
+      },
+      "market": {
+        "label": "临场赔率",
+        "status": "proxy",
+        "home_impact": 0.0,
+        "away_impact": 0.0,
+        "summary": "暂无真实赔率覆盖，使用模型代理且不计入情报完整度。",
+        "source_name": "",
+        "source_url": "",
+        "published_at": "",
+        "updated_at": "",
+        "details": []
+      }
+    },
+    "completeness": 0,
+    "confirmed_features": 0,
+    "total_features": 8,
+    "home_context_adjustment": 0,
+    "away_context_adjustment": 0,
+    "warning": "动态情报覆盖有限，缺失项保持中性且不会被模型臆测。"
   }
 ]

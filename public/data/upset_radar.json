@@ -1078,5 +1078,20 @@
       "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
+  },
+  {
+    "match_id": "wc2026-073",
+    "upset_index": 41,
+    "risk_level": "苗头",
+    "favorite_team": "加拿大",
+    "underdog_team": "南非",
+    "favorite_overheat_score": 49,
+    "underdog_not_lose_prob": 0.507,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
   }
 ]
