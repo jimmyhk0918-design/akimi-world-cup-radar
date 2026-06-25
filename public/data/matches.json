@@ -488,9 +488,9 @@
     "match_time": "2026-06-24T22:00:00+00:00",
     "stadium": "Miami (Miami Gardens)",
     "city": "Miami (Miami Gardens)",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 0,
+    "away_score": 3
   },
   {
     "match_id": "wc2026-018",
@@ -517,9 +517,9 @@
     "match_time": "2026-06-24T22:00:00+00:00",
     "stadium": "Atlanta",
     "city": "亚特兰大",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 4,
+    "away_score": 2
   },
   {
     "match_id": "wc2026-019",
