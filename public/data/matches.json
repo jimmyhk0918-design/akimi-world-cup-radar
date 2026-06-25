@@ -836,7 +836,7 @@
     "match_time": "2026-06-25T20:00:00+00:00",
     "stadium": "Philadelphia",
     "city": "费城",
-    "status": "scheduled",
+    "status": "live",
     "home_score": null,
     "away_score": null
   },
@@ -865,7 +865,7 @@
     "match_time": "2026-06-25T20:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
     "city": "纽约/新泽西",
-    "status": "scheduled",
+    "status": "live",
     "home_score": null,
     "away_score": null
   },
