@@ -1010,9 +1010,9 @@
     "match_time": "2026-06-25T23:00:00+00:00",
     "stadium": "Dallas (Arlington)",
     "city": "达拉斯",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-036",
@@ -1039,9 +1039,9 @@
     "match_time": "2026-06-25T23:00:00+00:00",
     "stadium": "Kansas City",
     "city": "堪萨斯城",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 3
   },
   {
     "match_id": "wc2026-037",
