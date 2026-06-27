@@ -1093,5 +1093,35 @@
       "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
+  },
+  {
+    "match_id": "wc2026-075",
+    "upset_index": 46,
+    "risk_level": "苗头",
+    "favorite_team": "荷兰",
+    "underdog_team": "摩洛哥",
+    "favorite_overheat_score": 54,
+    "underdog_not_lose_prob": 0.5493,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-076",
+    "upset_index": 40,
+    "risk_level": "苗头",
+    "favorite_team": "巴西",
+    "underdog_team": "日本",
+    "favorite_overheat_score": 48,
+    "underdog_not_lose_prob": 0.4661,
+    "draw_heat_score": 45,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
   }
 ]

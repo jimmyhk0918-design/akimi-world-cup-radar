@@ -3502,5 +3502,101 @@
         "away": 0.493
       }
     ]
+  },
+  {
+    "match_id": "wc2026-075",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 2.22,
+    "current_odds": 2.2,
+    "open_probability": 0.4499,
+    "current_probability": 0.4539,
+    "change_24h": 0.004,
+    "change_6h": 0.002,
+    "change_1h": 0.0008,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-06-29T01:00:00+00:00",
+        "home": 0.4499,
+        "draw": 0.2629,
+        "away": 0.2871
+      },
+      {
+        "time": "2026-06-29T13:00:00+00:00",
+        "home": 0.4509,
+        "draw": 0.2626,
+        "away": 0.2865
+      },
+      {
+        "time": "2026-06-29T19:00:00+00:00",
+        "home": 0.4519,
+        "draw": 0.2623,
+        "away": 0.2858
+      },
+      {
+        "time": "2026-06-30T00:00:00+00:00",
+        "home": 0.4529,
+        "draw": 0.2619,
+        "away": 0.2851
+      },
+      {
+        "time": "2026-06-30T01:00:00+00:00",
+        "home": 0.4539,
+        "draw": 0.2616,
+        "away": 0.2845
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-076",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.88,
+    "current_odds": 1.85,
+    "open_probability": 0.5323,
+    "current_probability": 0.5403,
+    "change_24h": 0.008,
+    "change_6h": 0.004,
+    "change_1h": 0.0016,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-06-28T17:00:00+00:00",
+        "home": 0.5323,
+        "draw": 0.2558,
+        "away": 0.2119
+      },
+      {
+        "time": "2026-06-29T05:00:00+00:00",
+        "home": 0.5343,
+        "draw": 0.2552,
+        "away": 0.2106
+      },
+      {
+        "time": "2026-06-29T11:00:00+00:00",
+        "home": 0.5363,
+        "draw": 0.2545,
+        "away": 0.2092
+      },
+      {
+        "time": "2026-06-29T16:00:00+00:00",
+        "home": 0.5383,
+        "draw": 0.2538,
+        "away": 0.2079
+      },
+      {
+        "time": "2026-06-29T17:00:00+00:00",
+        "home": 0.5403,
+        "draw": 0.2532,
+        "away": 0.2066
+      }
+    ]
   }
 ]
