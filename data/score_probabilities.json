@@ -1823,5 +1823,55 @@
         "probability": 0.089
       }
     ]
+  },
+  {
+    "match_id": "wc2026-075",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1261
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1243
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0898
+      },
+      {
+        "score": "0:1",
+        "probability": 0.0886
+      },
+      {
+        "score": "2:0",
+        "probability": 0.0885
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-076",
+    "scores": [
+      {
+        "score": "1:0",
+        "probability": 0.1345
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1178
+      },
+      {
+        "score": "2:0",
+        "probability": 0.1078
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0943
+      },
+      {
+        "score": "0:0",
+        "probability": 0.084
+      }
+    ]
   }
 ]
