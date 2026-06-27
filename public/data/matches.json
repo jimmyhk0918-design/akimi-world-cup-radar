@@ -1184,9 +1184,9 @@
     "match_time": "2026-06-27T03:00:00+00:00",
     "stadium": "Seattle",
     "city": "西雅图",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-042",
@@ -1213,9 +1213,9 @@
     "match_time": "2026-06-27T03:00:00+00:00",
     "stadium": "Vancouver",
     "city": "温哥华",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 5
   },
   {
     "match_id": "wc2026-043",
