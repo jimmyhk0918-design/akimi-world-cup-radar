@@ -3504,16 +3504,64 @@
     ]
   },
   {
+    "match_id": "wc2026-074",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.65,
+    "current_odds": 1.64,
+    "open_probability": 0.6056,
+    "current_probability": 0.6096,
+    "change_24h": 0.004,
+    "change_6h": 0.002,
+    "change_1h": 0.0008,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-06-28T20:30:00+00:00",
+        "home": 0.6056,
+        "draw": 0.2459,
+        "away": 0.1485
+      },
+      {
+        "time": "2026-06-29T08:30:00+00:00",
+        "home": 0.6066,
+        "draw": 0.2456,
+        "away": 0.1478
+      },
+      {
+        "time": "2026-06-29T14:30:00+00:00",
+        "home": 0.6076,
+        "draw": 0.2453,
+        "away": 0.1471
+      },
+      {
+        "time": "2026-06-29T19:30:00+00:00",
+        "home": 0.6086,
+        "draw": 0.2449,
+        "away": 0.1465
+      },
+      {
+        "time": "2026-06-29T20:30:00+00:00",
+        "home": 0.6096,
+        "draw": 0.2446,
+        "away": 0.1458
+      }
+    ]
+  },
+  {
     "match_id": "wc2026-075",
     "market_type": "1x2-proxy",
     "selection": "home",
     "open_odds": 2.22,
-    "current_odds": 2.2,
+    "current_odds": 2.18,
     "open_probability": 0.4499,
-    "current_probability": 0.4539,
-    "change_24h": 0.004,
-    "change_6h": 0.002,
-    "change_1h": 0.0008,
+    "current_probability": 0.4579,
+    "change_24h": 0.008,
+    "change_6h": 0.004,
+    "change_1h": 0.0016,
     "bookmaker_consensus": 0,
     "market_dispersion": 0,
     "signal": "模型代理",
@@ -3527,27 +3575,27 @@
       },
       {
         "time": "2026-06-29T13:00:00+00:00",
-        "home": 0.4509,
-        "draw": 0.2626,
-        "away": 0.2865
-      },
-      {
-        "time": "2026-06-29T19:00:00+00:00",
         "home": 0.4519,
         "draw": 0.2623,
         "away": 0.2858
       },
       {
-        "time": "2026-06-30T00:00:00+00:00",
-        "home": 0.4529,
-        "draw": 0.2619,
-        "away": 0.2851
-      },
-      {
-        "time": "2026-06-30T01:00:00+00:00",
+        "time": "2026-06-29T19:00:00+00:00",
         "home": 0.4539,
         "draw": 0.2616,
         "away": 0.2845
+      },
+      {
+        "time": "2026-06-30T00:00:00+00:00",
+        "home": 0.4559,
+        "draw": 0.2609,
+        "away": 0.2831
+      },
+      {
+        "time": "2026-06-30T01:00:00+00:00",
+        "home": 0.4579,
+        "draw": 0.2603,
+        "away": 0.2818
       }
     ]
   },
@@ -3556,12 +3604,12 @@
     "market_type": "1x2-proxy",
     "selection": "home",
     "open_odds": 1.88,
-    "current_odds": 1.85,
+    "current_odds": 1.84,
     "open_probability": 0.5323,
-    "current_probability": 0.5403,
-    "change_24h": 0.008,
-    "change_6h": 0.004,
-    "change_1h": 0.0016,
+    "current_probability": 0.5443,
+    "change_24h": 0.012,
+    "change_6h": 0.006,
+    "change_1h": 0.0024,
     "bookmaker_consensus": 0,
     "market_dispersion": 0,
     "signal": "模型代理",
@@ -3575,27 +3623,603 @@
       },
       {
         "time": "2026-06-29T05:00:00+00:00",
-        "home": 0.5343,
-        "draw": 0.2552,
-        "away": 0.2106
+        "home": 0.5353,
+        "draw": 0.2548,
+        "away": 0.2099
       },
       {
         "time": "2026-06-29T11:00:00+00:00",
-        "home": 0.5363,
-        "draw": 0.2545,
-        "away": 0.2092
-      },
-      {
-        "time": "2026-06-29T16:00:00+00:00",
         "home": 0.5383,
         "draw": 0.2538,
         "away": 0.2079
       },
       {
+        "time": "2026-06-29T16:00:00+00:00",
+        "home": 0.5413,
+        "draw": 0.2528,
+        "away": 0.2059
+      },
+      {
         "time": "2026-06-29T17:00:00+00:00",
-        "home": 0.5403,
+        "home": 0.5443,
+        "draw": 0.2518,
+        "away": 0.2039
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-077",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.56,
+    "current_odds": 1.59,
+    "open_probability": 0.6418,
+    "current_probability": 0.6298,
+    "change_24h": -0.012,
+    "change_6h": -0.006,
+    "change_1h": -0.0024,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-06-29T21:00:00+00:00",
+        "home": 0.6418,
+        "draw": 0.2394,
+        "away": 0.1188
+      },
+      {
+        "time": "2026-06-30T09:00:00+00:00",
+        "home": 0.6388,
+        "draw": 0.2404,
+        "away": 0.1208
+      },
+      {
+        "time": "2026-06-30T15:00:00+00:00",
+        "home": 0.6358,
+        "draw": 0.2414,
+        "away": 0.1228
+      },
+      {
+        "time": "2026-06-30T20:00:00+00:00",
+        "home": 0.6328,
+        "draw": 0.2424,
+        "away": 0.1248
+      },
+      {
+        "time": "2026-06-30T21:00:00+00:00",
+        "home": 0.6298,
+        "draw": 0.2434,
+        "away": 0.1268
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-078",
+    "market_type": "1x2-proxy",
+    "selection": "away",
+    "open_odds": 2.64,
+    "current_odds": 2.6,
+    "open_probability": 0.3789,
+    "current_probability": 0.3842,
+    "change_24h": 0.0053,
+    "change_6h": 0.0027,
+    "change_1h": 0.0011,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-06-29T17:00:00+00:00",
+        "home": 0.354,
+        "draw": 0.2671,
+        "away": 0.3789
+      },
+      {
+        "time": "2026-06-30T05:00:00+00:00",
+        "home": 0.352,
+        "draw": 0.2677,
+        "away": 0.3802
+      },
+      {
+        "time": "2026-06-30T11:00:00+00:00",
+        "home": 0.35,
+        "draw": 0.2684,
+        "away": 0.3816
+      },
+      {
+        "time": "2026-06-30T16:00:00+00:00",
+        "home": 0.348,
+        "draw": 0.2691,
+        "away": 0.3829
+      },
+      {
+        "time": "2026-06-30T17:00:00+00:00",
+        "home": 0.346,
+        "draw": 0.2697,
+        "away": 0.3842
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-079",
+    "market_type": "1x2-proxy",
+    "selection": "away",
+    "open_odds": 2.71,
+    "current_odds": 2.69,
+    "open_probability": 0.3692,
+    "current_probability": 0.3718,
+    "change_24h": 0.0027,
+    "change_6h": 0.0013,
+    "change_1h": 0.0005,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-06-30T01:00:00+00:00",
+        "home": 0.364,
+        "draw": 0.2668,
+        "away": 0.3692
+      },
+      {
+        "time": "2026-06-30T13:00:00+00:00",
+        "home": 0.363,
+        "draw": 0.2672,
+        "away": 0.3698
+      },
+      {
+        "time": "2026-06-30T19:00:00+00:00",
+        "home": 0.362,
+        "draw": 0.2675,
+        "away": 0.3705
+      },
+      {
+        "time": "2026-07-01T00:00:00+00:00",
+        "home": 0.361,
+        "draw": 0.2678,
+        "away": 0.3712
+      },
+      {
+        "time": "2026-07-01T01:00:00+00:00",
+        "home": 0.36,
+        "draw": 0.2682,
+        "away": 0.3718
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-080",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.39,
+    "current_odds": 1.39,
+    "open_probability": 0.7186,
+    "current_probability": 0.7186,
+    "change_24h": 0.0,
+    "change_6h": 0.0,
+    "change_1h": 0.0,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-06-30T16:00:00+00:00",
+        "home": 0.7186,
+        "draw": 0.2201,
+        "away": 0.0613
+      },
+      {
+        "time": "2026-07-01T04:00:00+00:00",
+        "home": 0.7186,
+        "draw": 0.2201,
+        "away": 0.0613
+      },
+      {
+        "time": "2026-07-01T10:00:00+00:00",
+        "home": 0.7186,
+        "draw": 0.2201,
+        "away": 0.0613
+      },
+      {
+        "time": "2026-07-01T15:00:00+00:00",
+        "home": 0.7186,
+        "draw": 0.2201,
+        "away": 0.0613
+      },
+      {
+        "time": "2026-07-01T16:00:00+00:00",
+        "home": 0.7186,
+        "draw": 0.2201,
+        "away": 0.0613
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-081",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.81,
+    "current_odds": 1.8,
+    "open_probability": 0.5517,
+    "current_probability": 0.5557,
+    "change_24h": 0.004,
+    "change_6h": 0.002,
+    "change_1h": 0.0008,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-07-01T00:00:00+00:00",
+        "home": 0.5517,
+        "draw": 0.2536,
+        "away": 0.1947
+      },
+      {
+        "time": "2026-07-01T12:00:00+00:00",
+        "home": 0.5527,
         "draw": 0.2532,
-        "away": 0.2066
+        "away": 0.1941
+      },
+      {
+        "time": "2026-07-01T18:00:00+00:00",
+        "home": 0.5537,
+        "draw": 0.2529,
+        "away": 0.1934
+      },
+      {
+        "time": "2026-07-01T23:00:00+00:00",
+        "home": 0.5547,
+        "draw": 0.2526,
+        "away": 0.1927
+      },
+      {
+        "time": "2026-07-02T00:00:00+00:00",
+        "home": 0.5557,
+        "draw": 0.2522,
+        "away": 0.1921
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-082",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.99,
+    "current_odds": 1.96,
+    "open_probability": 0.502,
+    "current_probability": 0.51,
+    "change_24h": 0.008,
+    "change_6h": 0.004,
+    "change_1h": 0.0016,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-06-30T20:00:00+00:00",
+        "home": 0.502,
+        "draw": 0.2589,
+        "away": 0.2391
+      },
+      {
+        "time": "2026-07-01T08:00:00+00:00",
+        "home": 0.504,
+        "draw": 0.2582,
+        "away": 0.2378
+      },
+      {
+        "time": "2026-07-01T14:00:00+00:00",
+        "home": 0.506,
+        "draw": 0.2575,
+        "away": 0.2365
+      },
+      {
+        "time": "2026-07-01T19:00:00+00:00",
+        "home": 0.508,
+        "draw": 0.2569,
+        "away": 0.2351
+      },
+      {
+        "time": "2026-07-01T20:00:00+00:00",
+        "home": 0.51,
+        "draw": 0.2562,
+        "away": 0.2338
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-083",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.95,
+    "current_odds": 1.9,
+    "open_probability": 0.5132,
+    "current_probability": 0.5252,
+    "change_24h": 0.012,
+    "change_6h": 0.006,
+    "change_1h": 0.0024,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-07-01T23:00:00+00:00",
+        "home": 0.5132,
+        "draw": 0.2578,
+        "away": 0.229
+      },
+      {
+        "time": "2026-07-02T11:00:00+00:00",
+        "home": 0.5162,
+        "draw": 0.2568,
+        "away": 0.227
+      },
+      {
+        "time": "2026-07-02T17:00:00+00:00",
+        "home": 0.5192,
+        "draw": 0.2558,
+        "away": 0.225
+      },
+      {
+        "time": "2026-07-02T22:00:00+00:00",
+        "home": 0.5222,
+        "draw": 0.2548,
+        "away": 0.223
+      },
+      {
+        "time": "2026-07-02T23:00:00+00:00",
+        "home": 0.5252,
+        "draw": 0.2538,
+        "away": 0.221
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-084",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.65,
+    "current_odds": 1.68,
+    "open_probability": 0.6079,
+    "current_probability": 0.5959,
+    "change_24h": -0.012,
+    "change_6h": -0.006,
+    "change_1h": -0.0024,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-07-01T19:00:00+00:00",
+        "home": 0.6079,
+        "draw": 0.2455,
+        "away": 0.1466
+      },
+      {
+        "time": "2026-07-02T07:00:00+00:00",
+        "home": 0.6049,
+        "draw": 0.2465,
+        "away": 0.1486
+      },
+      {
+        "time": "2026-07-02T13:00:00+00:00",
+        "home": 0.6019,
+        "draw": 0.2475,
+        "away": 0.1506
+      },
+      {
+        "time": "2026-07-02T18:00:00+00:00",
+        "home": 0.5989,
+        "draw": 0.2485,
+        "away": 0.1526
+      },
+      {
+        "time": "2026-07-02T19:00:00+00:00",
+        "home": 0.5959,
+        "draw": 0.2495,
+        "away": 0.1546
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-085",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.9,
+    "current_odds": 1.93,
+    "open_probability": 0.5251,
+    "current_probability": 0.5171,
+    "change_24h": -0.008,
+    "change_6h": -0.004,
+    "change_1h": -0.0016,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-07-02T03:00:00+00:00",
+        "home": 0.5251,
+        "draw": 0.2566,
+        "away": 0.2183
+      },
+      {
+        "time": "2026-07-02T15:00:00+00:00",
+        "home": 0.5231,
+        "draw": 0.2573,
+        "away": 0.2197
+      },
+      {
+        "time": "2026-07-02T21:00:00+00:00",
+        "home": 0.5211,
+        "draw": 0.2579,
+        "away": 0.221
+      },
+      {
+        "time": "2026-07-03T02:00:00+00:00",
+        "home": 0.5191,
+        "draw": 0.2586,
+        "away": 0.2223
+      },
+      {
+        "time": "2026-07-03T03:00:00+00:00",
+        "home": 0.5171,
+        "draw": 0.2593,
+        "away": 0.2237
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-086",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.34,
+    "current_odds": 1.36,
+    "open_probability": 0.7441,
+    "current_probability": 0.7378,
+    "change_24h": -0.0063,
+    "change_6h": -0.0032,
+    "change_1h": -0.0013,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-07-02T22:00:00+00:00",
+        "home": 0.7441,
+        "draw": 0.2117,
+        "away": 0.0442
+      },
+      {
+        "time": "2026-07-03T10:00:00+00:00",
+        "home": 0.7425,
+        "draw": 0.2119,
+        "away": 0.0456
+      },
+      {
+        "time": "2026-07-03T16:00:00+00:00",
+        "home": 0.741,
+        "draw": 0.212,
+        "away": 0.047
+      },
+      {
+        "time": "2026-07-03T21:00:00+00:00",
+        "home": 0.7394,
+        "draw": 0.2122,
+        "away": 0.0484
+      },
+      {
+        "time": "2026-07-03T22:00:00+00:00",
+        "home": 0.7378,
+        "draw": 0.2124,
+        "away": 0.0498
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-087",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.51,
+    "current_odds": 1.51,
+    "open_probability": 0.6642,
+    "current_probability": 0.6642,
+    "change_24h": 0.0,
+    "change_6h": 0.0,
+    "change_1h": 0.0,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-07-03T01:30:00+00:00",
+        "home": 0.6642,
+        "draw": 0.2346,
+        "away": 0.1012
+      },
+      {
+        "time": "2026-07-03T13:30:00+00:00",
+        "home": 0.6642,
+        "draw": 0.2346,
+        "away": 0.1012
+      },
+      {
+        "time": "2026-07-03T19:30:00+00:00",
+        "home": 0.6642,
+        "draw": 0.2346,
+        "away": 0.1012
+      },
+      {
+        "time": "2026-07-04T00:30:00+00:00",
+        "home": 0.6642,
+        "draw": 0.2346,
+        "away": 0.1012
+      },
+      {
+        "time": "2026-07-04T01:30:00+00:00",
+        "home": 0.6642,
+        "draw": 0.2346,
+        "away": 0.1012
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-088",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 2.25,
+    "current_odds": 2.23,
+    "open_probability": 0.444,
+    "current_probability": 0.448,
+    "change_24h": 0.004,
+    "change_6h": 0.002,
+    "change_1h": 0.0008,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-07-02T18:00:00+00:00",
+        "home": 0.444,
+        "draw": 0.2633,
+        "away": 0.2927
+      },
+      {
+        "time": "2026-07-03T06:00:00+00:00",
+        "home": 0.445,
+        "draw": 0.263,
+        "away": 0.292
+      },
+      {
+        "time": "2026-07-03T12:00:00+00:00",
+        "home": 0.446,
+        "draw": 0.2626,
+        "away": 0.2913
+      },
+      {
+        "time": "2026-07-03T17:00:00+00:00",
+        "home": 0.447,
+        "draw": 0.2623,
+        "away": 0.2907
+      },
+      {
+        "time": "2026-07-03T18:00:00+00:00",
+        "home": 0.448,
+        "draw": 0.262,
+        "away": 0.29
       }
     ]
   }

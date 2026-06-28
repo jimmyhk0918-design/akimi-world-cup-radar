@@ -2117,6 +2117,35 @@
     "away_score": null
   },
   {
+    "match_id": "wc2026-074",
+    "match_no": 74,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "GER",
+      "name": "德国",
+      "english_name": "Germany",
+      "flag": "🇩🇪",
+      "elo": 1986,
+      "form": []
+    },
+    "away_team": {
+      "code": "PAR",
+      "name": "巴拉圭",
+      "english_name": "Paraguay",
+      "flag": "🇵🇾",
+      "elo": 1770,
+      "form": []
+    },
+    "match_time": "2026-06-29T20:30:00+00:00",
+    "stadium": "Boston (Foxborough)",
+    "city": "波士顿",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
     "match_id": "wc2026-075",
     "match_no": 75,
     "stage": "round_of_32",
@@ -2170,6 +2199,354 @@
     "match_time": "2026-06-29T17:00:00+00:00",
     "stadium": "Houston",
     "city": "休斯敦",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-077",
+    "match_no": 77,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "FRA",
+      "name": "法国",
+      "english_name": "France",
+      "flag": "🇫🇷",
+      "elo": 2076,
+      "form": []
+    },
+    "away_team": {
+      "code": "SWE",
+      "name": "瑞典",
+      "english_name": "Sweden",
+      "flag": "🇸🇪",
+      "elo": 1810,
+      "form": []
+    },
+    "match_time": "2026-06-30T21:00:00+00:00",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "city": "纽约/新泽西",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-078",
+    "match_no": 78,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "CIV",
+      "name": "科特迪瓦",
+      "english_name": "Ivory Coast",
+      "flag": "🇨🇮",
+      "elo": 1790,
+      "form": []
+    },
+    "away_team": {
+      "code": "NOR",
+      "name": "挪威",
+      "english_name": "Norway",
+      "flag": "🇳🇴",
+      "elo": 1845,
+      "form": []
+    },
+    "match_time": "2026-06-30T17:00:00+00:00",
+    "stadium": "Dallas (Arlington)",
+    "city": "达拉斯",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-079",
+    "match_no": 79,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "MEX",
+      "name": "墨西哥",
+      "english_name": "Mexico",
+      "flag": "🇲🇽",
+      "elo": 1840,
+      "form": []
+    },
+    "away_team": {
+      "code": "ECU",
+      "name": "厄瓜多尔",
+      "english_name": "Ecuador",
+      "flag": "🇪🇨",
+      "elo": 1885,
+      "form": []
+    },
+    "match_time": "2026-07-01T01:00:00+00:00",
+    "stadium": "Mexico City",
+    "city": "墨西哥城",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-080",
+    "match_no": 80,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "ENG",
+      "name": "英格兰",
+      "english_name": "England",
+      "flag": "🏴",
+      "elo": 2047,
+      "form": []
+    },
+    "away_team": {
+      "code": "COD",
+      "name": "刚果民主共和国",
+      "english_name": "DR Congo",
+      "flag": "🇨🇩",
+      "elo": 1650,
+      "form": []
+    },
+    "match_time": "2026-07-01T16:00:00+00:00",
+    "stadium": "Atlanta",
+    "city": "亚特兰大",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-081",
+    "match_no": 81,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "USA",
+      "name": "美国",
+      "english_name": "USA",
+      "flag": "🇺🇸",
+      "elo": 1830,
+      "form": []
+    },
+    "away_team": {
+      "code": "BIH",
+      "name": "波黑",
+      "english_name": "Bosnia & Herzegovina",
+      "flag": "🇧🇦",
+      "elo": 1680,
+      "form": []
+    },
+    "match_time": "2026-07-02T00:00:00+00:00",
+    "stadium": "San Francisco Bay Area (Santa Clara)",
+    "city": "旧金山湾区",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-082",
+    "match_no": 82,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "BEL",
+      "name": "比利时",
+      "english_name": "Belgium",
+      "flag": "🇧🇪",
+      "elo": 1930,
+      "form": []
+    },
+    "away_team": {
+      "code": "SEN",
+      "name": "塞内加尔",
+      "english_name": "Senegal",
+      "flag": "🇸🇳",
+      "elo": 1835,
+      "form": []
+    },
+    "match_time": "2026-07-01T20:00:00+00:00",
+    "stadium": "Seattle",
+    "city": "西雅图",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-083",
+    "match_no": 83,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "POR",
+      "name": "葡萄牙",
+      "english_name": "Portugal",
+      "flag": "🇵🇹",
+      "elo": 2012,
+      "form": []
+    },
+    "away_team": {
+      "code": "CRO",
+      "name": "克罗地亚",
+      "english_name": "Croatia",
+      "flag": "🇭🇷",
+      "elo": 1905,
+      "form": []
+    },
+    "match_time": "2026-07-02T23:00:00+00:00",
+    "stadium": "Toronto",
+    "city": "多伦多",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-084",
+    "match_no": 84,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "ESP",
+      "name": "西班牙",
+      "english_name": "Spain",
+      "flag": "🇪🇸",
+      "elo": 2094,
+      "form": []
+    },
+    "away_team": {
+      "code": "AUT",
+      "name": "奥地利",
+      "english_name": "Austria",
+      "flag": "🇦🇹",
+      "elo": 1875,
+      "form": []
+    },
+    "match_time": "2026-07-02T19:00:00+00:00",
+    "stadium": "Los Angeles (Inglewood)",
+    "city": "洛杉矶",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-085",
+    "match_no": 85,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "SUI",
+      "name": "瑞士",
+      "english_name": "Switzerland",
+      "flag": "🇨🇭",
+      "elo": 1880,
+      "form": []
+    },
+    "away_team": {
+      "code": "ALG",
+      "name": "阿尔及利亚",
+      "english_name": "Algeria",
+      "flag": "🇩🇿",
+      "elo": 1760,
+      "form": []
+    },
+    "match_time": "2026-07-03T03:00:00+00:00",
+    "stadium": "Vancouver",
+    "city": "温哥华",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-086",
+    "match_no": 86,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "ARG",
+      "name": "阿根廷",
+      "english_name": "Argentina",
+      "flag": "🇦🇷",
+      "elo": 2118,
+      "form": []
+    },
+    "away_team": {
+      "code": "CPV",
+      "name": "佛得角",
+      "english_name": "Cape Verde",
+      "flag": "🇨🇻",
+      "elo": 1640,
+      "form": []
+    },
+    "match_time": "2026-07-03T22:00:00+00:00",
+    "stadium": "Miami (Miami Gardens)",
+    "city": "Miami (Miami Gardens)",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-087",
+    "match_no": 87,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "COL",
+      "name": "哥伦比亚",
+      "english_name": "Colombia",
+      "flag": "🇨🇴",
+      "elo": 1960,
+      "form": []
+    },
+    "away_team": {
+      "code": "GHA",
+      "name": "加纳",
+      "english_name": "Ghana",
+      "flag": "🇬🇭",
+      "elo": 1660,
+      "form": []
+    },
+    "match_time": "2026-07-04T01:30:00+00:00",
+    "stadium": "Kansas City",
+    "city": "堪萨斯城",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-088",
+    "match_no": 88,
+    "stage": "round_of_32",
+    "round": 32,
+    "group_name": "",
+    "home_team": {
+      "code": "AUS",
+      "name": "澳大利亚",
+      "english_name": "Australia",
+      "flag": "🇦🇺",
+      "elo": 1785,
+      "form": []
+    },
+    "away_team": {
+      "code": "EGY",
+      "name": "埃及",
+      "english_name": "Egypt",
+      "flag": "🇪🇬",
+      "elo": 1750,
+      "form": []
+    },
+    "match_time": "2026-07-03T18:00:00+00:00",
+    "stadium": "Dallas (Arlington)",
+    "city": "达拉斯",
     "status": "scheduled",
     "home_score": null,
     "away_score": null
