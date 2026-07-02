@@ -2198,5 +2198,80 @@
         "probability": 0.0875
       }
     ]
+  },
+  {
+    "match_id": "wc2026-089",
+    "scores": [
+      {
+        "score": "0:1",
+        "probability": 0.1602
+      },
+      {
+        "score": "0:2",
+        "probability": 0.1257
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1142
+      },
+      {
+        "score": "0:0",
+        "probability": 0.1021
+      },
+      {
+        "score": "1:2",
+        "probability": 0.0896
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-090",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.1304
+      },
+      {
+        "score": "0:1",
+        "probability": 0.1214
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1012
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0943
+      },
+      {
+        "score": "1:2",
+        "probability": 0.084
+      }
+    ]
+  },
+  {
+    "match_id": "wc2026-091",
+    "scores": [
+      {
+        "score": "1:0",
+        "probability": 0.1405
+      },
+      {
+        "score": "2:0",
+        "probability": 0.1205
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1106
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0949
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0819
+      }
+    ]
   }
 ]

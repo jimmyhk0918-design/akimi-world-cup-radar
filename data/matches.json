@@ -2228,9 +2228,9 @@
     "match_time": "2026-06-30T21:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
     "city": "纽约/新泽西",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 3,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-078",
@@ -2257,9 +2257,9 @@
     "match_time": "2026-06-30T17:00:00+00:00",
     "stadium": "Dallas (Arlington)",
     "city": "达拉斯",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 2
   },
   {
     "match_id": "wc2026-079",
@@ -2286,9 +2286,9 @@
     "match_time": "2026-07-01T01:00:00+00:00",
     "stadium": "Mexico City",
     "city": "墨西哥城",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-080",
@@ -2315,9 +2315,9 @@
     "match_time": "2026-07-01T16:00:00+00:00",
     "stadium": "Atlanta",
     "city": "亚特兰大",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-081",
@@ -2344,9 +2344,9 @@
     "match_time": "2026-07-02T00:00:00+00:00",
     "stadium": "San Francisco Bay Area (Santa Clara)",
     "city": "旧金山湾区",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-082",
@@ -2373,9 +2373,9 @@
     "match_time": "2026-07-01T20:00:00+00:00",
     "stadium": "Seattle",
     "city": "西雅图",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 2
   },
   {
     "match_id": "wc2026-083",
@@ -2547,6 +2547,93 @@
     "match_time": "2026-07-03T18:00:00+00:00",
     "stadium": "Dallas (Arlington)",
     "city": "达拉斯",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-089",
+    "match_no": 89,
+    "stage": "round_of_16",
+    "round": 16,
+    "group_name": "",
+    "home_team": {
+      "code": "PAR",
+      "name": "巴拉圭",
+      "english_name": "Paraguay",
+      "flag": "🇵🇾",
+      "elo": 1770,
+      "form": []
+    },
+    "away_team": {
+      "code": "FRA",
+      "name": "法国",
+      "english_name": "France",
+      "flag": "🇫🇷",
+      "elo": 2076,
+      "form": []
+    },
+    "match_time": "2026-07-04T21:00:00+00:00",
+    "stadium": "Philadelphia",
+    "city": "费城",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-090",
+    "match_no": 90,
+    "stage": "round_of_16",
+    "round": 16,
+    "group_name": "",
+    "home_team": {
+      "code": "CAN",
+      "name": "加拿大",
+      "english_name": "Canada",
+      "flag": "🇨🇦",
+      "elo": 1810,
+      "form": []
+    },
+    "away_team": {
+      "code": "MAR",
+      "name": "摩洛哥",
+      "english_name": "Morocco",
+      "flag": "🇲🇦",
+      "elo": 1940,
+      "form": []
+    },
+    "match_time": "2026-07-04T17:00:00+00:00",
+    "stadium": "Houston",
+    "city": "休斯敦",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-091",
+    "match_no": 91,
+    "stage": "round_of_16",
+    "round": 16,
+    "group_name": "",
+    "home_team": {
+      "code": "BRA",
+      "name": "巴西",
+      "english_name": "Brazil",
+      "flag": "🇧🇷",
+      "elo": 2028,
+      "form": []
+    },
+    "away_team": {
+      "code": "NOR",
+      "name": "挪威",
+      "english_name": "Norway",
+      "flag": "🇳🇴",
+      "elo": 1845,
+      "form": []
+    },
+    "match_time": "2026-07-05T20:00:00+00:00",
+    "stadium": "New York/New Jersey (East Rutherford)",
+    "city": "纽约/新泽西",
     "status": "scheduled",
     "home_score": null,
     "away_score": null
