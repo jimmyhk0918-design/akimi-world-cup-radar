@@ -2637,5 +2637,63 @@
     "status": "scheduled",
     "home_score": null,
     "away_score": null
+  },
+  {
+    "match_id": "wc2026-092",
+    "match_no": 92,
+    "stage": "round_of_16",
+    "round": 16,
+    "group_name": "",
+    "home_team": {
+      "code": "MEX",
+      "name": "墨西哥",
+      "english_name": "Mexico",
+      "flag": "🇲🇽",
+      "elo": 1840,
+      "form": []
+    },
+    "away_team": {
+      "code": "ENG",
+      "name": "英格兰",
+      "english_name": "England",
+      "flag": "🏴",
+      "elo": 2047,
+      "form": []
+    },
+    "match_time": "2026-07-06T00:00:00+00:00",
+    "stadium": "Mexico City",
+    "city": "墨西哥城",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-094",
+    "match_no": 94,
+    "stage": "round_of_16",
+    "round": 16,
+    "group_name": "",
+    "home_team": {
+      "code": "USA",
+      "name": "美国",
+      "english_name": "USA",
+      "flag": "🇺🇸",
+      "elo": 1830,
+      "form": []
+    },
+    "away_team": {
+      "code": "BEL",
+      "name": "比利时",
+      "english_name": "Belgium",
+      "flag": "🇧🇪",
+      "elo": 1930,
+      "form": []
+    },
+    "match_time": "2026-07-07T00:00:00+00:00",
+    "stadium": "Seattle",
+    "city": "西雅图",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
   }
 ]
