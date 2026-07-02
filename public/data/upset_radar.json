@@ -1363,5 +1363,35 @@
       "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
+  },
+  {
+    "match_id": "wc2026-092",
+    "upset_index": 41,
+    "risk_level": "苗头",
+    "favorite_team": "英格兰",
+    "underdog_team": "墨西哥",
+    "favorite_overheat_score": 49,
+    "underdog_not_lose_prob": 0.4775,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-094",
+    "upset_index": 48,
+    "risk_level": "苗头",
+    "favorite_team": "比利时",
+    "underdog_team": "美国",
+    "favorite_overheat_score": 56,
+    "underdog_not_lose_prob": 0.5769,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
   }
 ]
