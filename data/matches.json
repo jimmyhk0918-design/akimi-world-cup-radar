@@ -2668,6 +2668,35 @@
     "away_score": null
   },
   {
+    "match_id": "wc2026-093",
+    "match_no": 93,
+    "stage": "round_of_16",
+    "round": 16,
+    "group_name": "",
+    "home_team": {
+      "code": "POR",
+      "name": "葡萄牙",
+      "english_name": "Portugal",
+      "flag": "🇵🇹",
+      "elo": 2012,
+      "form": []
+    },
+    "away_team": {
+      "code": "ESP",
+      "name": "西班牙",
+      "english_name": "Spain",
+      "flag": "🇪🇸",
+      "elo": 2094,
+      "form": []
+    },
+    "match_time": "2026-07-06T19:00:00+00:00",
+    "stadium": "Dallas (Arlington)",
+    "city": "达拉斯",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
     "match_id": "wc2026-094",
     "match_no": 94,
     "stage": "round_of_16",
