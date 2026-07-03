@@ -2300,6 +2300,31 @@
     ]
   },
   {
+    "match_id": "wc2026-093",
+    "scores": [
+      {
+        "score": "1:1",
+        "probability": 0.131
+      },
+      {
+        "score": "0:1",
+        "probability": 0.1118
+      },
+      {
+        "score": "1:0",
+        "probability": 0.1081
+      },
+      {
+        "score": "0:0",
+        "probability": 0.0923
+      },
+      {
+        "score": "1:2",
+        "probability": 0.0793
+      }
+    ]
+  },
+  {
     "match_id": "wc2026-094",
     "scores": [
       {
