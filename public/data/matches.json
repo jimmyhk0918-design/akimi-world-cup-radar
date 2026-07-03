@@ -2402,9 +2402,9 @@
     "match_time": "2026-07-02T23:00:00+00:00",
     "stadium": "Toronto",
     "city": "多伦多",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-084",
