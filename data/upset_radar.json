@@ -1408,5 +1408,35 @@
       "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
+  },
+  {
+    "match_id": "wc2026-095",
+    "upset_index": 25,
+    "risk_level": "低",
+    "favorite_team": "阿根廷",
+    "underdog_team": "埃及",
+    "favorite_overheat_score": 33,
+    "underdog_not_lose_prob": 0.2955,
+    "draw_heat_score": 40,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-096",
+    "upset_index": 51,
+    "risk_level": "苗头",
+    "favorite_team": "哥伦比亚",
+    "underdog_team": "瑞士",
+    "favorite_overheat_score": 59,
+    "underdog_not_lose_prob": 0.5978,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
   }
 ]
