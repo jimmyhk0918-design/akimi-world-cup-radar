@@ -2724,5 +2724,63 @@
     "status": "scheduled",
     "home_score": null,
     "away_score": null
+  },
+  {
+    "match_id": "wc2026-095",
+    "match_no": 95,
+    "stage": "round_of_16",
+    "round": 16,
+    "group_name": "",
+    "home_team": {
+      "code": "ARG",
+      "name": "阿根廷",
+      "english_name": "Argentina",
+      "flag": "🇦🇷",
+      "elo": 2118,
+      "form": []
+    },
+    "away_team": {
+      "code": "EGY",
+      "name": "埃及",
+      "english_name": "Egypt",
+      "flag": "🇪🇬",
+      "elo": 1750,
+      "form": []
+    },
+    "match_time": "2026-07-07T16:00:00+00:00",
+    "stadium": "Atlanta",
+    "city": "亚特兰大",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-096",
+    "match_no": 96,
+    "stage": "round_of_16",
+    "round": 16,
+    "group_name": "",
+    "home_team": {
+      "code": "SUI",
+      "name": "瑞士",
+      "english_name": "Switzerland",
+      "flag": "🇨🇭",
+      "elo": 1880,
+      "form": []
+    },
+    "away_team": {
+      "code": "COL",
+      "name": "哥伦比亚",
+      "english_name": "Colombia",
+      "flag": "🇨🇴",
+      "elo": 1960,
+      "form": []
+    },
+    "match_time": "2026-07-07T20:00:00+00:00",
+    "stadium": "Vancouver",
+    "city": "温哥华",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
   }
 ]
