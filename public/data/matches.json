@@ -2489,9 +2489,9 @@
     "match_time": "2026-07-03T22:00:00+00:00",
     "stadium": "Miami (Miami Gardens)",
     "city": "Miami (Miami Gardens)",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 1
   },
   {
     "match_id": "wc2026-087",
