@@ -2634,9 +2634,9 @@
     "match_time": "2026-07-05T20:00:00+00:00",
     "stadium": "New York/New Jersey (East Rutherford)",
     "city": "纽约/新泽西",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 2
   },
   {
     "match_id": "wc2026-092",
@@ -2663,9 +2663,9 @@
     "match_time": "2026-07-06T00:00:00+00:00",
     "stadium": "Mexico City",
     "city": "墨西哥城",
-    "status": "scheduled",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 2,
+    "away_score": 3
   },
   {
     "match_id": "wc2026-093",
@@ -2779,6 +2779,64 @@
     "match_time": "2026-07-07T20:00:00+00:00",
     "stadium": "Vancouver",
     "city": "温哥华",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-097",
+    "match_no": 97,
+    "stage": "quarter_final",
+    "round": 1,
+    "group_name": "",
+    "home_team": {
+      "code": "FRA",
+      "name": "法国",
+      "english_name": "France",
+      "flag": "🇫🇷",
+      "elo": 2076,
+      "form": []
+    },
+    "away_team": {
+      "code": "MAR",
+      "name": "摩洛哥",
+      "english_name": "Morocco",
+      "flag": "🇲🇦",
+      "elo": 1940,
+      "form": []
+    },
+    "match_time": "2026-07-09T20:00:00+00:00",
+    "stadium": "Boston (Foxborough)",
+    "city": "波士顿",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-099",
+    "match_no": 99,
+    "stage": "quarter_final",
+    "round": 1,
+    "group_name": "",
+    "home_team": {
+      "code": "NOR",
+      "name": "挪威",
+      "english_name": "Norway",
+      "flag": "🇳🇴",
+      "elo": 1845,
+      "form": []
+    },
+    "away_team": {
+      "code": "ENG",
+      "name": "英格兰",
+      "english_name": "England",
+      "flag": "🏴",
+      "elo": 2047,
+      "form": []
+    },
+    "match_time": "2026-07-11T21:00:00+00:00",
+    "stadium": "Miami (Miami Gardens)",
+    "city": "Miami (Miami Gardens)",
     "status": "scheduled",
     "home_score": null,
     "away_score": null
