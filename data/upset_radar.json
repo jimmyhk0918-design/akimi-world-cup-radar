@@ -1455,13 +1455,28 @@
     ]
   },
   {
+    "match_id": "wc2026-098",
+    "upset_index": 38,
+    "risk_level": "苗头",
+    "favorite_team": "西班牙",
+    "underdog_team": "比利时",
+    "favorite_overheat_score": 46,
+    "underdog_not_lose_prob": 0.4387,
+    "draw_heat_score": 45,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
     "match_id": "wc2026-099",
-    "upset_index": 42,
+    "upset_index": 41,
     "risk_level": "苗头",
     "favorite_team": "英格兰",
     "underdog_team": "挪威",
-    "favorite_overheat_score": 50,
-    "underdog_not_lose_prob": 0.4813,
+    "favorite_overheat_score": 49,
+    "underdog_not_lose_prob": 0.4819,
     "draw_heat_score": 47,
     "reason": [
       "热门方胜率没有形成绝对优势",

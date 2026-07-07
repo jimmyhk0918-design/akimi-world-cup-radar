@@ -1,10 +1,10 @@
 {
   "overall": {
-    "matches_reviewed": 93,
-    "result_accuracy": 0.6344,
-    "over_under_accuracy": 0.4624,
-    "top5_score_hit_rate": 0.5269,
-    "upset_warning_hit_rate": 0.6344,
+    "matches_reviewed": 94,
+    "result_accuracy": 0.6383,
+    "over_under_accuracy": 0.4574,
+    "top5_score_hit_rate": 0.5213,
+    "upset_warning_hit_rate": 0.6383,
     "brier_score": 0.514,
     "log_loss": 0.863
   },
