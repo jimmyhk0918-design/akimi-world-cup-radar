@@ -2721,9 +2721,9 @@
     "match_time": "2026-07-07T00:00:00+00:00",
     "stadium": "Seattle",
     "city": "西雅图",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 1,
+    "away_score": 4
   },
   {
     "match_id": "wc2026-095",
@@ -2750,7 +2750,7 @@
     "match_time": "2026-07-07T16:00:00+00:00",
     "stadium": "Atlanta",
     "city": "亚特兰大",
-    "status": "scheduled",
+    "status": "live",
     "home_score": null,
     "away_score": null
   },
@@ -2808,6 +2808,35 @@
     "match_time": "2026-07-09T20:00:00+00:00",
     "stadium": "Boston (Foxborough)",
     "city": "波士顿",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
+  },
+  {
+    "match_id": "wc2026-098",
+    "match_no": 98,
+    "stage": "quarter_final",
+    "round": 1,
+    "group_name": "",
+    "home_team": {
+      "code": "ESP",
+      "name": "西班牙",
+      "english_name": "Spain",
+      "flag": "🇪🇸",
+      "elo": 2094,
+      "form": []
+    },
+    "away_team": {
+      "code": "BEL",
+      "name": "比利时",
+      "english_name": "Belgium",
+      "flag": "🇧🇪",
+      "elo": 1930,
+      "form": []
+    },
+    "match_time": "2026-07-10T19:00:00+00:00",
+    "stadium": "Los Angeles (Inglewood)",
+    "city": "洛杉矶",
     "status": "scheduled",
     "home_score": null,
     "away_score": null
