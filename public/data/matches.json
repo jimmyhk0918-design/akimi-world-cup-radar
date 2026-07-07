@@ -2779,9 +2779,9 @@
     "match_time": "2026-07-07T20:00:00+00:00",
     "stadium": "Vancouver",
     "city": "温哥华",
-    "status": "live",
-    "home_score": null,
-    "away_score": null
+    "status": "finished",
+    "home_score": 0,
+    "away_score": 0
   },
   {
     "match_id": "wc2026-097",

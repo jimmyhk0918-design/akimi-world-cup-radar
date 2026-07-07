@@ -1,12 +1,12 @@
 {
   "overall": {
-    "matches_reviewed": 95,
-    "result_accuracy": 0.6421,
-    "over_under_accuracy": 0.4526,
-    "top5_score_hit_rate": 0.5158,
-    "upset_warning_hit_rate": 0.6421,
-    "brier_score": 0.51,
-    "log_loss": 0.858
+    "matches_reviewed": 96,
+    "result_accuracy": 0.6354,
+    "over_under_accuracy": 0.4583,
+    "top5_score_hit_rate": 0.5208,
+    "upset_warning_hit_rate": 0.6354,
+    "brier_score": 0.513,
+    "log_loss": 0.863
   },
   "by_stage": [],
   "by_confidence": [],
