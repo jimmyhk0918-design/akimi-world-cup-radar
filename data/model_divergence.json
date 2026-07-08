@@ -988,5 +988,15 @@
     "largest_divergence_value": 0.008,
     "divergence_level": "low",
     "summary": "当前比较对象为模型代理，不具备真实市场分歧含义。"
+  },
+  {
+    "match_id": "wc2026-100",
+    "home_divergence": 0.004,
+    "draw_divergence": -0.0013,
+    "away_divergence": -0.0027,
+    "largest_divergence_selection": "home",
+    "largest_divergence_value": 0.004,
+    "divergence_level": "low",
+    "summary": "当前比较对象为模型代理，不具备真实市场分歧含义。"
   }
 ]

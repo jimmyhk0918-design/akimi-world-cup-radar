@@ -2473,5 +2473,30 @@
         "probability": 0.0902
       }
     ]
+  },
+  {
+    "match_id": "wc2026-100",
+    "scores": [
+      {
+        "score": "1:0",
+        "probability": 0.1461
+      },
+      {
+        "score": "2:0",
+        "probability": 0.1335
+      },
+      {
+        "score": "1:1",
+        "probability": 0.1022
+      },
+      {
+        "score": "2:1",
+        "probability": 0.0934
+      },
+      {
+        "score": "3:0",
+        "probability": 0.0814
+      }
+    ]
   }
 ]
