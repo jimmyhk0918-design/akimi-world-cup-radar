@@ -1483,5 +1483,20 @@
       "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
+  },
+  {
+    "match_id": "wc2026-100",
+    "upset_index": 32,
+    "risk_level": "苗头",
+    "favorite_team": "阿根廷",
+    "underdog_team": "瑞士",
+    "favorite_overheat_score": 40,
+    "underdog_not_lose_prob": 0.3788,
+    "draw_heat_score": 43,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
   }
 ]

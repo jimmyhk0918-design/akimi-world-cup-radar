@@ -2869,5 +2869,34 @@
     "status": "scheduled",
     "home_score": null,
     "away_score": null
+  },
+  {
+    "match_id": "wc2026-100",
+    "match_no": 100,
+    "stage": "quarter_final",
+    "round": 1,
+    "group_name": "",
+    "home_team": {
+      "code": "ARG",
+      "name": "阿根廷",
+      "english_name": "Argentina",
+      "flag": "🇦🇷",
+      "elo": 2118,
+      "form": []
+    },
+    "away_team": {
+      "code": "SUI",
+      "name": "瑞士",
+      "english_name": "Switzerland",
+      "flag": "🇨🇭",
+      "elo": 1880,
+      "form": []
+    },
+    "match_time": "2026-07-12T01:00:00+00:00",
+    "stadium": "Kansas City",
+    "city": "堪萨斯城",
+    "status": "scheduled",
+    "home_score": null,
+    "away_score": null
   }
 ]

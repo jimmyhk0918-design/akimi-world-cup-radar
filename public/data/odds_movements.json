@@ -4750,5 +4750,53 @@
         "away": 0.5224
       }
     ]
+  },
+  {
+    "match_id": "wc2026-100",
+    "market_type": "1x2-proxy",
+    "selection": "home",
+    "open_odds": 1.61,
+    "current_odds": 1.62,
+    "open_probability": 0.622,
+    "current_probability": 0.618,
+    "change_24h": -0.004,
+    "change_6h": -0.002,
+    "change_1h": -0.0008,
+    "bookmaker_consensus": 0,
+    "market_dispersion": 0,
+    "signal": "模型代理",
+    "risk_note": "该场暂无实时赔率覆盖，本栏为模型代理，不代表博彩公司报价。",
+    "history": [
+      {
+        "time": "2026-07-11T01:00:00+00:00",
+        "home": 0.622,
+        "draw": 0.2431,
+        "away": 0.1349
+      },
+      {
+        "time": "2026-07-11T13:00:00+00:00",
+        "home": 0.621,
+        "draw": 0.2434,
+        "away": 0.1355
+      },
+      {
+        "time": "2026-07-11T19:00:00+00:00",
+        "home": 0.62,
+        "draw": 0.2438,
+        "away": 0.1362
+      },
+      {
+        "time": "2026-07-12T00:00:00+00:00",
+        "home": 0.619,
+        "draw": 0.2441,
+        "away": 0.1369
+      },
+      {
+        "time": "2026-07-12T01:00:00+00:00",
+        "home": 0.618,
+        "draw": 0.2444,
+        "away": 0.1375
+      }
+    ]
   }
 ]
