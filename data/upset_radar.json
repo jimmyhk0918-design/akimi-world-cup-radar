@@ -1498,5 +1498,65 @@
       "Elo 与进球模型存在不确定性",
       "平局路径仍有可观概率"
     ]
+  },
+  {
+    "match_id": "wc2026-101",
+    "upset_index": 49,
+    "risk_level": "苗头",
+    "favorite_team": "法国",
+    "underdog_team": "西班牙",
+    "favorite_overheat_score": 57,
+    "underdog_not_lose_prob": 0.609,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-102",
+    "upset_index": 50,
+    "risk_level": "苗头",
+    "favorite_team": "阿根廷",
+    "underdog_team": "英格兰",
+    "favorite_overheat_score": 58,
+    "underdog_not_lose_prob": 0.606,
+    "draw_heat_score": 48,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-103",
+    "upset_index": 47,
+    "risk_level": "苗头",
+    "favorite_team": "法国",
+    "underdog_team": "英格兰",
+    "favorite_overheat_score": 55,
+    "underdog_not_lose_prob": 0.5603,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
+  },
+  {
+    "match_id": "wc2026-104",
+    "upset_index": 53,
+    "risk_level": "苗头",
+    "favorite_team": "西班牙",
+    "underdog_team": "阿根廷",
+    "favorite_overheat_score": 61,
+    "underdog_not_lose_prob": 0.6126,
+    "draw_heat_score": 47,
+    "reason": [
+      "热门方胜率没有形成绝对优势",
+      "Elo 与进球模型存在不确定性",
+      "平局路径仍有可观概率"
+    ]
   }
 ]
